@@ -3,7 +3,7 @@
 var left = keyboard_check(ord("A"));
 var right = keyboard_check(ord("D"));
 var up = keyboard_check_pressed(ord("W"));
-var move = -left+right;
+var move = -left+right
 
 #endregion
 #region MOVIMENTAÇÃO
