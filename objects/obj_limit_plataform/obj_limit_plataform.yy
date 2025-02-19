@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_wonmen",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_limit_plataform",
+  "eventList":[],
   "managed":true,
-  "name":"obj_wonmen",
+  "name":"obj_limit_plataform",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
-  "parentObjectId":{
-    "name":"obj_men",
-    "path":"objects/obj_men/obj_men.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_wonmen",
-    "path":"sprites/spr_wonmen/spr_wonmen.yy",
+    "name":"spr_block",
+    "path":"sprites/spr_block/spr_block.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

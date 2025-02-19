@@ -6,6 +6,8 @@ if start == false
 	
 }
 
+
+//CHANGE PAGES OF DIALOG
 if mouse_check_button_pressed(mb_left)
 {
 	

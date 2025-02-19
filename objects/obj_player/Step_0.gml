@@ -1,54 +1,29 @@
+#region EXIT
+
 if global.dialog == true 
 {
 	
 	exit;	
 	
 }
-#region CONTROLES
+
+#endregion
+#region CONTROLS
 
 var left = keyboard_check(ord("A"));
 var right = keyboard_check(ord("D"));
 var up = keyboard_check_pressed(ord("W"));
 var move = -left+right;
-var on = keyboard_check_pressed(ord("F"));
-
-if on
-{
-	
- global.on = !global.on;
-   
-}
-switch global.on
-{
-	case 0:
-	
-		jspd = -13;
-		spd = 3;
-		obj_men_2.spd = 0;
-		obj_men_2.jspd = 0;
-		
-		break;
-		
-		case 1:
-		
-		obj_men_2.jspd = -13;
-		obj_men_2.spd = 3;
-		spd = 0;
-		jspd = 0;
-		
-		break;
-
-}
 
 #endregion	
-#region MOVIMENTAÇÃO
+#region MOVIMENT
 
 hspd = move*spd; // movimentação horizontal
 
 vspd = vspd + grv; // movimentação vertival
 
 #endregion
-#region PULO
+#region JUMP
 
 if place_meeting(x,y+1,obj_floor)
 {
@@ -59,7 +34,7 @@ if place_meeting(x,y+1,obj_floor)
 }
 
 #endregion
-#region COLISÃO
+#region COLISION
 
 //colisão horizontal
 if place_meeting(x+hspd,y,obj_floor)
@@ -70,7 +45,6 @@ if place_meeting(x+hspd,y,obj_floor)
     }
     hspd = 0;
 }
-
 
 x+=hspd
 
@@ -85,6 +59,8 @@ if place_meeting(x,y+vspd,obj_floor)
 }
 
 y+=vspd;
+
+//OBS: ESSA COLISÃO INCLUI AS PLATAFORMAS, POIS ELAS SÃO FILHAS DO "obj_floor".
 
 #endregion
 #region DIALOG

@@ -6,9 +6,9 @@ function scr_dialog()
 	
 		case "verdin":
 		
-			text[0] = "vai tomar no cu";
-			text[1] = "vai tomar no cu2";
-			text[2] = "vai tomar no cu3";
+			text[0] = "Oi, tudo bem?!";
+			text[1] = "Voce é novo aqui né?";
+			text[2] = "Espero que goste dessa sala preta.";
 			break;
 		
 	}

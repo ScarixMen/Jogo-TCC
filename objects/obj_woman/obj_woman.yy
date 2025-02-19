@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_men_2",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_woman",
+  "eventList":[],
   "managed":true,
-  "name":"obj_men_2",
+  "name":"obj_woman",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_men",
-    "path":"objects/obj_men/obj_men.yy",
+    "name":"obj_player",
+    "path":"objects/obj_player/obj_player.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_men_2",
-    "path":"sprites/spr_men_2/spr_men_2.yy",
+    "name":"spr_woman",
+    "path":"sprites/spr_woman/spr_woman.yy",
   },
   "spriteMaskId":null,
   "visible":true,
