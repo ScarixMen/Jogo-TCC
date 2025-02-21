@@ -24,6 +24,7 @@
     {"name":"obj_limit_plataform","order":12,"path":"objects/obj_limit_plataform/obj_limit_plataform.yy",},
     {"name":"obj_npc","order":5,"path":"objects/obj_npc/obj_npc.yy",},
     {"name":"obj_par_npc","order":6,"path":"objects/obj_par_npc/obj_par_npc.yy",},
+    {"name":"obj_plataform_diagonal_esquerda","order":3,"path":"objects/obj_plataform_diagonal_esquerda/obj_plataform_diagonal_esquerda.yy",},
     {"name":"obj_plataform_horizontal","order":1,"path":"objects/obj_plataform_horizontal/obj_plataform_horizontal.yy",},
     {"name":"obj_plataform_vertical","order":2,"path":"objects/obj_plataform_vertical/obj_plataform_vertical.yy",},
     {"name":"obj_player","order":10,"path":"objects/obj_player/obj_player.yy",},

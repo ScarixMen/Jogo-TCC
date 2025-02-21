@@ -18,9 +18,9 @@ var move = -left+right;
 #endregion	
 #region MOVIMENT
 
-hspd = move*spd; // movimentação horizontal
+hspd = move*spd; // moviment horizontal
 
-vspd = vspd + grv; // movimentação vertival
+vspd = vspd + grv; // moviment vertival
 
 #endregion
 #region JUMP
