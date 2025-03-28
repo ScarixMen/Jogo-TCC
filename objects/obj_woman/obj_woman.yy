@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_woman",
+  "%Name":"obj_Woman",
   "eventList":[],
   "managed":true,
-  "name":"obj_woman",
+  "name":"obj_Woman",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_player",
-    "path":"objects/obj_player/obj_player.yy",
+    "name":"obj_Player",
+    "path":"objects/obj_Player/obj_Player.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_woman",
-    "path":"sprites/spr_woman/spr_woman.yy",
+    "name":"spr_Woman",
+    "path":"sprites/spr_Woman/spr_Woman.yy",
   },
   "spriteMaskId":null,
   "visible":true,

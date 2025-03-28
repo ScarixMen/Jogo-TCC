@@ -3,7 +3,7 @@
 hspd = spd *h_dir;
 
 
-if instance_place(x + hspd, y, obj_floor)
+if instance_place(x + hspd, y, obj_Floor)
 {
 
 	h_dir *= -1;
@@ -12,16 +12,16 @@ if instance_place(x + hspd, y, obj_floor)
 #endregion
 #region COLISION
 
-var h_colision = place_meeting(x + hspd, y, obj_man) or place_meeting(x, y - 1, obj_man);
+var h_colision = place_meeting(x + hspd, y, obj_Man) or place_meeting(x, y - 1, obj_Man);
 
-var w_colision = place_meeting(x + hspd, y, obj_woman) or place_meeting(x, y - 1, obj_woman);
+var w_colision = place_meeting(x + hspd, y, obj_Woman) or place_meeting(x, y - 1, obj_Woman);
 
 if h_colision
 {
 	
-	with(obj_man)
+	with(obj_Man)
 	
-	if!place_meeting(x + other.hspd, y, obj_floor)
+	if!place_meeting(x + other.hspd, y, obj_Floor)
 	{
 		
 		x += other.hspd;
@@ -34,9 +34,9 @@ if h_colision
 if w_colision
 {
 	
-	with(obj_woman)
+	with(obj_Woman)
 	
-	if!place_meeting(x + other.hspd, y, obj_floor)
+	if!place_meeting(x + other.hspd, y, obj_Floor)
 	{
 		
 		x += other.hspd;

@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_man",
+  "%Name":"obj_Man",
   "eventList":[],
   "managed":true,
-  "name":"obj_man",
+  "name":"obj_Man",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_player",
-    "path":"objects/obj_player/obj_player.yy",
+    "name":"obj_Player",
+    "path":"objects/obj_Player/obj_Player.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_man",
-    "path":"sprites/spr_man/spr_man.yy",
+    "name":"spr_Man",
+    "path":"sprites/spr_Man/spr_Man.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -25,7 +25,7 @@ vspd = vspd + grv; // moviment vertival
 #endregion
 #region JUMP
 
-if place_meeting(x,y+1,obj_floor)
+if place_meeting(x,y+1,obj_Floor)
 {
     if up
     {
@@ -37,9 +37,9 @@ if place_meeting(x,y+1,obj_floor)
 #region COLISION
 
 //colisão horizontal
-if place_meeting(x+hspd,y,obj_floor)
+if place_meeting(x+hspd,y,obj_Floor)
 {
-    while !place_meeting(x+sign(hspd),y,obj_floor)
+    while !place_meeting(x+sign(hspd),y,obj_Floor)
     {
         x+=sign(hspd);
     }
@@ -49,9 +49,9 @@ if place_meeting(x+hspd,y,obj_floor)
 x+=hspd
 
 //Colisão vertical
-if place_meeting(x,y+vspd,obj_floor)
+if place_meeting(x,y+vspd,obj_Floor)
 {
-    while !place_meeting(x,y+sign(vspd),obj_floor)
+    while !place_meeting(x,y+sign(vspd),obj_Floor)
     {
         y+=sign(vspd);
     }
@@ -65,14 +65,14 @@ y+=vspd;
 #endregion
 #region DIALOG
 
-if distance_to_object(obj_par_npc) <=10
+if distance_to_object(obj_Par_Npc) <=10
 {
 		
 		if keyboard_check_pressed(ord("E")) and global.dialog == false
 		{
 			
-			var npc	= instance_nearest(x,y,obj_par_npc);
-			var dialog = instance_create_layer(x,y,"dialog",obj_dialog);
+			var npc	= instance_nearest(x,y,obj_Par_Npc);
+			var dialog = instance_create_layer(x,y,"dialog",obj_Dialog);
 			dialog.npc_name = npc.name
 			
 		}

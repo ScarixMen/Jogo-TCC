@@ -3,7 +3,7 @@
 hspd = spd *h_dir;
 vspd = spd *v_dir;
 
-if instance_place(x + hspd, y + vspd, obj_floor)
+if instance_place(x + hspd, y + vspd, obj_Floor)
 {
 
 	h_dir *= -1;
@@ -13,20 +13,20 @@ if instance_place(x + hspd, y + vspd, obj_floor)
 #endregion
 #region COLISION
 
-var h_colision = place_meeting(x + hspd, y + vspd, obj_man) or place_meeting(x, y - 1, obj_man);
+var h_colision = place_meeting(x + hspd, y + vspd, obj_Man) or place_meeting(x, y - 1, obj_Man);
 
-var w_colision = place_meeting(x + hspd, y + vspd, obj_woman) or place_meeting(x, y - 1, obj_woman);
+var w_colision = place_meeting(x + hspd, y + vspd, obj_Woman) or place_meeting(x, y - 1, obj_Woman);
 
 if h_colision
 {
 	
-	with(obj_man)
+	with(obj_Man)
 	
-	switch(obj_plataform_diagonal_direita.h_dir)
+	switch(obj_Plataform_Diagonal_Direita.h_dir)
 	{
 		
 		case 1:
-			if!place_meeting(x + other.hspd, y, obj_floor)
+			if!place_meeting(x + other.hspd, y, obj_Floor)
 			{
 		
 				x += other.hspd;
@@ -36,7 +36,7 @@ if h_colision
 		break;
 		
 		case -1:
-			if!place_meeting(x - other.hspd, y - other.vspd + 1 , obj_floor)
+			if!place_meeting(x - other.hspd, y - other.vspd + 1 , obj_Floor)
 			{
 		
 				x += other.hspd;
@@ -52,13 +52,13 @@ if h_colision
 if w_colision
 {
 	
-	with(obj_woman)
+	with(obj_Woman)
 	
-	switch(obj_plataform_diagonal_direita.h_dir)
+	switch(obj_Plataform_Diagonal_Direita.h_dir)
 	{
 		
 		case 1:
-			if!place_meeting(x + other.hspd, y, obj_floor)
+			if!place_meeting(x + other.hspd, y, obj_Floor)
 			{
 		
 				x += other.hspd;
@@ -68,7 +68,7 @@ if w_colision
 		break;
 		
 		case -1:
-			if!place_meeting(x - other.hspd, y - other.vspd+1, obj_floor)
+			if!place_meeting(x - other.hspd, y - other.vspd+1, obj_Floor)
 			{
 		
 				x += other.hspd;

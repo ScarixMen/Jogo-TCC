@@ -1,4 +1,4 @@
-if instance_exists(obj_dialog)
+if instance_exists(obj_Dialog)
 {
 	
 	global.dialog = true;

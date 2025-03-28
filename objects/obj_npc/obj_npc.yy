@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_npc",
+  "%Name":"obj_Npc",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_npc",
+  "name":"obj_Npc",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
     "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_npc",
-    "path":"objects/obj_par_npc/obj_par_npc.yy",
+    "name":"obj_Par_Npc",
+    "path":"objects/obj_Par_Npc/obj_Par_Npc.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc",
-    "path":"sprites/spr_npc/spr_npc.yy",
+    "name":"spr_Npc",
+    "path":"sprites/spr_Npc/spr_Npc.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,20 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_plataform_diagonal_esquerda",
+  "%Name":"obj_Plataform_Diagonal_Esquerda",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_plataform_diagonal_esquerda",
+  "name":"obj_Plataform_Diagonal_Esquerda",
   "overriddenProperties":[],
   "parent":{
     "name":"Plataforms",
-    "path":"folders/Objetos/Plataforms.yy",
+    "path":"folders/Objetos/Construct/Plataforms.yy",
   },
   "parentObjectId":{
-    "name":"obj_floor",
-    "path":"objects/obj_floor/obj_floor.yy",
+    "name":"obj_Floor",
+    "path":"objects/obj_Floor/obj_Floor.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_block",
-    "path":"sprites/spr_block/spr_block.yy",
+    "name":"spr_Sand",
+    "path":"sprites/spr_Sand/spr_Sand.yy",
   },
   "spriteMaskId":null,
   "visible":true,

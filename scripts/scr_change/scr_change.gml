@@ -13,19 +13,19 @@ function scr_change()
 	{
 		case 0:
 	
-			obj_man.jspd = -13;
-			obj_man.spd = 3;
-			obj_woman.spd = 0;
-			obj_woman.jspd = 0;
+			obj_Man.jspd = obj_Player.jspd;
+			obj_Man.spd = obj_Player.spd;
+			obj_Woman.spd = 0;
+			obj_Woman.jspd = 0;
 		
 			break;
 		
 			case 1:
 		
-			obj_woman.jspd = -13;
-			obj_woman.spd = 3;
-			obj_man.spd = 0;
-			obj_man.jspd = 0;
+			obj_Woman.jspd = obj_Player.jspd;
+			obj_Woman.spd = obj_Player.spd;
+			obj_Man.spd = 0;
+			obj_Man.jspd = 0;
 		
 			break;
 

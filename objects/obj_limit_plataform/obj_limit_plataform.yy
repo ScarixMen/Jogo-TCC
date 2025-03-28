@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_limit_plataform",
+  "%Name":"obj_Limit_Plataform",
   "eventList":[],
   "managed":true,
-  "name":"obj_limit_plataform",
+  "name":"obj_Limit_Plataform",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Construct",
+    "path":"folders/Objetos/Construct.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_block",
-    "path":"sprites/spr_block/spr_block.yy",
+    "name":"spr_Sand",
+    "path":"sprites/spr_Sand/spr_Sand.yy",
   },
   "spriteMaskId":null,
   "visible":false,
