@@ -2,7 +2,7 @@
 
 vspd = spd *v_dir;
 
-if instance_place(x, y + vspd, obj_Floor)
+if instance_place(x, y + vspd, obj_Limit_Plataform)
 {
 
 	v_dir *= -1;
@@ -20,7 +20,7 @@ if h_colision
 	
 	with(obj_Man)
 	
-	if!place_meeting(x, y + other.vspd, obj_Floor)
+	if!place_meeting(x, y + other.vspd, obj_Stone)
 	{
 		
 		y += other.vspd;
@@ -34,7 +34,7 @@ if w_colision
 	
 	with(obj_Woman)
 	
-	if!place_meeting(x, y + other.vspd, obj_Floor)
+	if!place_meeting(x, y + other.vspd, obj_Limit_Plataform)
 	{
 		
 		y += other.vspd;

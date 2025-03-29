@@ -80,3 +80,8 @@ if distance_to_object(obj_Par_Npc) <=10
 }
 
 #endregion
+#region CAM
+
+	
+
+#endregion
