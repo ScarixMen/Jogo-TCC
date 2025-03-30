@@ -22,12 +22,12 @@
   ],
   "ResourceOrderSettings":[
     {"name":"obj_Button_Green","order":4,"path":"objects/obj_Button_Green/obj_Button_Green.yy",},
-    {"name":"obj_Button_Red","order":5,"path":"objects/obj_Button_Red/obj_Button_Red.yy",},
     {"name":"obj_Cam","order":22,"path":"objects/obj_Cam/obj_Cam.yy",},
     {"name":"obj_Citrino","order":20,"path":"objects/obj_Citrino/obj_Citrino.yy",},
     {"name":"obj_Control","order":8,"path":"objects/obj_Control/obj_Control.yy",},
     {"name":"obj_Dialog","order":7,"path":"objects/obj_Dialog/obj_Dialog.yy",},
     {"name":"obj_Equinnito","order":18,"path":"objects/obj_Equinnito/obj_Equinnito.yy",},
+    {"name":"obj_Lever","order":5,"path":"objects/obj_Lever/obj_Lever.yy",},
     {"name":"obj_Light","order":16,"path":"objects/obj_Light/obj_Light.yy",},
     {"name":"obj_Limit_Plataform","order":1,"path":"objects/obj_Limit_Plataform/obj_Limit_Plataform.yy",},
     {"name":"obj_Npc","order":5,"path":"objects/obj_Npc/obj_Npc.yy",},

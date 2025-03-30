@@ -5,7 +5,7 @@ vspd = spd *v_dir;
 if instance_place(x, y + vspd, obj_Limit_Plataform)
 {
 
-	v_dir *= -1;
+	spd = 0;
 	
 }
 #endregion
