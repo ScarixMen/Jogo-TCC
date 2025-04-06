@@ -8,32 +8,9 @@ if global.dialog == true
 }
 
 #endregion
-#region CONTROLS
 
-var left = keyboard_check(ord("A"));
-var right = keyboard_check(ord("D"));
-var up = keyboard_check_pressed(ord("W"));
-var move = -left+right;
+script_execute(Player_States)
 
-#endregion	
-#region MOVIMENT
-
-hspd = move*spd; // moviment horizontal
-
-vspd = vspd + grv; // moviment vertival
-
-#endregion
-#region JUMP
-
-if place_meeting(x,y+1,obj_Floor)
-{
-    if up
-    {
-        vspd = jspd;
-    }
-}
-
-#endregion
 #region COLISION
 
 //colisão horizontal
@@ -80,7 +57,7 @@ if distance_to_object(obj_Par_Npc) <=10
 }
 
 #endregion
-#region CAM
+#region PARALAX
 
 	
 

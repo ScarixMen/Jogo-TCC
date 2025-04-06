@@ -12,14 +12,14 @@ if instance_place(x + hspd, y, obj_Floor)
 #endregion
 #region COLISION
 
-var h_colision = place_meeting(x + hspd, y, obj_Man) or place_meeting(x, y - 1, obj_Man);
+var Luana_colision = place_meeting(x + hspd, y, obj_Apolo) or place_meeting(x, y - 1, obj_Apolo);
 
-var w_colision = place_meeting(x + hspd, y, obj_Woman) or place_meeting(x, y - 1, obj_Woman);
+var Apolo_colision = place_meeting(x + hspd, y, obj_Luana) or place_meeting(x, y - 1, obj_Luana);
 
-if h_colision
+if Apolo_colision
 {
 	
-	with(obj_Man)
+	with(obj_Apolo)
 	
 	if!place_meeting(x + other.hspd, y, obj_Floor)
 	{
@@ -31,10 +31,10 @@ if h_colision
 	
 }
 
-if w_colision
+if Luana_colision
 {
 	
-	with(obj_Woman)
+	with(obj_Luana)
 	
 	if!place_meeting(x + other.hspd, y, obj_Floor)
 	{
@@ -47,5 +47,5 @@ if w_colision
 	
 }
 
-#endregion
 x+=hspd
+#endregion
