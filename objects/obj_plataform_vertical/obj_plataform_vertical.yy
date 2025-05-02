@@ -13,8 +13,8 @@
     "path":"folders/Objetos/Construct/Plataforms.yy",
   },
   "parentObjectId":{
-    "name":"obj_Floor",
-    "path":"objects/obj_Floor/obj_Floor.yy",
+    "name":"obj_Block",
+    "path":"objects/obj_Block/obj_Block.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Stone",
-    "path":"sprites/spr_Stone/spr_Stone.yy",
+    "name":"spr_Plataform1",
+    "path":"sprites/spr_Plataform1/spr_Plataform1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

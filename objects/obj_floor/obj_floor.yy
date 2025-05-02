@@ -9,7 +9,10 @@
     "name":"Construct",
     "path":"folders/Objetos/Construct.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Block",
+    "path":"objects/obj_Block/obj_Block.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Sand",
-    "path":"sprites/spr_Sand/spr_Sand.yy",
+    "name":"spr_floor",
+    "path":"sprites/spr_floor/spr_floor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

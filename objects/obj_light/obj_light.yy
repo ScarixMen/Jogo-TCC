@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_Light",
-    "path":"sprites/spr_Light/spr_Light.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

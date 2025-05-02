@@ -14,9 +14,9 @@ script_execute(Player_States)
 #region COLISION
 
 //colisão horizontal
-if place_meeting(x+hspd,y,obj_Floor)
+if place_meeting(x+hspd,y,obj_Block)
 {
-    while !place_meeting(x+sign(hspd),y,obj_Floor)
+    while !place_meeting(x+sign(hspd),y,obj_Block)
     {
         x+=sign(hspd);
     }
@@ -26,9 +26,9 @@ if place_meeting(x+hspd,y,obj_Floor)
 x+=hspd
 
 //Colisão vertical
-if place_meeting(x,y+vspd,obj_Floor)
+if place_meeting(x,y+vspd,obj_Block)
 {
-    while !place_meeting(x,y+sign(vspd),obj_Floor)
+    while !place_meeting(x,y+sign(vspd),obj_Block)
     {
         y+=sign(vspd);
     }

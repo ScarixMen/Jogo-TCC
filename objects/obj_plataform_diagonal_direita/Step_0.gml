@@ -3,7 +3,7 @@
 hspd = spd *h_dir;
 vspd = spd *v_dir;
 
-if instance_place(x + hspd, y + vspd, obj_Floor)
+if instance_place(x + hspd, y + vspd, obj_Block)
 {
 
 	h_dir *= -1;
@@ -26,7 +26,7 @@ if h_colision
 	{
 		
 		case 1:
-			if!place_meeting(x + other.hspd, y, obj_Floor)
+			if!place_meeting(x + other.hspd, y, obj_Block)
 			{
 		
 				x += other.hspd;
@@ -36,7 +36,7 @@ if h_colision
 		break;
 		
 		case -1:
-			if!place_meeting(x - other.hspd, y - other.vspd + 1 , obj_Floor)
+			if!place_meeting(x - other.hspd, y - other.vspd + 1 , obj_Block)
 			{
 		
 				x += other.hspd;
@@ -58,7 +58,7 @@ if w_colision
 	{
 		
 		case 1:
-			if!place_meeting(x + other.hspd, y, obj_Floor)
+			if!place_meeting(x + other.hspd, y, obj_Block)
 			{
 		
 				x += other.hspd;
@@ -68,7 +68,7 @@ if w_colision
 		break;
 		
 		case -1:
-			if!place_meeting(x - other.hspd, y - other.vspd+1, obj_Floor)
+			if!place_meeting(x - other.hspd, y - other.vspd+1, obj_Block)
 			{
 		
 				x += other.hspd;

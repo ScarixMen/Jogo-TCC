@@ -3,7 +3,7 @@
 hspd = spd *h_dir;
 
 
-if instance_place(x + hspd, y, obj_Floor)
+if instance_place(x + hspd, y, obj_Block)
 {
 
 	h_dir *= -1;
@@ -21,7 +21,7 @@ if Apolo_colision
 	
 	with(obj_Apolo)
 	
-	if!place_meeting(x + other.hspd, y, obj_Floor)
+	if!place_meeting(x + other.hspd, y, obj_Block)
 	{
 		
 		x += other.hspd;
@@ -36,7 +36,7 @@ if Luana_colision
 	
 	with(obj_Luana)
 	
-	if!place_meeting(x + other.hspd, y, obj_Floor)
+	if!place_meeting(x + other.hspd, y, obj_Block)
 	{
 		
 		x += other.hspd;

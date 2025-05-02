@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Man",
-    "path":"sprites/spr_Man/spr_Man.yy",
+    "name":"spr_Apolo",
+    "path":"sprites/spr_Apolo/spr_Apolo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

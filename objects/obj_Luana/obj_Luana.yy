@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Woman",
-    "path":"sprites/spr_Woman/spr_Woman.yy",
+    "name":"spr_Luana",
+    "path":"sprites/spr_Luana/spr_Luana.yy",
   },
   "spriteMaskId":null,
   "visible":true,

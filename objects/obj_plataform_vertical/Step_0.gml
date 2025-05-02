@@ -20,7 +20,7 @@ if h_colision
 	
 	with(obj_Apolo)
 	
-	if!place_meeting(x, y + other.vspd, obj_Stone)
+	if!place_meeting(x, y + other.vspd, obj_Block)
 	{
 		
 		y += other.vspd;
@@ -34,7 +34,7 @@ if w_colision
 	
 	with(obj_Luana)
 	
-	if!place_meeting(x, y + other.vspd, obj_Stone)
+	if!place_meeting(x, y + other.vspd, obj_Block)
 	{
 		
 		y += other.vspd;

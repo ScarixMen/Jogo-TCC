@@ -28,7 +28,7 @@ vspd = vspd + grv; // moviment vertival
 #endregion
 #region JUMP
 
-if place_meeting(x,y+1,obj_Floor)
+if place_meeting(x,y+1,obj_Block)
 {
     if up
     {
