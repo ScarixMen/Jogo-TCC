@@ -1,44 +1,12 @@
-if(obj_Apolo.x>obj_Luana.x)
-{
-	
-	target_ = obj_Apolo
-	not_target = obj_Luana
-	
-}
-else
-{
+// Player 1
+var target_x1 = obj_Apolo.x - viewport_width / 2;
+var target_y1 = obj_Apolo.y - viewport_height / 2;
+camera_set_view_pos(camera_1, clamp(target_x1, 0, room_width - viewport_width), clamp(target_y1, 0, room_height - viewport_height));
 
-	target_ = obj_Luana
-	not_target = obj_Apolo
-}
+// Player 2
+var target_x2 = obj_Luana.x - viewport_width / 2;
+var target_y2 = obj_Luana.y - viewport_height / 2;
+camera_set_view_pos(camera_2, clamp(target_x2, 0, room_width - viewport_width), clamp(target_y2, 0, room_height - viewport_height));
 
-if (target_ != noone)
-{
-	xTo = target_.x
-	//yTo = target_.y
-}
 
-	if(x<640 and target_.x < 640) 
-	{
-	
-		x = 640
-	
-	}
-	else if (target_.x >= 640 or x > 640)
-	{
-		
-		if (distance_to_object(not_target)<560)
-		{
-			x += (xTo - x)/100;
-		}
-		else if(distance_to_object(not_target)<460)
-		{
-			
-			x += (xTo - x)/15
-			
-		}
-	}
-	 
-		//y += (yTo - y)/100
 
-camera_set_view_pos(view_camera[0], x-(width_/2), y-(heigth_/1.5));
