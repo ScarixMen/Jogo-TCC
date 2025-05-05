@@ -3,7 +3,7 @@ viewport_width = display_get_width() / 2;
 viewport_height = display_get_height();
 
 // Viewport 0 - Player 1
-camera_1 = camera_create_view(0, 0, viewport_width, viewport_height, 0, obj_Apolo, -1, -1, 0, 0);
+camera_1 = camera_create_view(0, 0, viewport_width, viewport_height, 0, obj_Apollo, -1, -1, 0, 0);
 view_camera[0] = camera_1;
 view_visible[0] = true;
 view_set_wport(0, viewport_width);

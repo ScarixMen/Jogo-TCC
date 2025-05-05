@@ -13,8 +13,8 @@ function scr_change()
 	{
 		case 0:
 	
-			obj_Apolo.jspd = obj_Player.jspd;
-			obj_Apolo.spd = obj_Player.spd;
+			obj_Apollo.jspd = obj_Player.jspd;
+			obj_Apollo.spd = obj_Player.spd;
 			obj_Luana.spd = 0;
 			obj_Luana.jspd = 0;
 		
@@ -24,8 +24,8 @@ function scr_change()
 		
 			obj_Luana.jspd = obj_Player.jspd;
 			obj_Luana.spd = obj_Player.spd;
-			obj_Apolo.spd = 0;
-			obj_Apolo.jspd = 0;
+			obj_Apollo.spd = 0;
+			obj_Apollo.jspd = 0;
 		
 			break;
 

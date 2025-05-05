@@ -1,7 +1,7 @@
-if(obj_Apolo.x>obj_Luana.x)
+if(obj_Apollo.x>obj_Luana.x)
 {
 	
-	target_ = obj_Apolo
+	target_ = obj_Apollo
 	not_target = obj_Luana
 	
 }
@@ -9,7 +9,7 @@ else
 {
 
 	target_ = obj_Luana
-	not_target = obj_Apolo
+	not_target = obj_Apollo
 }
 
 if (target_ != noone)
@@ -44,8 +44,7 @@ if (target_ != noone)
 	{
 		
 			y += (1850 - y)/100
-			y += (yTo - y)/100
-			x += (2600 - x)/60
+
 			
 		
 	}

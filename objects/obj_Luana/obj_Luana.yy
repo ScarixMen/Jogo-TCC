@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_Luana",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_Luana",
   "overriddenProperties":[],
@@ -31,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Luana",
-    "path":"sprites/spr_Luana/spr_Luana.yy",
+    "name":"spr_Luana_Walking",
+    "path":"sprites/spr_Luana_Walking/spr_Luana_Walking.yy",
   },
   "spriteMaskId":null,
   "visible":true,

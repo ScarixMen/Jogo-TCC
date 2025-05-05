@@ -1,6 +1,6 @@
 // Player 1
-var target_x1 = obj_Apolo.x - viewport_width / 2;
-var target_y1 = obj_Apolo.y - viewport_height / 2;
+var target_x1 = obj_Apollo.x - viewport_width / 2;
+var target_y1 = obj_Apollo.y - viewport_height / 2;
 camera_set_view_pos(camera_1, clamp(target_x1, 0, room_width - viewport_width), clamp(target_y1, 0, room_height - viewport_height));
 
 // Player 2

@@ -9,7 +9,7 @@ if global.dialog == true
 
 #endregion
 
-script_execute(Player_States)
+
 
 #region COLISION
 
@@ -78,3 +78,5 @@ layer_x(very_far, lerp(0, camera_get_view_x(view_camera[0]),0.7))
 layer_x(extremely_far, lerp(0, camera_get_view_x(view_camera[0]),0.8))
 
 #endregion
+
+vspd = vspd + grv
