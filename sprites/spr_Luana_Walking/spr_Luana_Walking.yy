@@ -204,8 +204,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Luana",
+    "path":"folders/Sprites/Luana.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
