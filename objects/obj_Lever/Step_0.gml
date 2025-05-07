@@ -6,7 +6,7 @@ if (distance_to_object(obj_Player) <= 15)
 		
 		image_index =! image_index
 		
-		obj_Plataform_Vertical.spd = 1;
+		obj_Plataform_Vertical.spd = 2;
 		obj_Plataform_Vertical.v_dir *= -1
 		
 	}

@@ -6,8 +6,8 @@
   "name":"obj_Stone2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Construct",
+    "path":"folders/Objetos/Construct.yy",
   },
   "parentObjectId":{
     "name":"obj_Block",

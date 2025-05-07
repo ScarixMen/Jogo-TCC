@@ -11,11 +11,11 @@ if instance_place(x, y + vspd, obj_Limit_Plataform)
 #endregion
 #region COLISION
 
-var h_colision = place_meeting(x, y + vspd, obj_Apollo) or place_meeting(x, y - 1, obj_Apollo);
+var A_colision = place_meeting(x, y + vspd, obj_Apollo) or place_meeting(x, y , obj_Apollo);
 
-var w_colision = place_meeting(x, y + vspd, obj_Luana) or place_meeting(x, y - 1, obj_Luana);
+var L_colision = place_meeting(x, y + vspd, obj_Luana) or place_meeting(x, y , obj_Luana);
 
-if h_colision
+if A_colision
 {
 	
 	with(obj_Apollo)
@@ -29,7 +29,7 @@ if h_colision
 	
 }
 
-if w_colision
+if L_colision
 {
 	
 	with(obj_Luana)

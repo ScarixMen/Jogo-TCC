@@ -4,7 +4,7 @@ function Apollo_state_idle(){
 
 	if(keyboard_check(ord("A"))) {state = Apollo_state_Walking}
 	if(keyboard_check(ord("D"))) {state = Apollo_state_Walking}
-	if(keyboard_check(vk_space)) {state = Apollo_state_Jump}
+	if(keyboard_check_pressed(vk_space)) {state = Apollo_state_Jump}
 	
 }
 function Apollo_state_Walking(){
@@ -14,7 +14,8 @@ function Apollo_state_Walking(){
 	var right = keyboard_check(ord("D"))
 	var move = -left+right
 	
-		
+	if (!place_meeting(x, y + 1, obj_Block)){air = true}
+	
 	hspd = move*spd // movimentação horizontal
 	
 	if abs(hspd) > 0 { sprite_index = spr_Apollo_Walking}
@@ -22,8 +23,12 @@ function Apollo_state_Walking(){
 	if(hspd != 0 ) image_xscale = sign(hspd)
 	
 	if(hspd == 0) {state = Apollo_state_idle;}
-	if(keyboard_check(vk_space)) {state = Apollo_state_Jump}
+	if(keyboard_check_pressed(vk_space)) {state = Apollo_state_Jump}
+	if (air = true) {sprite_index = spr_Apollo_Air state = Apollo_state_Jump}
+	
 }
+
+
 function Apollo_state_Jump() {
 
     if (air == false and (place_meeting(x, y + 1, obj_Block)))
@@ -47,7 +52,6 @@ function Apollo_state_Jump() {
 	{
 	    vspd = 0; 
         air = false;
-		
 		hspd = 0
 		sprite_index = spr_Apollo_Falling
 		
