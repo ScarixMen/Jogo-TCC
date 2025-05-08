@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Stone2",
-    "path":"sprites/spr_Stone2/spr_Stone2.yy",
+    "name":"spr_Stone_Tower2",
+    "path":"sprites/spr_Stone_Tower2/spr_Stone_Tower2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

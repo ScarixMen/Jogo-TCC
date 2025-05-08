@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Sand",
-    "path":"sprites/spr_Sand/spr_Sand.yy",
+    "name":"spr_Plataform1",
+    "path":"sprites/spr_Plataform1/spr_Plataform1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

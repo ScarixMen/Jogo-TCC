@@ -12,9 +12,9 @@ if instance_place(x + hspd, y, obj_Block)
 #endregion
 #region COLISION
 
-var Luana_colision = place_meeting(x + hspd, y, obj_Apollo) or place_meeting(x, y - 1, obj_Apollo);
+var Apolo_colision = place_meeting(x + hspd, y, obj_Apollo) or place_meeting(x, y - 1, obj_Apollo);
 
-var Apolo_colision = place_meeting(x + hspd, y, obj_Luana) or place_meeting(x, y - 1, obj_Luana);
+var Luana_colision = place_meeting(x + hspd, y, obj_Luana) or place_meeting(x, y - 1, obj_Luana);
 
 if Apolo_colision
 {

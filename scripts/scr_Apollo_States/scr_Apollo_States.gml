@@ -34,7 +34,7 @@ function Apollo_state_Jump() {
     if (air == false and (place_meeting(x, y + 1, obj_Block)))
 	{
         vspd = jspd  
-        air = true
+		air = true
 		sprite_index = spr_Apollo_Jump
 	}
 	
