@@ -9,8 +9,8 @@
   "name":"obj_Input_Gamepad",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Controls",
+    "path":"folders/Objetos/Controls.yy",
   },
   "parentObjectId":null,
   "persistent":true,

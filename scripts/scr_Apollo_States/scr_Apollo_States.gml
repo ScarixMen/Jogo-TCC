@@ -59,4 +59,3 @@ function Apollo_state_Jump() {
 		
     }
 }
-

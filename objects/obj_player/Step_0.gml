@@ -13,6 +13,23 @@ if global.dialog == true
 
 #region COLISION
 
+if(place_meeting(x+sign(hspd),y, obj_Block)){
+	if(!place_meeting(x+sign(hspd),y-2, obj_Block)){
+		y -=5 ;
+
+	}
+}
+/*else{
+
+	if(!place_meeting(x+sign(hspd),y+1, obj_Block)){
+		if(!place_meeting(x+sign(hspd),y+2, obj_Block)){
+			
+			y+=4;
+			
+		}	
+	}	
+}*/
+
 //colisão horizontal
 if place_meeting(x+hspd,y,obj_Block)
 {
@@ -34,6 +51,7 @@ if place_meeting(x,y+vspd,obj_Block)
     }
     vspd = 0;
 }
+
 
 y+=vspd;
 

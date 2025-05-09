@@ -6,8 +6,8 @@
   "name":"obj_Equinnito",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Enemy",
+    "path":"folders/Objetos/Enemy.yy",
   },
   "parentObjectId":null,
   "persistent":false,

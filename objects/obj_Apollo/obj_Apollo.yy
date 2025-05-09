@@ -10,8 +10,8 @@
   "name":"obj_Apollo",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Persons",
+    "path":"folders/Objetos/Persons.yy",
   },
   "parentObjectId":{
     "name":"obj_Player",
