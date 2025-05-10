@@ -32,7 +32,7 @@ function Luana_state_Walking(){
 
 function Luana_state_Jump() {
 
-    if (air == false and (place_meeting(x, y + 1, obj_Block)))
+    if (air == false and (place_meeting(x, y + 5, obj_Block)))
 	{
         vspd = jspd  
         air = true

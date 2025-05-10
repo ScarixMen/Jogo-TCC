@@ -74,7 +74,7 @@ if distance_to_object(obj_Par_Npc) <=10
 	
 }
 
-#region PARALAX
+/*#region PARALAX
 
 var extremely_close = layer_get_id("b_Bush_Front")
 var very_close = layer_get_id("b_Bush_Back")
@@ -95,6 +95,6 @@ layer_x(far, lerp(0, camera_get_view_x(view_camera[0]),0.6))
 layer_x(very_far, lerp(0, camera_get_view_x(view_camera[0]),0.7))
 layer_x(extremely_far, lerp(0, camera_get_view_x(view_camera[0]),0.8))
 
-#endregion
+#endregion*/
 
 vspd = vspd + grv
