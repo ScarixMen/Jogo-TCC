@@ -71,7 +71,6 @@
     {"name":"spr_Bush_Back","order":6,"path":"sprites/spr_Bush_Back/spr_Bush_Back.yy",},
     {"name":"spr_Bush_Front","order":5,"path":"sprites/spr_Bush_Front/spr_Bush_Front.yy",},
     {"name":"spr_Button_Green","order":3,"path":"sprites/spr_Button_Green/spr_Button_Green.yy",},
-    {"name":"spr_Button_Red_1","order":19,"path":"sprites/spr_Button_Red_1/spr_Button_Red_1.yy",},
     {"name":"spr_Button_Red","order":5,"path":"sprites/spr_Button_Red/spr_Button_Red.yy",},
     {"name":"spr_Dense_Forest_Back","order":3,"path":"sprites/spr_Dense_Forest_Back/spr_Dense_Forest_Back.yy",},
     {"name":"spr_Dense_Forest_Front","order":4,"path":"sprites/spr_Dense_Forest_Front/spr_Dense_Forest_Front.yy",},

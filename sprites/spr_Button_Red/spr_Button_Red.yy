@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_Button_Red",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":191,
-  "bbox_left":45,
-  "bbox_right":146,
+  "bbox_left":57,
+  "bbox_right":134,
   "bbox_top":147,
   "collisionKind":1,
   "collisionTolerance":0,

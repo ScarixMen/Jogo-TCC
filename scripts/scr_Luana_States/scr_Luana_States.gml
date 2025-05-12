@@ -17,7 +17,7 @@ function Luana_state_Walking(){
 		
 	hspd = move*spd // movimentação horizontal
 	
-	if (!place_meeting(x, y + 1, obj_Block)){air = true}
+	if (!place_meeting(x, y + 1, obj_Block)){if x < 7400 {air = true}}
 	
 	if abs(hspd) > 0 { sprite_index = spr_Luana_Walking}
 	

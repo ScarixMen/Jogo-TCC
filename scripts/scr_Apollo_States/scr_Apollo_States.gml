@@ -14,7 +14,7 @@ function Apollo_state_Walking(){
 	var right = keyboard_check(ord("D"))
 	var move = -left+right
 	
-	if (!place_meeting(x, y + 5, obj_Block)){air = true}
+	if (!place_meeting(x, y + 1, obj_Block)){if x < 7400 {air = true}}
 	
 	hspd = move*spd // movimentação horizontal
 	
@@ -49,13 +49,13 @@ function Apollo_state_Jump() {
 	if(image_index >= image_number -1){ sprite_index = spr_Apollo_Air }
 
 	if (air == true and (place_meeting(x, y + 1, obj_Block))) 
-	{
-	    vspd = 0; 
-        air = false;
-		hspd = 0
-		sprite_index = spr_Apollo_Falling
+		{
+		    vspd = 0; 
+	        air = false;
+			hspd = 0
+			sprite_index = spr_Apollo_Falling
 		
-        if(image_index >= image_number -1){state = Apollo_state_idle }
+	        if(image_index >= image_number -1){ y -=2 state = Apollo_state_idle }
 		
-    }
-}
+	    }
+	}

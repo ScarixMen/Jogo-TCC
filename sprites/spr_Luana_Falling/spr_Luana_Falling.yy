@@ -74,7 +74,7 @@
     },
     "name":"spr_Luana_Falling",
     "playback":1,
-    "playbackSpeed":50.0,
+    "playbackSpeed":75.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
