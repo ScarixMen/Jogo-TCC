@@ -1,4 +1,4 @@
-// Cor da linha
+/*// Cor da linha
 draw_set_color(c_white);
 
 

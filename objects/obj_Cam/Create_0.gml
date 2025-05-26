@@ -1,3 +1,7 @@
+// Distância para ativar o split
+split_distance = 1700;
+is_split = false;
+
 // Tamanho de cada viewport (metade da tela)
 viewport_width = display_get_width() / 2;
 viewport_height = display_get_height();
@@ -18,12 +22,12 @@ view_set_wport(1, viewport_width);
 view_set_hport(1, viewport_height);
 view_set_xport(1, viewport_width); // Lado direito
 
-
 // Cria as duas câmeras (uma para cada view)
 camera_left = camera_create();
 camera_right = camera_create();
 
-// Define o tamanho da tela dividida
-view_width = display_get_width() / 2;
-view_height = display_get_height();
+
+// Valores atuais interpolados da câmera
+cam_width = display_get_width();
+cam_height = display_get_height();
 
