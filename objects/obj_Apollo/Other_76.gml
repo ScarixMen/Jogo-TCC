@@ -15,5 +15,11 @@ if(event_data[?"event_type"] == "sprite event") {
 			case "step5":
 			audio_play_sound(snd_step5,1,false)
             break;
+			case "jump":
+			audio_play_sound(snd_Jump_Apollo,3,false)
+            break;
+			case "fall":
+			audio_play_sound(snd_Fall_Apollo,3,false)
+            break;
     }
 }

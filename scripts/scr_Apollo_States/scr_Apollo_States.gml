@@ -4,7 +4,7 @@ function Apollo_state_idle(){
 
 	if(keyboard_check(ord("A"))) {state = Apollo_state_Walking}
 	if(keyboard_check(ord("D"))) {state = Apollo_state_Walking}
-	if(keyboard_check_pressed(vk_space)) {state = Apollo_state_Jump}
+	if(keyboard_check_pressed(vk_space)) {image_index = 0 state = Apollo_state_Jump}
 	
 }
 function Apollo_state_Walking(){
@@ -23,7 +23,7 @@ function Apollo_state_Walking(){
 	if(hspd != 0 ) image_xscale = sign(hspd)
 	
 	if(hspd == 0) {state = Apollo_state_idle;}
-	if(keyboard_check_pressed(vk_space)) {state = Apollo_state_Jump}
+	if(keyboard_check_pressed(vk_space)) {image_index = 0 state = Apollo_state_Jump}
 	if (air = true) {sprite_index = spr_Apollo_Air state = Apollo_state_Jump}
 	
 }
@@ -46,7 +46,7 @@ function Apollo_state_Jump() {
 
 	if(hspd != 0 ) image_xscale = sign(hspd)
 	
-	if(image_index >= image_number -1){ sprite_index = spr_Apollo_Air }
+	if(image_index >= image_number -1){ image_index = 0 sprite_index = spr_Apollo_Air }
 
 	if (air == true and (place_meeting(x, y + 1, obj_Block))) 
 		{
