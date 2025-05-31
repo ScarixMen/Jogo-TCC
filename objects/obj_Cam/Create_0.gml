@@ -1,5 +1,5 @@
 // Distância para ativar o split
-split_distance = 1700;
+split_distance = 1600;
 is_split = false;
 
 // Tamanho de cada viewport (metade da tela)

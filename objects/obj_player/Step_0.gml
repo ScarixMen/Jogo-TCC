@@ -60,7 +60,7 @@ if place_meeting(x,y+vspd,obj_Block)
 
 y+=vspd;
 
-//OBS: ESSA COLISÃO INCLUI AS PLATAFORMAS, POIS ELAS SÃO FILHAS DO "obj_floor".
+//OBS: ESSA COLISÃO INCLUI AS PLATAFORMAS, POIS ELAS SÃO FILHAS DO "obj_Block".
 
 #endregion
 #region DIALOG
@@ -78,28 +78,5 @@ if distance_to_object(obj_Par_Npc) <=10
 		}
 	
 }
-
-/*#region PARALAX
-
-var extremely_close = layer_get_id("b_Bush_Front")
-var very_close = layer_get_id("b_Bush_Back")
-var close = layer_get_id("b_Tree_Front")
-var little_close = layer_get_id("b_Tree_Back")
-var little_far = layer_get_id("b_Temple")
-var far = layer_get_id("b_Dense_Forest_Front")
-var very_far = layer_get_id("b_Dense_Forest_Back")
-var extremely_far = layer_get_id("b_Sky")
-
-
-layer_x(extremely_close, lerp(0, camera_get_view_x(view_camera[0]),0.1))
-layer_x(very_close, lerp(0, camera_get_view_x(view_camera[0]),0.2))
-layer_x(close, lerp(0, camera_get_view_x(view_camera[0]),0.3))
-layer_x(little_close, lerp(0, camera_get_view_x(view_camera[0]),0.4))
-layer_x(little_far, lerp(0, camera_get_view_x(view_camera[0]),0.5))
-layer_x(far, lerp(0, camera_get_view_x(view_camera[0]),0.6))
-layer_x(very_far, lerp(0, camera_get_view_x(view_camera[0]),0.7))
-layer_x(extremely_far, lerp(0, camera_get_view_x(view_camera[0]),0.8))
-
-#endregion*/
 
 vspd = vspd + grv
