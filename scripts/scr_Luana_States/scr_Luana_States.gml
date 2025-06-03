@@ -24,7 +24,7 @@ function Luana_state_Walking(){
 	
 	if(hspd == 0) {state = Luana_state_idle;}
 	if(gamepad_button_check_pressed(global.gamepad_id,gp_face1)) {image_index = 0 state = Luana_state_Jump}
-	if (!place_meeting(x,y+1, obj_Block)and x <= 7400) {state = Luana_state_air}
+	if (!place_meeting(x,y+1, obj_Block)and x <= 11966) {state = Luana_state_air}
 	
 }
 

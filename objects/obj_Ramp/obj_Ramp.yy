@@ -37,5 +37,5 @@
     "path":"sprites/spr_Ramp/spr_Ramp.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

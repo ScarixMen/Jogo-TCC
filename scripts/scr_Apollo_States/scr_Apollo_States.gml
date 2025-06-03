@@ -25,7 +25,7 @@ function Apollo_state_Walking(){
 	if(hspd == 0) {state = Apollo_state_idle;}
 	if(keyboard_check(ord("S"))) {state = Apollo_state_crouched}
 	if(keyboard_check_pressed(vk_space)) {image_index = 0 state = Apollo_state_Jump}
-	if (!place_meeting(x,y+1, obj_Block)and x <= 7400) {state = Apollo_state_air}
+	if (!place_meeting(x,y+1, obj_Block)and x <= 11966) {state = Apollo_state_air}
 	
 }
 
@@ -103,7 +103,9 @@ function Apollo_state_crouched() {
 
 	if(hspd != 0 ) image_xscale = sign(hspd)
 	
-	if(keyboard_check_released(ord("W"))) {state = Apollo_state_idle}
-	
+	if !place_meeting(x,y-46,obj_Block)
+	{
+		if(keyboard_check_released(ord("W"))) {state = Apollo_state_idle}
+	}
 	
 }

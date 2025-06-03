@@ -13,7 +13,7 @@ if global.dialog == true
 
 #region COLISION
 
-if x > 7400
+if x > 11966 and x < 13000
 {
 	if(place_meeting(x+sign(hspd),y, obj_Block)){
 		if(!place_meeting(x+sign(hspd),y-2, obj_Block)){
