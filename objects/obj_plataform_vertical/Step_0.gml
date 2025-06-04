@@ -37,5 +37,3 @@ if L_colision
 #endregion
 v_dir = -1
 y+=vspd
-
-show_debug_message(v_dir)

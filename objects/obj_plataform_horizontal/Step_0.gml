@@ -3,7 +3,7 @@
 hspd = spd *h_dir;
 
 
-if instance_place(x + hspd, y, obj_Block)
+if instance_place(x + hspd, y, obj_Limit_Plataform)
 {
 
 	h_dir *= -1;

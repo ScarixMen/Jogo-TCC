@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Ramp",
+  "%Name":"obj_Plataform_Two_Four",
   "eventList":[],
   "managed":true,
-  "name":"obj_Ramp",
+  "name":"obj_Plataform_Two_Four",
   "overriddenProperties":[],
   "parent":{
-    "name":"Construct",
-    "path":"folders/Objetos/Construct.yy",
+    "name":"Plataforms",
+    "path":"folders/Objetos/Construct/Plataforms.yy",
   },
   "parentObjectId":{
     "name":"obj_Block",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Ramp",
-    "path":"sprites/spr_Ramp/spr_Ramp.yy",
+    "name":"spr_Plataform1",
+    "path":"sprites/spr_Plataform1/spr_Plataform1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

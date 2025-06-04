@@ -1,18 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Cam_old",
+  "%Name":"obj_Plataform_One_Five",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Cam_old",
+  "name":"obj_Plataform_One_Five",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controls",
-    "path":"folders/Objetos/Controls.yy",
+    "name":"Plataforms",
+    "path":"folders/Objetos/Construct/Plataforms.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Block",
+    "path":"objects/obj_Block/obj_Block.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Plataform1",
+    "path":"sprites/spr_Plataform1/spr_Plataform1.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

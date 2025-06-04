@@ -25,7 +25,12 @@ function Apollo_state_Walking(){
 	if(hspd == 0) {state = Apollo_state_idle;}
 	if(keyboard_check(ord("S"))) {state = Apollo_state_crouched}
 	if(keyboard_check_pressed(vk_space)) {image_index = 0 state = Apollo_state_Jump}
-	if (!place_meeting(x,y+1, obj_Block)and x <= 11966) {state = Apollo_state_air}
+	if(!place_meeting(x,y+10, obj_Ramp))
+	{
+		
+		if (!place_meeting(x,y+1, obj_Block)) {state = Apollo_state_air}
+		
+	}
 	
 }
 

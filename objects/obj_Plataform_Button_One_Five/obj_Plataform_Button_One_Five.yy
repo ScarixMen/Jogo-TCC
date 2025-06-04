@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Plataform_Diagonal_Direita",
+  "%Name":"obj_Plataform_Button_One_Five",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Plataform_Diagonal_Direita",
+  "name":"obj_Plataform_Button_One_Five",
   "overriddenProperties":[],
   "parent":{
     "name":"Plataforms",
@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Tile_Sand",
-    "path":"sprites/spr_Tile_Sand/spr_Tile_Sand.yy",
+    "name":"spr_Plataform1",
+    "path":"sprites/spr_Plataform1/spr_Plataform1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
