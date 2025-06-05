@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Plataform1",
-    "path":"sprites/spr_Plataform1/spr_Plataform1.yy",
+    "name":"spr_Plataform_Appear",
+    "path":"sprites/spr_Plataform_Appear/spr_Plataform_Appear.yy",
   },
   "spriteMaskId":null,
   "visible":true,

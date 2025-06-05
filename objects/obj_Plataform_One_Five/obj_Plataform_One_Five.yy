@@ -1,9 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_Plataform_One_Five",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_Plataform_One_Five",
   "overriddenProperties":[],
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Plataform1",
-    "path":"sprites/spr_Plataform1/spr_Plataform1.yy",
+    "name":"spr_Plataform_Appear",
+    "path":"sprites/spr_Plataform_Appear/spr_Plataform_Appear.yy",
   },
   "spriteMaskId":null,
   "visible":true,
