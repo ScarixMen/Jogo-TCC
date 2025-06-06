@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_floor",
-    "path":"sprites/spr_floor/spr_floor.yy",
+    "name":"spr_Floor",
+    "path":"sprites/spr_Floor/spr_Floor.yy",
   },
   "spriteMaskId":null,
   "visible":true,

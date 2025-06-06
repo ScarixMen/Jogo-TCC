@@ -3,6 +3,7 @@
   "%Name":"obj_Button",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_Button",
@@ -11,7 +12,10 @@
     "name":"Construct",
     "path":"folders/Objetos/Construct.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Block",
+    "path":"objects/obj_Block/obj_Block.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Button",
-    "path":"sprites/spr_Button/spr_Button.yy",
+    "name":"spr_Button_Green_Press",
+    "path":"sprites/spr_Button_Green_Press/spr_Button_Green_Press.yy",
   },
   "spriteMaskId":null,
   "visible":true,

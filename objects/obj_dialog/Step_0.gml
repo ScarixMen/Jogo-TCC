@@ -1,7 +1,7 @@
 if start == false
 {
 		
-	scr_dialog();
+	scr_Dialog();
 	start = true;
 	
 }

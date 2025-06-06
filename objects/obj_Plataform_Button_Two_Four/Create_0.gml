@@ -1,1 +1,3 @@
-global.two_four = false
+state = Plataform_Button_Idle
+plataform = obj_Plataform_Two_Four
+

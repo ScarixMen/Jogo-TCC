@@ -1,0 +1,1 @@
+i = obj_Plataform_Button_Three
