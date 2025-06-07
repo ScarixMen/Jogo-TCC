@@ -13,9 +13,9 @@ if global.dialog == true
 
 #region COLISION
 
-if x > 11966 and x < 13000
+if x > 11800 and x < 12900
 {
-	if(place_meeting(x+sign(hspd),y, obj_Block)){
+	if(place_meeting(x+sign(hspd),y, obj_Ramp)){
 		if(!place_meeting(x+sign(hspd),y-2, obj_Block)){
 
 			y -=4 ;
@@ -35,6 +35,30 @@ if x > 11966 and x < 13000
 		}	
 	}
 }
+
+if x > 19264 and x < 20094
+{
+	if(place_meeting(x+sign(hspd),y, obj_Ramp)){
+		if(!place_meeting(x+sign(hspd),y-2, obj_Block)){
+
+			y -=4 ;
+
+		}
+	}
+
+	else{
+	
+		if(!place_meeting(x+sign(hspd),y+1, obj_Block)){
+			if(!place_meeting(x+sign(hspd),y+2, obj_Block)){
+			
+			
+				y+=4;
+			
+			}	
+		}	
+	}
+}
+
 //colisão horizontal
 if place_meeting(x+hspd,y,obj_Block)
 {

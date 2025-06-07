@@ -1,5 +1,6 @@
-// Distância para ativar o split
-split_distance = 1600;
+x_dist_split = 1600; // Split se os jogadores se afastarem mais que isso no eixo X
+y_dist_split = 700; // Split se se afastarem mais que isso no eixo Y
+
 is_split = false;
 
 // Tamanho de cada viewport (metade da tela)

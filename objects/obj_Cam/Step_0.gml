@@ -1,12 +1,21 @@
-// Distância entre os jogadores
-var dist = point_distance(obj_Apollo.x, obj_Apollo.y, obj_Luana.x, obj_Luana.y);
-var split_now = dist > split_distance;
+// Distância em X e Y
 
-// Detectar transição de modo
+if(obj_Player.x>1000)
+{
+
+	y_dist_split =810;
+
+}
+var dx = abs(obj_Apollo.x - obj_Luana.x);
+var dy = abs(obj_Apollo.y - obj_Luana.y);
+
+// Verifica se deve fazer split
+var split_now = (dx > x_dist_split) || (dy > y_dist_split);
+
+// Se houve mudança de modo, atualiza
 if (split_now != is_split) {
     is_split = split_now;
 }
-
 // Inicializa valores padrão com os valores atuais
 var target_width = cam_width;
 var target_height = cam_height;
@@ -61,14 +70,14 @@ if (is_split) {
 // Interpolação de posição
 var cam_x1 = camera_get_view_x(camera_1);
 var cam_y1 = camera_get_view_y(camera_1);
-var new_x1 = lerp(cam_x1, target_x1, 0.05);
-var new_y1 = lerp(cam_y1, target_y1, 0.05);
+var new_x1 = lerp(cam_x1, target_x1, 0.1);
+var new_y1 = lerp(cam_y1, target_y1, 0.1);
 camera_set_view_pos(camera_1, new_x1, new_y1);
 
 if (is_split) {
     var cam_x2 = camera_get_view_x(camera_2);
     var cam_y2 = camera_get_view_y(camera_2);
-    var new_x2 = lerp(cam_x2, target_x2, 0.05);
-    var new_y2 = lerp(cam_y2, target_y2, 0.05);
+    var new_x2 = lerp(cam_x2, target_x2, 0.025);
+    var new_y2 = lerp(cam_y2, target_y2, 0.025);
     camera_set_view_pos(camera_2, new_x2, new_y2);
 }

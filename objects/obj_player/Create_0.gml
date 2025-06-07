@@ -5,7 +5,9 @@ vspd = 0;    //Vertical Speed
 spd = 7;        //Speed
 jspd = -20;    //Jump speed
 grv = 0.7;    //Gravity
-ground = place_meeting(x, y+1, obj_Block)
+slope_max = 4;
+
+
 
 
 #endregion
