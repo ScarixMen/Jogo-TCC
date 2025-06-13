@@ -1,6 +1,6 @@
 // Distância em X e Y
 
-if(obj_Player.x>1000)
+if(obj_Player.x>10000)
 {
 
 	y_dist_split =810;

@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_Equinnito",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_Equinnito",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Equinnito",
-    "path":"sprites/spr_Equinnito/spr_Equinnito.yy",
+    "name":"spr_Equinnito_Attack",
+    "path":"sprites/spr_Equinnito_Attack/spr_Equinnito_Attack.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_Citrino",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_Citrino",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Citrino",
-    "path":"sprites/spr_Citrino/spr_Citrino.yy",
+    "name":"spr_Citrino_Idle",
+    "path":"sprites/spr_Citrino_Idle/spr_Citrino_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

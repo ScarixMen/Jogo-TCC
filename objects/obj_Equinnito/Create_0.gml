@@ -1,0 +1,1 @@
+state = Equinnito_State_Idle

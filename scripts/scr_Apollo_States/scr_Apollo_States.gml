@@ -4,7 +4,7 @@ function Apollo_state_idle(){
 
 	if(keyboard_check(ord("A"))) {state = Apollo_state_Walking}
 	if(keyboard_check(ord("D"))) {state = Apollo_state_Walking}
-	if(keyboard_check_released(ord("S"))) {state = Apollo_state_crouched_idle}
+	if(keyboard_check_pressed(ord("S"))) {state = Apollo_state_crouched_idle}
 	if(keyboard_check_pressed(vk_space)) {image_index = 0 state = Apollo_state_Jump}
 	
 }
@@ -92,7 +92,7 @@ function Apollo_state_falling() {
 	if(image_index >= image_number -1)
 	{ 
 	
-		state = Apollo_state_idle 
+		state = Apollo_state_idle
 		
 	}	
 }
