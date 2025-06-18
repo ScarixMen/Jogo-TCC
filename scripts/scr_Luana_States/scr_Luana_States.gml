@@ -1,5 +1,6 @@
 function Luana_state_idle(){
 	
+	
 	sprite_index = spr_Luana_Idle
 	
 	if(gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25) {state = Luana_state_Walking}
@@ -125,7 +126,7 @@ hspd = 0
 
 function Luana_state_push_walking() {
 	
-		image_index =	6
+	image_index =	6
 	
 	var left = gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25;
 	var right =  gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25;
@@ -151,6 +152,10 @@ function Luana_state_push_walking() {
 				with(block){
 					if(!place_meeting(x+other.hspd,y,obj_Block))
 					{
+						if!audio_is_playing(snd_Push)
+						{
+							audio_play_sound(snd_Push,1,true)
+						}
 						x+=other.hspd;
 					}
 				}
@@ -160,6 +165,7 @@ function Luana_state_push_walking() {
 	
 	else
 	{
+		audio_stop_sound(snd_Push);
 		state = Luana_state_idle
 	}
 

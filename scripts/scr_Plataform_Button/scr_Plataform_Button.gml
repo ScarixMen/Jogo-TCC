@@ -17,7 +17,7 @@ function Plataform_Button_Appear(){
 		if(image_index >= image_number -1)
 		{
 		
-			image_index = 21
+			image_index = 19
 		
 		}
 	}

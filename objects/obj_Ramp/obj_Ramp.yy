@@ -10,8 +10,8 @@
     "path":"folders/Objetos/Construct.yy",
   },
   "parentObjectId":{
-    "name":"obj_Block",
-    "path":"objects/obj_Block/obj_Block.yy",
+    "name":"obj_Sand",
+    "path":"objects/obj_Sand/obj_Sand.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

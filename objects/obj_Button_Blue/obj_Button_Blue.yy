@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Button_Blue",
-    "path":"sprites/spr_Button_Blue/spr_Button_Blue.yy",
+    "name":"spr_Button_Blue_Idle",
+    "path":"sprites/spr_Button_Blue_Idle/spr_Button_Blue_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

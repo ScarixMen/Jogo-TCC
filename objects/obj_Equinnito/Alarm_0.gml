@@ -1,0 +1,2 @@
+
+state =  Equinnito_State_Attack

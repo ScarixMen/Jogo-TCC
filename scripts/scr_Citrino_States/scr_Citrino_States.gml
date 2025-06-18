@@ -92,8 +92,6 @@ function Citrino_state_Attack() {
 		
 
 	        var flecha = instance_create_layer(x - 50, y- 175, "Arrow", obj_Arrow);
-	        flecha.direction = 0;
-	        flecha.image_angle = 0;
 	        tiro_tempo = 0;
     }
 }

@@ -1,12 +1,11 @@
 function Equinnito_State_Idle(){
 	
-	sprite_index = spr_Equinnito_Attack
-	image_index = 0
+	sprite_index = spr_Equinnito_Idle
 	
-	if(place_meeting(x,y,obj_Player))
+	if !place_meeting(x,y,obj_Player)
 	{
 		
-		state =  Equinnito_State_Attack
+		alarm [0] = 40
 		
 	}
 
@@ -15,6 +14,19 @@ function Equinnito_State_Idle(){
 function Equinnito_State_Attack(){
 	
 	sprite_index = spr_Equinnito_Attack
+	
+	if(image_index >= image_number -1)
+	{
+		
+		sprite_index = spr_Equinnito_Reset
+		image_index = 0
+		state = Equinnito_State_Reset
+		
+	}
+}
+function Equinnito_State_Reset(){
+	
+	sprite_index = spr_Equinnito_Reset
 	
 	if(image_index >= image_number -1)
 	{

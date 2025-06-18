@@ -5,7 +5,6 @@ vspd = 0;    //Vertical Speed
 spd = 7;        //Speed
 jspd = -20;    //Jump speed
 grv = 0.7;    //Gravity
-slope_max = 4;
 
 
 
