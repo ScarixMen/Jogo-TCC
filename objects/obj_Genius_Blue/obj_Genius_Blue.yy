@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_Genius_Blue",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_Genius_Blue",
   "overriddenProperties":[],
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Genius_Blue",
-    "path":"sprites/spr_Genius_Blue/spr_Genius_Blue.yy",
+    "name":"spr_Genius_Blue_On",
+    "path":"sprites/spr_Genius_Blue_On/spr_Genius_Blue_On.yy",
   },
   "spriteMaskId":null,
   "visible":true,

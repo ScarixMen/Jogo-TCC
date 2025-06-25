@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Plataform_Disappear",
-    "path":"sprites/spr_Plataform_Disappear/spr_Plataform_Disappear.yy",
+    "name":"spr_Plataform_Genius_Appear",
+    "path":"sprites/spr_Plataform_Genius_Appear/spr_Plataform_Genius_Appear.yy",
   },
   "spriteMaskId":null,
   "visible":true,

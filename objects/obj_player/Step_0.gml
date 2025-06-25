@@ -9,8 +9,6 @@ if global.dialog == true
 
 #endregion
 
-
-
 #region COLISION
 
 if x > 11800 and x < 12900

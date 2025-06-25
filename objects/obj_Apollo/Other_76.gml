@@ -23,6 +23,18 @@ if place_meeting(x,y+100,obj_Sand){
 				case "fallA":
 				audio_play_sound(snd_Fall_Apollo,1,false)
 		        break;
+				case "arrastando_1":
+				audio_play_sound(snd_Dragging_1,1,false)
+		        break;
+				case "arrastando_2":
+				audio_play_sound(snd_Dragging_2,1,false)
+		        break;
+				case "arrastando_3":
+				audio_play_sound(snd_Dragging_3,1,false)
+		        break;
+				case "arrastando_4":
+				audio_play_sound(snd_Dragging_4,1,false)
+		        break;
 		}
 	}
 }else

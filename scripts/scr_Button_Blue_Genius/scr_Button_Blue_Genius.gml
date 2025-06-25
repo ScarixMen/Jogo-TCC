@@ -2,9 +2,15 @@ function Button_Genius_Idle(){
 	
 	sprite_index = spr_Button_Blue_Idle
 	
-	with(obj_Plataform_Genius){
+	with(obj_Plataform_Genius_Short){
 		
 		sprite_index = spr_Plataform2
+		
+	}
+	
+	with(obj_Plataform_Genius){
+		
+		sprite_index = spr_Plataform_Genius
 		
 	}
 	
@@ -18,12 +24,29 @@ function Button_Genius_Idle(){
 }
 function Button_Genius_Press(){
 
-	
 	sprite_index = spr_Button_Blue_Press
 	
-	with(obj_Plataform_Genius)
+	if(image_index >= image_number -1)
+	{
+	
+		image_index = 7
+	
+	}
+	
+	with(obj_Plataform_Genius_Short)
 	{
 		sprite_index = spr_Plataform_Disappear
+		
+		if(image_index >= image_number -1)
+		{
+			
+			image_index = 5
+			
+		}
+	}
+	with(obj_Plataform_Genius)
+	{
+		sprite_index = spr_Plataform_Genius_Disappear
 		
 		if(image_index >= image_number -1)
 		{
@@ -41,17 +64,20 @@ function Button_Genius_Press(){
 	
 function Button_Genius_Pressed(){
 	
-	if(image_index >= image_number -1)
+	image_index = 7
+	
+	
+	with(obj_Plataform_Genius_Short)
 	{
-	
-		image_index = 7
-	
+		
+		sprite_index = spr_Plataform_Portrait
+		
 	}
 	
 	with(obj_Plataform_Genius)
 	{
 		
-		sprite_index = spr_Plataform_Portrait
+		sprite_index = spr_Plataform_Genius_Portrait
 		
 	}
 	
@@ -74,23 +100,33 @@ function Button_Genius_Reset(){
 	
 	sprite_index = spr_Button_Blue_Reset
 	
-	with(obj_Plataform_Genius){
+	with(obj_Plataform_Genius_Short){
 		sprite_index = spr_Plataform_Appear
 		if(image_index >= image_number -1)
 		{
 		
-			image_index = 21
+			image_index = 19
 		
 		}
 	}
 	
+	with(obj_Plataform_Genius){
+		sprite_index = spr_Plataform_Genius_Appear
+		if(image_index >= image_number -1)
+		{
+		
+			image_index = 24
+			with(obj_Button_Blue_Genius)
+			{
+				state = Button_Genius_Idle;
+			}
+		}
+	}
 	
 	if(image_index >= image_number -1)
 		{
 			
-			state = Button_Genius_Idle;
+			image_index = 7
 		
 		}
-	
-	
 }

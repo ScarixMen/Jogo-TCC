@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Genius_Yellow",
-    "path":"sprites/spr_Genius_Yellow/spr_Genius_Yellow.yy",
+    "name":"spr_Genius_Yellow_On",
+    "path":"sprites/spr_Genius_Yellow_On/spr_Genius_Yellow_On.yy",
   },
   "spriteMaskId":null,
   "visible":true,
