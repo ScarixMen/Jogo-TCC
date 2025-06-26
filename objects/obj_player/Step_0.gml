@@ -1,6 +1,6 @@
 #region EXIT
 
-if global.dialog == true 
+if global.dialog
 {
 	
 	exit;	
@@ -85,6 +85,28 @@ if room == rm_Beach
 if room == rm_Tutorial
 {
 	if x > 3776 and x < 4480
+	{
+		if(place_meeting(x+sign(hspd),y, obj_Ramp)){
+			if(!place_meeting(x+sign(hspd),y-2, obj_Block)){
+
+				y -=4 ;
+
+			}
+		}
+
+		else{
+	
+			if(!place_meeting(x+sign(hspd),y+1, obj_Block)){
+				if(!place_meeting(x+sign(hspd),y+2, obj_Block)){
+			
+			
+					y+=4;
+			
+				}	
+			}	
+		}
+	}
+	if x > 7744 and x < 8320
 	{
 		if(place_meeting(x+sign(hspd),y, obj_Ramp)){
 			if(!place_meeting(x+sign(hspd),y-2, obj_Block)){

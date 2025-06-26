@@ -150,7 +150,7 @@ function Luana_state_push_walking() {
 			{
 				var block = push_list [| i];
 				with(block){
-					if(!place_meeting(x+other.hspd,y,obj_Block))
+					if(!place_meeting(x+other.hspd,y,obj_Block) and !place_meeting(x+other.hspd,y,obj_Apollo))
 					{
 						if!audio_is_playing(snd_Push)
 						{
@@ -173,4 +173,30 @@ function Luana_state_push_walking() {
 		
 	
 	
+}
+function Luana_State_Death() {
+	
+	sprite_index = spr_Luana_Death
+	
+	hspd = 0
+	vspd = 0
+	
+	if(image_index >= image_number -1)
+	{
+			
+		image_index = 7
+		instance_create_layer(0, 0, layer, obj_Transition_Death);
+		
+	}
+	if instance_exists( obj_Transition_Death)
+	{
+		if obj_Transition_Death.alpha == 1
+		{	
+			x = global.check_X
+			y = global.check_Y
+			obj_Apollo.x = global.check_X
+			obj_Apollo.y = global.check_Y
+			state = Luana_state_idle
+		}
+	}
 }

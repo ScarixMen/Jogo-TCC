@@ -1,14 +1,14 @@
-function Apollo_state_idle(){
+function Apollo_State_Idle(){
 	
 	sprite_index = spr_Apollo_Idle
 
-	if(keyboard_check(ord("A"))) {state = Apollo_state_Walking}
-	if(keyboard_check(ord("D"))) {state = Apollo_state_Walking}
-	if(keyboard_check_pressed(ord("S"))) {state = Apollo_state_crouched_idle}
-	if(keyboard_check_pressed(vk_space)) {image_index = 0 state = Apollo_state_Jump}
+	if(keyboard_check(ord("A"))) {state = Apollo_State_Walking}
+	if(keyboard_check(ord("D"))) {state = Apollo_State_Walking}
+	if(keyboard_check_pressed(ord("S"))) {state = Apollo_State_Crouched_Idle}
+	if(keyboard_check_pressed(vk_space)) {image_index = 0 state = Apollo_State_Jump}
 	
 }
-function Apollo_state_Walking(){
+function Apollo_State_Walking(){
 	
 	//controles
 	var left = keyboard_check(ord("A"))
@@ -22,20 +22,20 @@ function Apollo_state_Walking(){
 	
 	if(hspd != 0 ) image_xscale = sign(hspd)
 	
-	if(hspd == 0) {state = Apollo_state_idle;}
-	if(keyboard_check(ord("S"))) {state = Apollo_state_crouched_idle}
-	if(keyboard_check_pressed(vk_space)) {image_index = 0 state = Apollo_state_Jump}
+	if(hspd == 0) {state = Apollo_State_Idle;}
+	if(keyboard_check(ord("S"))) {state = Apollo_State_Crouched_Idle}
+	if(keyboard_check_pressed(vk_space)) {image_index = 0 state = Apollo_State_Jump}
 	if(!place_meeting(x,y+10, obj_Ramp))
 	{
 		
-		if (!place_meeting(x,y+1, obj_Block)) {state = Apollo_state_air}
+		if (!place_meeting(x,y+1, obj_Block)) {state = Apollo_State_Air}
 		
 	}
 	
 }
 
 
-function Apollo_state_Jump() {
+function Apollo_State_Jump() {
 	
 	sprite_index = spr_Apollo_Jump
 	vspd = jspd
@@ -50,11 +50,11 @@ function Apollo_state_Jump() {
 	
 	if (vspd<=0)
 	{	
-		state = Apollo_state_air
+		state = Apollo_State_Air
 	}
 }
 
-	function Apollo_state_air() {
+	function Apollo_State_Air() {
 	if sprite_index == spr_Apollo_Jump
 	{
 		
@@ -79,36 +79,36 @@ function Apollo_state_Jump() {
 		if place_meeting(x, y + 1, obj_Block)
 		{
 			image_index = 0
-			state = Apollo_state_falling
+			state = Apollo_State_Falling
 		}
 		
 }
 
 		
-function Apollo_state_falling() {
+function Apollo_State_Falling() {
 	
 	hspd = 0
 	sprite_index = spr_Apollo_Falling
 	if(image_index >= image_number -1)
 	{ 
 	
-		state = Apollo_state_idle
+		state = Apollo_State_Idle
 		
 	}	
 }
-function Apollo_state_crouched_idle() {
+function Apollo_State_Crouched_Idle() {
 	sprite_index = spr_Apollo_Crouched_Idle
 	
-	if(keyboard_check(ord("A"))) {state = Apollo_state_crouched}
-	if(keyboard_check(ord("D"))) {state = Apollo_state_crouched}
+	if(keyboard_check(ord("A"))) {state = Apollo_State_Crouched}
+	if(keyboard_check(ord("D"))) {state = Apollo_State_Crouched}
 	
 	if !place_meeting(x,y-46,obj_Block)
 	{
-		if(keyboard_check_released(ord("W"))) {state = Apollo_state_idle}
+		if(keyboard_check_released(ord("W"))) {state = Apollo_State_Idle}
 	}
 	
 }
-function Apollo_state_crouched() {
+function Apollo_State_Crouched() {
 	
 	sprite_index = spr_Apollo_Crouched
 	
@@ -120,11 +120,37 @@ function Apollo_state_crouched() {
 
 	if(hspd != 0 ) image_xscale = sign(hspd)
 	
-	if(hspd == 0) {state = Apollo_state_crouched_idle;}
+	if(hspd == 0) {state = Apollo_State_Crouched_Idle;}
 	
 	if !place_meeting(x,y-46,obj_Block)
 	{
-		if(keyboard_check_released(ord("W"))) {state = Apollo_state_idle}
+		if(keyboard_check_released(ord("W"))) {state = Apollo_State_Idle}
 	}
 	
+}
+function Apollo_State_Death() {
+	
+	sprite_index = spr_Apollo_Death
+	
+	hspd = 0
+	vspd = 0
+	
+	if(image_index >= image_number -1)
+	{
+			
+		image_index = 7
+		instance_create_layer(0, 0, layer, obj_Transition_Death);
+		
+	}
+	if instance_exists( obj_Transition_Death)
+	{
+		if obj_Transition_Death.alpha == 1
+		{	
+			x = global.check_X
+			y = global.check_Y
+			obj_Luana.x = global.check_X
+			obj_Luana.y = global.check_Y
+			state = Apollo_State_Idle
+		}
+	}
 }

@@ -20,7 +20,7 @@ function Button_Blue_Idle(){
 
 function Button_Blue_Pressed(){
 	global.cam_override = true
-	
+	global.focus_target = obj_Bridge
 	with obj_Bridge
 	{
 	
