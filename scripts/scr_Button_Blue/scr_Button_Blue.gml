@@ -28,8 +28,9 @@ function Button_Blue_Pressed(){
 		
 		if(image_index >= image_number -1)
 		{	
-			global.cam_override = false
+			
 			image_index = 48
+			global.cam_override = false
 			
 		}
 		

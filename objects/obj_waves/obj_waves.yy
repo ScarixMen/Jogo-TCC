@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_waves",
+  "%Name":"obj_Waves",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_Apollo","path":"objects/obj_Apollo/obj_Apollo.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_Luana","path":"objects/obj_Luana/obj_Luana.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_waves",
+  "name":"obj_Waves",
   "overriddenProperties":[],
   "parent":{
     "name":"Construct",

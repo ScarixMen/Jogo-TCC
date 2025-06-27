@@ -2,12 +2,12 @@ opc = ["Jogar", "Fases", "Opções", "Créditos","Sair"]
 
 opc_max = array_length(opc)
 
-indice = 2
+indice = 0
 
 pos = indice
 
-larg_fim = 192
-alt_fim = 64
+larg_fim = 256
+alt_fim = 96
 
 larg = larg_fim
 alt = alt_fim 
@@ -27,3 +27,6 @@ fade_speed = 0.01
 tempo_espera = 0;
 iniciar_alpha = false;
 image = 0
+
+estado_menu = "principal"; // ou pode usar um número se preferir
+mostrar_creditos = false;

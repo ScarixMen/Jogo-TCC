@@ -150,7 +150,7 @@ function Luana_state_push_walking() {
 			{
 				var block = push_list [| i];
 				with(block){
-					if(!place_meeting(x+other.hspd,y,obj_Block) and !place_meeting(x+other.hspd,y,obj_Apollo))
+					if(!place_meeting(x+other.hspd,y,obj_Block) and !place_meeting(x+other.hspd,y,obj_Apollo)) and !place_meeting(x+other.hspd,y,obj_Post)
 					{
 						if!audio_is_playing(snd_Push)
 						{

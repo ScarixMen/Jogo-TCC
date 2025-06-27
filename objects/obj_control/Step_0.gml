@@ -7,7 +7,7 @@ if instance_exists(obj_Dialog)
 
 if keyboard_check(ord("R"))
 {
-	audio_pause_all()
+	audio_stop_all()
 	room_restart();	
 	
 }

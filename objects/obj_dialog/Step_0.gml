@@ -1,14 +1,13 @@
-if start == false
+if !start && npc_name != ""
 {
-		
-	scr_Dialog();
-	start = true;
-	
+    script_execute(scr_dialog);
+    start = true;
 }
 
 
+
 //CHANGE PAGES OF DIALOG
-if mouse_check_button_pressed(mb_left)
+if keyboard_check_pressed(vk_enter)
 {
 	
 	if page < array_length(text) -1

@@ -1,14 +1,3 @@
-#region EXIT
-
-if global.dialog
-{
-	
-	exit;	
-	
-}
-
-#endregion
-
 #region COLISION
 if room == rm_Beach
 {
@@ -82,9 +71,7 @@ if room == rm_Beach
 	}
 }
 
-if room == rm_Tutorial
-{
-	if x > 3776 and x < 4480
+if x > 27584 and x < 28032
 	{
 		if(place_meeting(x+sign(hspd),y, obj_Ramp)){
 			if(!place_meeting(x+sign(hspd),y-2, obj_Block)){
@@ -106,7 +93,10 @@ if room == rm_Tutorial
 			}	
 		}
 	}
-	if x > 7744 and x < 8320
+
+if room == rm_Tutorial
+{
+	if x > 3776 and x < 4480
 	{
 		if(place_meeting(x+sign(hspd),y, obj_Ramp)){
 			if(!place_meeting(x+sign(hspd),y-2, obj_Block)){
@@ -160,19 +150,17 @@ y+=vspd;
 
 #endregion
 #region DIALOG
-
-if distance_to_object(obj_Par_Npc) <=10
-{
 		
-		if keyboard_check_pressed(ord("E")) and global.dialog == false
+		/*if place_meeting(x,y,obj_Par_Npc) and global.dialog == false
 		{
 			
 			var npc	= instance_nearest(x,y,obj_Par_Npc);
 			var dialog = instance_create_layer(x,y,"dialog",obj_Dialog);
 			dialog.npc_name = npc.name
 			
-		}
+		}*/
 	
-}
 
 vspd = vspd + grv
+
+show_debug_message(global.cam_override)

@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Luana_Walking",
-    "path":"sprites/spr_Luana_Walking/spr_Luana_Walking.yy",
+    "name":"spr_Luana_Idle",
+    "path":"sprites/spr_Luana_Idle/spr_Luana_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,
