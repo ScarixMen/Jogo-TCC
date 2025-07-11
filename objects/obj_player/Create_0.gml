@@ -1,5 +1,6 @@
 #region VARIABLES
 
+no_ar = false;
 global.check_X = x
 global.check_Y = y
 

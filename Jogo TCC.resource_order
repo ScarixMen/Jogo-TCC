@@ -121,6 +121,7 @@
     {"name":"scr_Citrino_States","order":8,"path":"scripts/scr_Citrino_States/scr_Citrino_States.yy",},
     {"name":"scr_Equinnito_States","order":9,"path":"scripts/scr_Equinnito_States/scr_Equinnito_States.yy",},
     {"name":"scr_Genius","order":10,"path":"scripts/scr_Genius/scr_Genius.yy",},
+    {"name":"scr_Input","order":15,"path":"scripts/scr_Input/scr_Input.yy",},
     {"name":"scr_Luana_States","order":5,"path":"scripts/scr_Luana_States/scr_Luana_States.yy",},
     {"name":"scr_Plataform_Button_Tutorial","order":12,"path":"scripts/scr_Plataform_Button_Tutorial/scr_Plataform_Button_Tutorial.yy",},
     {"name":"scr_Plataform_Button","order":7,"path":"scripts/scr_Plataform_Button/scr_Plataform_Button.yy",},

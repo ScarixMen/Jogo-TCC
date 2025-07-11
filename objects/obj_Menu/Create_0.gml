@@ -30,3 +30,9 @@ image = 0
 
 estado_menu = "principal"; // ou pode usar um número se preferir
 mostrar_creditos = false;
+
+// No create do objeto de controle:
+axis_up_previously = false;
+axis_down_previously = false;
+
+

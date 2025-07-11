@@ -1,3 +1,5 @@
+script_execute(Input_Menu)
+
 if !iniciar_alpha
 {
 
@@ -11,10 +13,6 @@ if keyboard_check(ord("R"))
 	room_restart();	
 	
 }
-
-	var up = keyboard_check_pressed(vk_up)
-	var down = keyboard_check_pressed(vk_down)
-	var enter = keyboard_check_pressed(vk_enter)
 
 	var input = down - up
 

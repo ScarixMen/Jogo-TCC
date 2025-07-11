@@ -146,6 +146,7 @@
     {"id":{"name":"scr_Dialog","path":"scripts/scr_Dialog/scr_Dialog.yy",},},
     {"id":{"name":"scr_Equinnito_States","path":"scripts/scr_Equinnito_States/scr_Equinnito_States.yy",},},
     {"id":{"name":"scr_Genius","path":"scripts/scr_Genius/scr_Genius.yy",},},
+    {"id":{"name":"scr_Input","path":"scripts/scr_Input/scr_Input.yy",},},
     {"id":{"name":"scr_Luana_States","path":"scripts/scr_Luana_States/scr_Luana_States.yy",},},
     {"id":{"name":"scr_Plataform_Button_Tutorial","path":"scripts/scr_Plataform_Button_Tutorial/scr_Plataform_Button_Tutorial.yy",},},
     {"id":{"name":"scr_Plataform_Button","path":"scripts/scr_Plataform_Button/scr_Plataform_Button.yy",},},

@@ -3,18 +3,12 @@ function Luana_state_idle(){
 	
 	sprite_index = spr_Luana_Idle
 	
-	if(gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25) {state = Luana_state_Walking}
-	if(gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25) {state = Luana_state_Walking}
-	if(gamepad_button_check_pressed(global.gamepad_id,gp_face1)) {image_index = 0 state = Luana_state_Jump}
+	if(left) {state = Luana_state_Walking}
+	if(right) {state = Luana_state_Walking}
+	if(jump) {image_index = 0 state = Luana_state_Jump}
 	
 }
 function Luana_state_Walking(){
-	
-	//controles
-	var left = gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25;
-	var right =  gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25;
-	var move = -left+right
-	
 		
 	hspd = move*spd // movimentação horizontal
 	
@@ -38,7 +32,7 @@ function Luana_state_Walking(){
 	}
 	
 	if(hspd == 0) {state = Luana_state_idle;}
-	if(gamepad_button_check_pressed(global.gamepad_id,gp_face1)) {image_index = 0 state = Luana_state_Jump}
+	if(jump) {image_index = 0 state = Luana_state_Jump}
 	if(!place_meeting(x,y+10, obj_Ramp))
 	{
 		
@@ -51,11 +45,6 @@ function Luana_state_Jump() {
 	
 	sprite_index = spr_Luana_Jump
 	vspd = jspd
-	
-	 var left = gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25;
-	var right =  gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25;
-	var move = -left+right
-	
 		
 	hspd = move*spd // movimentação horizontal
 
@@ -81,10 +70,6 @@ function Luana_state_Jump() {
 		sprite_index = spr_Luana_Air
 	
 	}
-    var left = gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25;
-	var right =  gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25;
-	var move = -left+right
-	
 		
 	hspd = move*spd // movimentação horizontal
 
@@ -123,14 +108,9 @@ hspd = 0
 	
 }
 
-
 function Luana_state_push_walking() {
 	
 	image_index =	6
-	
-	var left = gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25;
-	var right =  gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25;
-	var move = -left+right
 	
 	hspd = move*pspd // movimentação horizontal
 

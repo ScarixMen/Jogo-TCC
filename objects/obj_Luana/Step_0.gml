@@ -16,4 +16,6 @@ image_speed = 1
 }
 event_inherited();
 
+script_execute(Input_luana)
 script_execute(state)
+
