@@ -4,10 +4,11 @@ if !start && npc_name != ""
     start = true;
 }
 
+script_execute(Input_Dialog)
 
 
 //CHANGE PAGES OF DIALOG
-if keyboard_check_pressed(vk_enter)
+if skip
 {
 	
 	if page < array_length(text) -1

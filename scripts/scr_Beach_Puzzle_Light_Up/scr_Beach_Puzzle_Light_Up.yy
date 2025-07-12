@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Beach_Puzzle_Light_Up",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Beach_Puzzle_Light_Up",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

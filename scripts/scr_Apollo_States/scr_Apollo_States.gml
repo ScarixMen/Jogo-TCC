@@ -1,5 +1,7 @@
 function Apollo_State_Idle(){
 	
+	hspd = 0
+	
 	sprite_index = spr_Apollo_Idle
 
 	if(left) {state = Apollo_State_Walking}
@@ -84,6 +86,9 @@ function Apollo_State_Falling() {
 	}	
 }
 function Apollo_State_Crouched_Idle() {
+	
+	hspd = 0
+	
 	sprite_index = spr_Apollo_Crouched_Idle
 	
 	if(left) {state = Apollo_State_Crouched}

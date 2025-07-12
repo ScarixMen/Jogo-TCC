@@ -14,7 +14,7 @@
 				}
 			}
 		}
-}
+	}
 //colisão horizontal
 if place_meeting(x+hspd,y,obj_Block)
 {

@@ -1,14 +1,15 @@
-function Luana_state_idle(){
+function Luana_State_Idle(){
 	
+	hspd = 0
 	
 	sprite_index = spr_Luana_Idle
 	
-	if(left) {state = Luana_state_Walking}
-	if(right) {state = Luana_state_Walking}
-	if(jump) {image_index = 0 state = Luana_state_Jump}
+	if(left) {state = Luana_State_Walking}
+	if(right) {state = Luana_State_Walking}
+	if(jump) {image_index = 0 state = Luana_State_Jump}
 	
 }
-function Luana_state_Walking(){
+function Luana_State_Walking(){
 		
 	hspd = move*spd // movimentação horizontal
 	
@@ -27,21 +28,21 @@ function Luana_state_Walking(){
 		
 		if(ds_list_size(push_list) > 0)	
 		{
-			state = Luana_state_push_idle
+			state = Luana_State_Push_Idle
 		}
 	}
 	
-	if(hspd == 0) {state = Luana_state_idle;}
-	if(jump) {image_index = 0 state = Luana_state_Jump}
+	if(hspd == 0) {state = Luana_State_Idle;}
+	if(jump) {image_index = 0 state = Luana_State_Jump}
 	if(!place_meeting(x,y+10, obj_Ramp))
 	{
 		
-		if (!place_meeting(x,y+1, obj_Block)) {state = Luana_state_air}
+		if (!place_meeting(x,y+1, obj_Block)) {state = Luana_State_Air}
 		
 	}
 }
 
-function Luana_state_Jump() {
+function Luana_State_Jump() {
 	
 	sprite_index = spr_Luana_Jump
 	vspd = jspd
@@ -52,11 +53,11 @@ function Luana_state_Jump() {
 	
 	if (vspd<=0)
 	{	
-		state = Luana_state_air
+		state = Luana_State_Air
 	}
 }
 
-	function Luana_state_air() {
+	function Luana_State_Air() {
 	if sprite_index == spr_Luana_Jump
 	{
 		
@@ -78,24 +79,24 @@ function Luana_state_Jump() {
 		if place_meeting(x, y + 1, obj_Block)
 		{
 			image_index = 0
-			state = Luana_state_falling
+			state = Luana_State_Falling
 		}
 		
 }
 
 		
-function Luana_state_falling() {
+function Luana_State_Falling() {
 	
 	hspd = 0
 	sprite_index = spr_Luana_Falling
 	if(image_index >= image_number -1)
 	{ 
 	
-		state = Luana_state_idle 
+		state = Luana_State_Idle 
 		
 	}	
 }
-function Luana_state_push_idle() {
+function Luana_State_Push_Idle() {
 
 hspd = 0
 			sprite_index = spr_Luana_Push
@@ -146,7 +147,7 @@ function Luana_state_push_walking() {
 	else
 	{
 		audio_stop_sound(snd_Push);
-		state = Luana_state_idle
+		state = Luana_State_Idle
 	}
 
 	ds_list_destroy(push_list);
@@ -176,7 +177,7 @@ function Luana_State_Death() {
 			y = global.check_Y
 			obj_Apollo.x = global.check_X
 			obj_Apollo.y = global.check_Y
-			state = Luana_state_idle
+			state = Luana_State_Idle
 		}
 	}
 }

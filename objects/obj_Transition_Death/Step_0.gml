@@ -6,8 +6,6 @@ if mode == "fade_out"
 	{
 		
 		alpha = 1
-		//obj_Player.x = global.check_X
-	//	obj_Player.y = global.check_Y
 		mode = "fade_in"
 		
 	}

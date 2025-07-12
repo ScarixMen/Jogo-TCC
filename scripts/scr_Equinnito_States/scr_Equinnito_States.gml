@@ -29,7 +29,7 @@ function Equinnito_State_Attack(){
 		
 		sprite_index = spr_Equinnito_Reset
 		image_index = 0
-		instance_destroy(obj_Hitbox_Equinnito)
+		obj_Hitbox_Equinnito.sprite_index = spr_Equinnito_Reset_Hitbox
 		state = Equinnito_State_Reset
 		
 	}
@@ -40,7 +40,7 @@ function Equinnito_State_Reset(){
 	
 	if(image_index >= image_number -1)
 	{
-		
+		instance_destroy(obj_Hitbox_Equinnito)
 		state = Equinnito_State_Idle
 		
 	}

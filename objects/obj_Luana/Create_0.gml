@@ -1,7 +1,7 @@
 
 event_inherited();
 
-state = Luana_state_idle
+state = Luana_State_Idle
 
 pspd = 4
 

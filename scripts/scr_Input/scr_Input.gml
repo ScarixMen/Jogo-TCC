@@ -1,5 +1,45 @@
+function Input_Luana(){
+	
+	if global.cam_override
+	{
+		state = Luana_State_Idle
+		exit;	
+	
+	}
+	
+	if global.dialog
+	{
+		state = Luana_State_Idle
+		exit;	
+	
+	}
+	
+	left = gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25 or keyboard_check(vk_left) or gamepad_button_check(global.gamepad_id,gp_padl)
+	right =  gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25 or keyboard_check(vk_right) or gamepad_button_check(global.gamepad_id,gp_padr)
+	move = -left+right
+	
+	jump = gamepad_button_check_pressed(global.gamepad_id,gp_face1) or keyboard_check(vk_up)
+	
+}
+
 function Input_Apollo(){
 	
+	if global.cam_override
+	{
+		
+		state = Apollo_State_Idle
+		exit;	
+	
+	}
+	
+	if global.dialog
+	{
+	
+		state = Apollo_State_Idle
+		exit;	
+	
+	}
+
 	left = keyboard_check(ord("A"))
 	right = keyboard_check(ord("D"))
 	move = -left+right
@@ -8,16 +48,6 @@ function Input_Apollo(){
 	
 	crounch = keyboard_check(vk_control)
 
-}
-
-function Input_luana(){
-	
-	left = gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25 or keyboard_check(vk_left) or gamepad_button_check(global.gamepad_id,gp_padl)
-	right =  gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25 or keyboard_check(vk_right) or gamepad_button_check(global.gamepad_id,gp_padr)
-	move = -left+right
-	
-	jump = gamepad_button_check_pressed(global.gamepad_id,gp_face1) or keyboard_check(vk_up)
-	
 }
 
 function Input_Menu(){
@@ -41,5 +71,9 @@ up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W")) or gamepa
 down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S")) or gamepad_button_check_pressed(global.gamepad_id, gp_padd) or axis_down_pressed;
 enter = keyboard_check_pressed(vk_enter) or keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(global.gamepad_id,gp_face1)
 	
-	
+}
+function Input_Dialog(){
+
+skip = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(global.gamepad_id,gp_face2)
+
 }
