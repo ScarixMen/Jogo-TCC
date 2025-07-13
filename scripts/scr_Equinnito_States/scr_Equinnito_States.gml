@@ -29,7 +29,6 @@ function Equinnito_State_Attack(){
 		
 		sprite_index = spr_Equinnito_Reset
 		image_index = 0
-		obj_Hitbox_Equinnito.sprite_index = spr_Equinnito_Reset_Hitbox
 		state = Equinnito_State_Reset
 		
 	}

@@ -5,7 +5,6 @@ if place_meeting(x,y+vspd,obj_Block)
     {
         y+=sign(vspd);
     }
-	instance_destroy(obj_Box_Hitbox)
     vspd = 0;
 }
 
@@ -25,15 +24,3 @@ if (place_meeting(x, y + vspd, obj_Luana)) {
              damage_Luana();
         }
     }
-
-
-/*if (vspd != 0)
-{
-	if !instance_exists(obj_Box_Hitbox)
-	{
-	
-		instance_create_layer(x,y,layer,obj_Box_Hitbox)
-		
-	}
-	
-}

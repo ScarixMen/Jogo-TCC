@@ -133,9 +133,9 @@ function Luana_state_push_walking() {
 				with(block){
 					if(!place_meeting(x+other.hspd,y,obj_Block) and !place_meeting(x+other.hspd,y,obj_Apollo)) and !place_meeting(x+other.hspd,y,obj_Post)
 					{
-						if!audio_is_playing(snd_Push)
+						if!audio_is_playing(sfx_Push)
 						{
-							audio_play_sound(snd_Push,1,true)
+							audio_play_sound(sfx_Push,1,true)
 						}
 						x+=other.hspd;
 					}
@@ -146,7 +146,7 @@ function Luana_state_push_walking() {
 	
 	else
 	{
-		audio_stop_sound(snd_Push);
+		audio_stop_sound(sfx_Push);
 		state = Luana_State_Idle
 	}
 

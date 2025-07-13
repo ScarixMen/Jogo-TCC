@@ -56,5 +56,3 @@ y+=vspd;
 	
 
 vspd = vspd + grv
-
-show_debug_message(global.cam_override)
