@@ -11,6 +11,27 @@ if (ativo) {
     }
 }
 function ativar() {
+	
+	switch (id_botao){
+			
+			case 0 : 
+				global.som.tocarSFX(sfx_Genius_1)
+			break;
+			
+			case 1 : 
+				global.som.tocarSFX(sfx_Genius_2)
+			break;
+			
+			case 2 : 
+				global.som.tocarSFX(sfx_Genius_3)
+			break;
+			
+			case 3 : 
+				global.som.tocarSFX(sfx_Genius_4)
+			break;
+		
+		}
+	
     ativo = true;
     timer = room_speed * 0.5 ;
 

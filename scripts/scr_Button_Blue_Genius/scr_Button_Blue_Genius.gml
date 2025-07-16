@@ -70,7 +70,7 @@ function Button_Genius_Pressed(){
 	
 	with(obj_Plataform_Genius_Short)
 	{
-		
+		mask_index = spr_Noone
 		sprite_index = spr_Plataform_Portrait
 		
 	}

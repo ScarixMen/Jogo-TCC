@@ -3,6 +3,7 @@ if (!ativo) exit;
 
 switch (estado) {
     case "tocando":
+		
         tempo_atual++;
 
         if (tempo_atual >= tempo_espera) {
@@ -30,8 +31,10 @@ switch (estado) {
     if (delay_vitoria > 0) {
         delay_vitoria--;
     } else {
-        if (array_length(sequencia) >= 7) {
+        if (array_length(sequencia) >= 2) {
             //show_debug_message("Genius finalizado!");
+			global.som.tocarSFX(sfx_Genius_Win)
+		
             estado = "fim";
             break;
         }
@@ -84,6 +87,7 @@ switch (estado) {
 
 
    case "erro":
+   global.som.tocarSFX(sfx_Genius_Error)
     if (delay_vitoria > 0) {
         delay_vitoria--;
     } else {
