@@ -64,6 +64,7 @@ function Button_Genius_Press(){
 	
 function Button_Genius_Pressed(){
 	
+	
 	image_index = 7
 	
 	
@@ -80,6 +81,23 @@ function Button_Genius_Pressed(){
 		sprite_index = spr_Plataform_Genius_Portrait
 		
 	}
+	
+	// Ativa o Genius se ainda não estiver ativo
+	with (obj_Genius) {
+		if(estado == "fim") exit;
+			if (!ativo) {
+				ativo = true;
+				estado = "tocando";
+				sequencia = [];
+				array_push(sequencia, irandom(3));
+				indice_entrada = 0;
+				indice_atual = 0;
+				tempo_atual = 0;
+				delay_vitoria = 0;
+				//show_debug_message("Genius iniciado pelo botão azul");
+			}
+	}
+
 	
 	if !place_meeting(x,y-1,obj_Box)
 	{

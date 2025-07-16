@@ -1,4 +1,9 @@
-state = Genius_Idle;
-current_index = 0;
-sequence_step = 1;
-// outras variáveis que precisar
+delay_vitoria = 0;
+ativo = false;
+estado = "esperando";
+sequencia = [];
+indice_atual = 0;
+tempo_espera = 30;
+tempo_atual = 0;
+indice_entrada = 0;
+global.botoes = [obj_Genius_Blue, obj_Genius_Green, obj_Genius_Red, obj_Genius_Yellow];

@@ -15,7 +15,6 @@
     {"$GMSpriteFrame":"","%Name":"fa2646df-a479-41f0-b6fe-b4613f70c50c","name":"fa2646df-a479-41f0-b6fe-b4613f70c50c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"76facefa-5772-4cc7-85ea-48bc331e4ee7","name":"76facefa-5772-4cc7-85ea-48bc331e4ee7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"910c07a9-0094-46bc-94ce-1eefa50b30a6","name":"910c07a9-0094-46bc-94ce-1eefa50b30a6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"da5d6e57-2973-48e5-b1c3-ad6e9f4d91d9","name":"da5d6e57-2973-48e5-b1c3-ad6e9f4d91d9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -52,7 +51,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":4.0,
+    "length":3.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -62,7 +61,7 @@
     },
     "name":"spr_Genius_Red_On",
     "playback":1,
-    "playbackSpeed":3.0,
+    "playbackSpeed":6.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -82,9 +81,6 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"910c07a9-0094-46bc-94ce-1eefa50b30a6","path":"sprites/spr_Genius_Red_On/spr_Genius_Red_On.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"7eae3a77-b76e-4850-831a-9a2102a8f501","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"da5d6e57-2973-48e5-b1c3-ad6e9f4d91d9","path":"sprites/spr_Genius_Red_On/spr_Genius_Red_On.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fb3f0c3f-b3bd-422b-86e1-f1868247e0e6","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

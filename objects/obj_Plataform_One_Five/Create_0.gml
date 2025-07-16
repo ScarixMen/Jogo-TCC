@@ -1,1 +1,3 @@
-i = obj_Plataform_Button_One_Five
+state = Plataform_Idle;
+colisao = noone;
+pronta = true;

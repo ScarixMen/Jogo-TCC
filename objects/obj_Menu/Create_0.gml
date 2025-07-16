@@ -1,4 +1,5 @@
-opc = ["Jogar", "Fases", "Opções", "Créditos","Sair"]
+opc = ["Jogar", "Fases", "Opçoes", "Creditos"]
+opc_principal = ["Jogar", "Fases", "Opçoes", "Creditos"]
 
 opc_max = array_length(opc)
 
@@ -15,6 +16,15 @@ alt = alt_fim
 larg_ini = larg_fim / 2 
 alt_ini = alt_fim / 2 
 
+larg_fim_exit = 64
+alt_fim_exit = 64
+
+larg_exit = larg_fim_exit
+alt_exit = alt_fim_exit 
+
+larg_ini_exit = larg_fim_exit / 1.5 
+alt_ini_exit = alt_fim_exit / 1.5 
+
 x_luana = 1280
 y_luana = 0
 
@@ -28,10 +38,9 @@ tempo_espera = 0;
 iniciar_alpha = false;
 image = 0
 
-estado_menu = "principal"; // ou pode usar um número se preferir
+estado_menu = "principal";
 mostrar_creditos = false;
 
-// No create do objeto de controle:
 axis_up_previously = false;
 axis_down_previously = false;
 

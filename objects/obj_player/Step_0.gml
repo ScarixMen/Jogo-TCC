@@ -1,3 +1,10 @@
+if (keyboard_check_pressed(ord("E")) && place_meeting(x, y, obj_Button_Blue_Genius)) {
+    with (obj_Genius) {
+        script_execute(scr_iniciar_genius)
+    }
+}
+
+
 #region COLISION
 
 	if (place_meeting(x + sign(hspd), y + 1, obj_Ramp) || place_meeting(x + sign(hspd), y + 12, obj_Ramp)) {

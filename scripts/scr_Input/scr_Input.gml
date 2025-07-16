@@ -18,7 +18,9 @@ function Input_Luana(){
 	right =  gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25 or keyboard_check(vk_right) or gamepad_button_check(global.gamepad_id,gp_padr)
 	move = -left+right
 	
-	jump = gamepad_button_check_pressed(global.gamepad_id,gp_face1) or keyboard_check(vk_up)
+	interact_Luana = gamepad_button_check_pressed(global.gamepad_id,gp_face3) or keyboard_check_pressed(ord("P"))
+	
+	jump = gamepad_button_check_pressed(global.gamepad_id,gp_face1) or keyboard_check_pressed(vk_up)
 	
 }
 
@@ -43,6 +45,8 @@ function Input_Apollo(){
 	left = keyboard_check(ord("A"))
 	right = keyboard_check(ord("D"))
 	move = -left+right
+	
+	interact_Apollo = keyboard_check_pressed(ord("E"))
 	
 	jump = keyboard_check_pressed(vk_space)
 	

@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_Genius_Green",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_Genius_Green",
   "overriddenProperties":[],
@@ -9,7 +11,10 @@
     "name":"Construct",
     "path":"folders/Objetos/Construct.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Genius_Main",
+    "path":"objects/obj_Genius_Main/obj_Genius_Main.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

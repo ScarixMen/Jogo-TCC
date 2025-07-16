@@ -15,13 +15,15 @@ function ReconfigurarSomPorRoom() {
 	switch(room) {
 		case rm_Beach:
 			global.som.tocarMusica(bgm_The_Moon);
-			global.som.tocarAmbiente("vento", bgm_Forrest);
-			global.som.tocarAmbiente("passaros", bgm_Ocean_Ambience);
+			global.som.tocarAmbiente("forest", bgm_Forest);
+			global.som.tocarAmbiente("ocean", bgm_Ocean_Ambience);
+	
             break;
 
 		case rm_Tutorial:
 			global.som.tocarMusica(bgm_The_Breeze);
-			global.som.tocarAmbiente("passaros", bgm_Ocean_Ambience);
+			global.som.tocarAmbiente("ocean", bgm_Ocean_Ambience);
+			global.som.pararAmbiente("forest");
 			
             break;
 
