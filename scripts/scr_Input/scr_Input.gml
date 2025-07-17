@@ -41,7 +41,11 @@ function Input_Apollo(){
 	
 	if global.dialog
 	{
-	
+		if(global.damage)
+		{
+			state = Apollo_State_Death
+			exit;
+		}
 		state = Apollo_State_Idle
 		exit;	
 	

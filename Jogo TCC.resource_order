@@ -142,6 +142,7 @@
     {"name":"sfx_Dragging_2","order":28,"path":"sounds/sfx_Dragging_2/sfx_Dragging_2.yy",},
     {"name":"sfx_Dragging_3","order":29,"path":"sounds/sfx_Dragging_3/sfx_Dragging_3.yy",},
     {"name":"sfx_Dragging_4","order":30,"path":"sounds/sfx_Dragging_4/sfx_Dragging_4.yy",},
+    {"name":"sfx_Equinnito","order":41,"path":"sounds/sfx_Equinnito/sfx_Equinnito.yy",},
     {"name":"sfx_Fall_Apollo","order":8,"path":"sounds/sfx_Fall_Apollo/sfx_Fall_Apollo.yy",},
     {"name":"sfx_Fall_Luana","order":9,"path":"sounds/sfx_Fall_Luana/sfx_Fall_Luana.yy",},
     {"name":"sfx_Fall_Rock_Apollo","order":17,"path":"sounds/sfx_Fall_Rock_Apollo/sfx_Fall_Rock_Apollo.yy",},

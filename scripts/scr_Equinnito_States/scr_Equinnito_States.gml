@@ -17,6 +17,7 @@ function Equinnito_State_Attack(){
 	
 	if(image_index = 1)
 	{
+		global.som.tocarSFX(sfx_Equinnito)
 		if(!instance_exists(obj_Hitbox_Equinnito))
 		{
 
