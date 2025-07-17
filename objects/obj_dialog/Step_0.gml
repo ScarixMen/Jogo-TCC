@@ -26,3 +26,7 @@ if skip
 	}
 	
 }
+if(global.dialog == false)
+{
+	instance_destroy();	
+}

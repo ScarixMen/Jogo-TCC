@@ -1,10 +1,3 @@
-if (keyboard_check_pressed(ord("E")) && place_meeting(x, y, obj_Button_Blue_Genius)) {
-    with (obj_Genius) {
-        script_execute(scr_iniciar_genius)
-    }
-}
-
-
 #region COLISION
 
 	if (place_meeting(x + sign(hspd), y + 1, obj_Ramp) || place_meeting(x + sign(hspd), y + 12, obj_Ramp)) {
@@ -50,16 +43,5 @@ y+=vspd;
 //OBS: ESSA COLISÃO INCLUI AS PLATAFORMAS, POIS ELAS SÃO FILHAS DO "obj_Block".
 
 #endregion
-#region DIALOG
-		
-		/*if place_meeting(x,y,obj_Par_Npc) and global.dialog == false
-		{
-			
-			var npc	= instance_nearest(x,y,obj_Par_Npc);
-			var dialog = instance_create_layer(x,y,"dialog",obj_Dialog);
-			dialog.npc_name = npc.name
-			
-		}*/
 	
-
 vspd = vspd + grv

@@ -8,7 +8,7 @@ function Plataform_Button_Idle_Tutorial(){
 		
 		if(image_index >= image_number -1)
 		{
-		
+			mask_index = spr_Plataform_Appear
 			image_index = 19
 		
 		}
@@ -31,6 +31,7 @@ function Plataform_Button_Press_Tutorial(){
 	
 	with(obj_Plataform_Tutorial)
 	{
+		mask_index = spr_Plataform_Disappear
 		sprite_index = spr_Plataform_Disappear
 		
 		if(image_index >= image_number -1)
@@ -58,7 +59,7 @@ function Plataform_Button_Pressed_Tutorial(){
 	
 	with(obj_Plataform_Tutorial)
 	{
-		
+		mask_index = spr_Noone
 		sprite_index = spr_Plataform_Portrait
 		
 	}

@@ -131,7 +131,7 @@ function Luana_state_push_walking() {
 			{
 				var block = push_list [| i];
 				with(block){
-					if(!place_meeting(x+other.hspd,y,obj_Block) and !place_meeting(x+other.hspd,y,obj_Apollo)) and !place_meeting(x+1,y,obj_Post)
+					if(!place_meeting(x+other.hspd,y,obj_Block) and !place_meeting(x+other.hspd,y,obj_Apollo)) and !place_meeting(x + other.hspd,y,obj_Post)
 					{
 						if!audio_is_playing(sfx_Push)
 						{
@@ -166,7 +166,10 @@ function Luana_State_Death() {
 	{
 			
 		image_index = 7
-		instance_create_layer(0, 0, layer, obj_Transition_Death);
+		if !instance_exists( obj_Transition_Death)
+		{
+			instance_create_layer(0, 0, layer, obj_Transition_Death);
+		}
 		
 	}
 	if instance_exists( obj_Transition_Death)

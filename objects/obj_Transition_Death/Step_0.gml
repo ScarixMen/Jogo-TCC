@@ -7,6 +7,7 @@ if mode == "fade_out"
 		
 		alpha = 1
 		mode = "fade_in"
+		show_debug_message(alpha)
 		
 	}
 	
@@ -16,7 +17,7 @@ if mode == "fade_out"
 	alpha -= fade_speed
 	if alpha <= 0
 	{
-		
+	global.damage = false;
 		instance_destroy();
 			
 	}

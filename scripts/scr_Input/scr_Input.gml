@@ -9,6 +9,11 @@ function Input_Luana(){
 	
 	if global.dialog
 	{
+		if(global.damage)
+		{
+			state = Luana_State_Death
+			exit;
+		}
 		state = Luana_State_Idle
 		exit;	
 	

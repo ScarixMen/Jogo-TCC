@@ -12,15 +12,17 @@ y+=vspd;
 
 vspd = vspd + grv
 
-if (place_meeting(x, y + vspd, obj_Apollo)) {
-        with (instance_place(x, y + vspd, obj_Apollo)) {
-             damage_Apollo();
-        }
-    }
+if (vspd > grv){
+	if (place_meeting(x, y + vspd, obj_Apollo)) {
+	        with (instance_place(x, y + vspd, obj_Apollo)) {
+	             damage_Apollo();
+	        }
+	    }
 
 
-if (place_meeting(x, y + vspd, obj_Luana)) {
-        with (instance_place(x, y + vspd, obj_Luana)) {
-             damage_Luana();
-        }
-    }
+	if (place_meeting(x, y + vspd, obj_Luana)) {
+	        with (instance_place(x, y + vspd, obj_Luana)) {
+	             damage_Luana();
+	        }
+	    }
+}

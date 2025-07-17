@@ -7,3 +7,4 @@ tempo_espera = 30;
 tempo_atual = 0;
 indice_entrada = 0;
 global.botoes = [obj_Genius_Blue, obj_Genius_Green, obj_Genius_Red, obj_Genius_Yellow];
+a = obj_Genius_Blue or obj_Genius_Green or obj_Genius_Red or obj_Genius_Yellow

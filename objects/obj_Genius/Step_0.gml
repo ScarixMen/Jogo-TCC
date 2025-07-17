@@ -31,10 +31,11 @@ switch (estado) {
     if (delay_vitoria > 0) {
         delay_vitoria--;
     } else {
-        if (array_length(sequencia) >= 2) {
+        if (array_length(sequencia) >= 3) {
             //show_debug_message("Genius finalizado!");
 			global.som.tocarSFX(sfx_Genius_Win)
-		
+			
+			delay_vitoria = room_speed * 1
             estado = "fim";
             break;
         }
@@ -57,6 +58,10 @@ switch (estado) {
     break;
 	
 	case "fim":
+	 
+	 if (delay_vitoria > 0) {
+        delay_vitoria--;
+    } else{
 	
     global.cam_override = true;
     global.focus_target = obj_Bridge_Genius;
@@ -72,6 +77,7 @@ switch (estado) {
 	
 
     estado = "ponte";
+	}
     break;
 
 	case "ponte":
@@ -87,12 +93,24 @@ switch (estado) {
 
 
    case "erro":
-   global.som.tocarSFX(sfx_Genius_Error)
     if (delay_vitoria > 0) {
         delay_vitoria--;
     } else {
-       // show_debug_message("Errou! Reiniciando sequência...");
-
+		// show_debug_message("Errou! Reiniciando sequência...")
+		
+		 with (obj_Genius_Red) {
+             ativar();
+         }
+		with (obj_Genius_Blue) {
+            ativar();
+        }
+		with (obj_Genius_Green) {
+			ativar();
+        }
+		with (obj_Genius_Yellow) {
+			ativar();
+        }
+		
         // Reinicia com nova sequência
         sequencia = [];
         array_push(sequencia, irandom(3));
