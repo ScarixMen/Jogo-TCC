@@ -1,3 +1,25 @@
+if (global.pause) {
+    if (image_speed > 0) {
+        image_index = floor(image_index); // trava no frame atual
+    }
+    image_speed = 0;
+    exit;
+}
+
+// Timer da animação
+if (ativo) {
+    timer--;
+
+    if (timer <= 0) {
+        ativo = false;
+        image_speed = 0;
+        image_index = sprite_get_number(sprite_index) ; // <<< CONGELA NO ÚLTIMO FRAME
+    }
+}
+
+
+
+
 function ativar() {
     if (obj_Genius.estado != "erro") {
         switch (id_botao) {
@@ -17,16 +39,6 @@ function ativar() {
 // Inputs
 Input_Luana();
 Input_Apollo();
-
-// Timer da animação
-if (ativo) {
-    timer--;
-    if (timer <= 0) {
-        ativo = false;
-        image_index = 0;
-        image_speed = 0;
-    }
-}
 
 // Função para checar interação
 function checar_interacao(_obj, _interact) {
@@ -53,10 +65,12 @@ function checar_interacao(_obj, _interact) {
 }
 
 // Verifica interação de um personagem por vez
-if (place_meeting(x, y, obj_Luana)) {
-    checar_interacao(obj_Luana, interact_Luana);
-}
-else if (place_meeting(x, y, obj_Apollo)) {
-    checar_interacao(obj_Apollo, interact_Apollo);
+if (!global.pause) {
+    if (place_meeting(x, y, obj_Luana)) {
+        checar_interacao(obj_Luana, interact_Luana);
+    }
+    else if (place_meeting(x, y, obj_Apollo)) {
+        checar_interacao(obj_Apollo, interact_Apollo);
+    }
 }
 

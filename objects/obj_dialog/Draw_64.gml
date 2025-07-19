@@ -1,3 +1,5 @@
+if (Check_Pause()) exit;
+
 draw_set_font(Font_Menu)
 var guiw = display_get_gui_width();
 var guih = display_get_gui_height();

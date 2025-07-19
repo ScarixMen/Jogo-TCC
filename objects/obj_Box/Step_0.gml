@@ -1,3 +1,5 @@
+if (Check_Pause()) exit;
+
 //Colisão vertical
 if place_meeting(x,y+vspd,obj_Block)
 {

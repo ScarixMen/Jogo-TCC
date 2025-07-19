@@ -1,3 +1,5 @@
+if (Check_Pause()) exit;
+
 if !start && npc_name != ""
 {
     script_execute(scr_dialog);

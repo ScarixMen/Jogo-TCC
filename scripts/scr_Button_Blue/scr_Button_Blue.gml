@@ -31,6 +31,7 @@ function Button_Blue_Pressed(){
 			
 			image_index = 48
 			global.cam_override = false
+			instance_destroy(obj_Button_Blue);
 			
 		}
 		

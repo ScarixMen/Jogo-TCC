@@ -1,3 +1,5 @@
+if (Check_Pause()) exit;
+
 if (!ativo) exit;
 
 
@@ -66,7 +68,7 @@ switch (estado) {
     global.cam_override = true;
     global.focus_target = obj_Bridge_Genius;
 	
-	camera_set_view_pos(view_camera [2] ,24800, 2000)
+	camera_set_view_pos(view_camera [2] ,21900, 1900)
 	
 
     with obj_Bridge_Genius {
@@ -86,7 +88,7 @@ switch (estado) {
             image_speed = 0;
             image_index = 48; // frame final, se necessário
             global.cam_override = false;
-			
+			instance_destroy(obj_Genius);
         }
     }
     break;
