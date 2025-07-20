@@ -1,3 +1,4 @@
+if (Check_Pause()) exit;
 #region CHANGE OF DIRECTION
 
 vspd = spd *v_dir;

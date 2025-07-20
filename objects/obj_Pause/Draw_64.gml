@@ -3,7 +3,7 @@ var _sprite_pause_reset = spr_Portrait_Pause_Reset;
 var _x_Portrait_Pause = display_get_gui_width() / 2;
 var _y_Portrait_Pause = display_get_gui_height() / 2;
 var _c_yellow = make_color_rgb(255, 224, 139);
-var dist = 120;
+var dist = 140;
 var sprite = 0;
 
 if (pause_state != "normal") {
@@ -31,7 +31,7 @@ if (pause_state != "normal") {
 	if (pause_state == "paused") {
     draw_set_alpha(1);
     
-    var menu_y = display_get_gui_height() / 2 - 100; // Posição abaixo do retrato
+    var menu_y = display_get_gui_height() / 2 - 135; // Posição abaixo do retrato
 
 	    for (var i = 0; i < opc_max; i++) {
 	        var _w = larg_ini;
@@ -50,9 +50,9 @@ if (pause_state != "normal") {
 
 	        draw_set_font(global.fontUI);
 	        draw_set_halign(fa_center);
-	        var y_string = (menu_y + (dist * i)) - (string_height(opc[i]) * 0.4 * 0.5);
+	        var y_string = (menu_y + (dist * i)) - (string_height(opc[i]) * 0.6 * 0.5);
 	        draw_set_color(_cor);
-	        draw_text_ext_transformed(_x_Portrait_Pause, y_string, opc[i], 0, 100, 0.4, 0.4, 0);
+	        draw_text_ext_transformed(_x_Portrait_Pause, y_string, opc[i], 0, 100, 0.6, 0.6, 0);
 	    }
 	}
 }

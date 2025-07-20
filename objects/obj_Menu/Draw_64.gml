@@ -21,7 +21,7 @@ if (iniciar_alpha) {
 #region Visual Setup
 var _c_yellow = make_color_rgb(255, 224, 139);
 var sprite = 0;
-var dist = 85;
+var dist = 120;
 var larg_t = display_get_gui_width(); 
 var alt_t = display_get_gui_height(); 
 var _x = larg_t / 2;
@@ -41,7 +41,7 @@ draw_sprite(spr_Apollo_Menu, -1, x_apollo, alt_t);
 if (!mostrar_creditos && alpha > 0 && estado_menu == "principal") {
     draw_set_alpha(alpha);
     
-    var menu_y = alt_t / 2.5; // <<<< altura central do menu principal
+    var menu_y = alt_t / 3; // <<<< altura central do menu principal
 
     for (var i = 0; i < opc_max; i++) {
         var _w = larg_ini;
@@ -60,9 +60,9 @@ if (!mostrar_creditos && alpha > 0 && estado_menu == "principal") {
 
         draw_set_font(global.fontUI);
         draw_set_halign(fa_center);
-        var y_string = (menu_y + (dist * i)) - (string_height(opc[i]) * 0.4 * 0.5);
+        var y_string = (menu_y + (dist * i)) - (string_height(opc[i]) * 0.6 * 0.5);
         draw_set_color(_cor);
-        draw_text_ext_transformed(_x, y_string, opc[i], 0, 100, 0.4, 0.4, 0);
+        draw_text_ext_transformed(_x, y_string, opc[i], 0, 100, 0.6, 0.6, 0);
     }
 }
 #endregion
@@ -71,7 +71,7 @@ if (!mostrar_creditos && alpha > 0 && estado_menu == "principal") {
 if (!mostrar_creditos && alpha > 0 && estado_menu == "fases") {
     draw_set_alpha(alpha);
     
-    var menu_y = alt_t / 3; // <<<< posição Y diferente, você ajusta como quiser
+    var menu_y = alt_t / 8; // <<<< posição Y diferente, você ajusta como quiser
 
     for (var i = 0; i < opc_max; i++) {
         var _w = larg_ini;
@@ -90,9 +90,9 @@ if (!mostrar_creditos && alpha > 0 && estado_menu == "fases") {
 
         draw_set_font(global.fontUI);
         draw_set_halign(fa_center);
-        var y_string = (menu_y + (dist * i)) - (string_height(opc[i]) * 0.4 * 0.5);
+        var y_string = (menu_y + (dist * i)) - (string_height(opc[i]) * 0.6 * 0.5);
         draw_set_color(_cor);
-        draw_text_ext_transformed(_x, y_string, opc[i], 0, 100, 0.4, 0.4, 0);
+        draw_text_ext_transformed(_x, y_string, opc[i], 0, 100, 0.6, 0.6, 0);
     }
 }
 #endregion
@@ -148,13 +148,80 @@ if (estado_menu == "creditos") {
 
     draw_set_font(global.fontUI);
     draw_set_halign(fa_center);
-    back_y -= (string_height(opc[0]) * 0.4 * 0.5);
+    back_y -= (string_height(opc[0]) * 0.6 * 0.5);
     draw_set_color(_cor);
-    draw_text_ext_transformed(_x, back_y, opc[0], 0, 100, 0.4, 0.4, 0);
+    draw_text_ext_transformed(_x, back_y, opc[0], 0, 100, 0.6, 0.6, 0);
 
     draw_set_alpha(1);
     draw_set_color(-1);
     draw_set_font(-1);
+}
+#endregion
+
+#region Options Screen
+if (estado_menu == "opcoes") {
+    var gui_w = display_get_gui_width();
+    var gui_h = display_get_gui_height();
+    _x = gui_w / 2;
+
+    // Posições e espaçamento
+    var start_y = gui_h / 2 - 150;
+    var dist_y = 160;
+
+    var vol_values = [
+        global.som.sfx_volume,
+        global.som.bgm_volume,
+        global.som.amb_volume
+    ];
+
+    var labels = ["Efeitos", "Musica", "Ambiente"];
+
+    // Fonte e alinhamento para os títulos
+    draw_set_font(global.fontUI);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_bottom);
+
+    for (var i = 0; i < 3; i++) {
+        var y_barra = start_y + i * dist_y;
+
+        // Troca a cor do label se selecionado
+        if (indice == i) {
+            draw_set_color(_c_yellow);
+        } else {
+            draw_set_color(c_white);
+        }
+
+        // Texto acima da barra
+        draw_text(_x, y_barra - 24, labels[i]);
+
+        // Sprite da barra
+        var frame = round(clamp(vol_values[i] * 10, 0, 10));
+        draw_sprite(spr_Sound_Bar, frame, _x, y_barra);
+    }
+
+    // Botão "Voltar"
+    var back_y = start_y + 3 * dist_y - 50;
+    var _w = larg_ini;
+    var _h = alt_ini;
+    var _cor = c_white;
+    var sprite = spr_Board_Off;
+
+    if (indice == 3) {
+        _w = larg;
+        _h = alt;
+        _cor = _c_yellow;
+        sprite = spr_Board_On;
+    }
+
+    draw_set_alpha(alpha);
+    draw_sprite_stretched(sprite, 0, _x - _w / 2, back_y - _h / 2, _w, _h);
+
+    draw_set_font(global.fontUI);
+    draw_set_halign(fa_center);
+    draw_set_color(_cor);
+    draw_text_ext_transformed(_x, back_y - (string_height(opc[3]) * 0.6 * 0.5), opc[3], 0, 100, 0.6, 0.6, 0);
+
+    draw_set_alpha(1);
 }
 #endregion
 

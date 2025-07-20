@@ -1,6 +1,7 @@
 function Input_Player(){
 	
 	pause = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(global.gamepad_id,gp_start)
+	skip = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(global.gamepad_id,gp_face1)
 	
 }
 
@@ -100,9 +101,4 @@ up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W")) or gamepa
 down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S")) or gamepad_button_check_pressed(global.gamepad_id, gp_padd) or axis_down_pressed;
 enter = keyboard_check_pressed(vk_enter) or keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(global.gamepad_id,gp_face1)
 	
-}
-function Input_Dialog(){
-
-skip = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(global.gamepad_id,gp_face2)
-
 }

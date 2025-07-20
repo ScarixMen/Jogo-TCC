@@ -33,7 +33,7 @@ switch (estado) {
     if (delay_vitoria > 0) {
         delay_vitoria--;
     } else {
-        if (array_length(sequencia) >= 3) {
+        if (array_length(sequencia) >= 7) {
             //show_debug_message("Genius finalizado!");
 			global.som.tocarSFX(sfx_Genius_Win)
 			

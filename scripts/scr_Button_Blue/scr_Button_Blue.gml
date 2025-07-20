@@ -3,7 +3,7 @@ function Button_Blue_Idle(){
 	with obj_Bridge
 	{
 	
-		image_index = 48
+		image_index = 0
 		
 	}
 	
@@ -29,7 +29,7 @@ function Button_Blue_Pressed(){
 		if(image_index >= image_number -1)
 		{	
 			
-			image_index = 48
+			image_index = 49
 			global.cam_override = false
 			instance_destroy(obj_Button_Blue);
 			

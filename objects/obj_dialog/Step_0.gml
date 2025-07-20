@@ -6,7 +6,7 @@ if !start && npc_name != ""
     start = true;
 }
 
-script_execute(Input_Dialog)
+script_execute(Input_Player)
 
 
 //CHANGE PAGES OF DIALOG

@@ -7,8 +7,8 @@ indice = 0
 
 pos = indice
 
-larg_fim = 256
-alt_fim = 96
+larg_fim = 320
+alt_fim = 144
 
 larg = larg_fim
 alt = alt_fim 

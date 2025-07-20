@@ -318,6 +318,7 @@
     {"id":{"name":"spr_Rock_Cut","path":"sprites/spr_Rock_Cut/spr_Rock_Cut.yy",},},
     {"id":{"name":"spr_Sand","path":"sprites/spr_Sand/spr_Sand.yy",},},
     {"id":{"name":"spr_Sky","path":"sprites/spr_Sky/spr_Sky.yy",},},
+    {"id":{"name":"spr_Sound_Bar","path":"sprites/spr_Sound_Bar/spr_Sound_Bar.yy",},},
     {"id":{"name":"spr_Stars","path":"sprites/spr_Stars/spr_Stars.yy",},},
     {"id":{"name":"spr_Stone_Tower1","path":"sprites/spr_Stone_Tower1/spr_Stone_Tower1.yy",},},
     {"id":{"name":"spr_Stone_Tower2","path":"sprites/spr_Stone_Tower2/spr_Stone_Tower2.yy",},},

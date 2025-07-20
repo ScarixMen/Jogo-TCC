@@ -1,3 +1,3 @@
-script_execute(state)
+if (Check_Pause()) exit;
 
-//show_debug_message(sprite_index)
+script_execute(state)
