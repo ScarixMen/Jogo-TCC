@@ -2,18 +2,24 @@ function Plataform_Button_Idle() {
     sprite_index = spr_plataform_Apollo;
     image_index = 0;
 
-    // Só ativa se o jogador estiver pisando no botão
+    // Só continua se algum jogador estiver pisando no botão
     if (place_meeting(x, y - 1, obj_Player)) {
-        
-        // Pegamos a plataforma associada a este botão
         var p = plataform;
 
-        // Confirma se a plataforma está pronta para ativar
+        // Verifica se a plataforma está válida e pronta
         if (p != noone && p.pronta) {
-            
-            // Agora testamos se há jogador em cima da área da plataforma
-            var jogador_em_cima = collision_rectangle(p.x, p.y, p.x + p.sprite_width, p.y + p.sprite_height, obj_Player, false, true);
 
+            // Checa se ALGUM jogador está em cima da plataforma associada
+            var jogador_em_cima = false;
+
+            with (obj_Player) {
+                // Confere se este jogador está colidindo com a plataforma associada ao botão
+                if (place_meeting(x, y, other.plataform)) {
+                    jogador_em_cima = true;
+                }
+            }
+
+            // Só ativa se ninguém estiver em cima da plataforma
             if (!jogador_em_cima) {
                 state = Plataform_Button_Appear;
             }
@@ -22,10 +28,9 @@ function Plataform_Button_Idle() {
 }
 
 
-
 function Plataform_Button_Appear() {
     sprite_index = spr_plataform_Apollo;
-
+    
     if (image_index >= image_number - 1) {
         image_index = 10;
     }
@@ -34,7 +39,11 @@ function Plataform_Button_Appear() {
         state = Plataform_Appear;
     }
 
-    // Se ninguém mais está pressionando o botão, desativa
+    // Se a plataforma ainda não terminou de aparecer, aguarda
+    if (!plataform.pronta)
+        exit;
+
+    // Só desativa se ninguém estiver mais no botão
     if (!place_meeting(x, y - 1, obj_Player)) {
         state = Plataform_Button_Disappear;
     }
@@ -51,7 +60,6 @@ function Plataform_Button_Disappear() {
         state = Plataform_Disappear;
     }
 
-    // Quando a plataforma terminar de desaparecer, volta pro Idle
     with (plataform) {
         if (pronta) {
             other.state = Plataform_Button_Idle;

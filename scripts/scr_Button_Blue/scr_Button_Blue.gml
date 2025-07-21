@@ -20,21 +20,32 @@ function Button_Blue_Idle(){
 
 function Button_Blue_Pressed(){
 	global.cam_override = true
-	global.focus_target = obj_Bridge
-	with obj_Bridge
-	{
+	global.focus_target = instance_nearest(x,y,obj_Box)
 	
-		sprite_index = spr_Bridge_Appear
+	if(image_index >= image_number -1)
+	{	
 		
-		if(image_index >= image_number -1)
-		{	
+		 timer --;
+		if timer <= 0
+		{
+		
+			global.focus_target = obj_Bridge
+			with obj_Bridge
+			{
+	
+				sprite_index = spr_Bridge_Appear
+		
+				if(image_index >= image_number -1)
+				{	
 			
-			image_index = 49
-			global.cam_override = false
-			instance_destroy(obj_Button_Blue);
+					image_index = 49
+					global.cam_override = false
+					instance_destroy(obj_Button_Blue);
 			
+				}
 		}
 		
+		}
 	}
 	
 	sprite_index = spr_Button_Blue_Press

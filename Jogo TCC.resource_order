@@ -84,6 +84,7 @@
     {"name":"obj_Plataform_Button_Three","order":6,"path":"objects/obj_Plataform_Button_Three/obj_Plataform_Button_Three.yy",},
     {"name":"obj_Plataform_Button_Tutorial","order":12,"path":"objects/obj_Plataform_Button_Tutorial/obj_Plataform_Button_Tutorial.yy",},
     {"name":"obj_Plataform_Button_Two_Four","order":7,"path":"objects/obj_Plataform_Button_Two_Four/obj_Plataform_Button_Two_Four.yy",},
+    {"name":"obj_Plataform_Collision_1","order":18,"path":"objects/obj_Plataform_Collision_1/obj_Plataform_Collision_1.yy",},
     {"name":"obj_Plataform_Collision","order":16,"path":"objects/obj_Plataform_Collision/obj_Plataform_Collision.yy",},
     {"name":"obj_Plataform_Genius_Short","order":14,"path":"objects/obj_Plataform_Genius_Short/obj_Plataform_Genius_Short.yy",},
     {"name":"obj_Plataform_Genius","order":11,"path":"objects/obj_Plataform_Genius/obj_Plataform_Genius.yy",},

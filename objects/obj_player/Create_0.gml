@@ -14,6 +14,5 @@ grv = 0.7;    //Gravity
 left = 0
 right = 0
 jump = 0
-crounch = 0
 
 #endregion

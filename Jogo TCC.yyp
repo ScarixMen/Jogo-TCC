@@ -107,6 +107,7 @@
     {"id":{"name":"obj_Plataform_Button_Three","path":"objects/obj_Plataform_Button_Three/obj_Plataform_Button_Three.yy",},},
     {"id":{"name":"obj_Plataform_Button_Tutorial","path":"objects/obj_Plataform_Button_Tutorial/obj_Plataform_Button_Tutorial.yy",},},
     {"id":{"name":"obj_Plataform_Button_Two_Four","path":"objects/obj_Plataform_Button_Two_Four/obj_Plataform_Button_Two_Four.yy",},},
+    {"id":{"name":"obj_Plataform_Collision_1","path":"objects/obj_Plataform_Collision_1/obj_Plataform_Collision_1.yy",},},
     {"id":{"name":"obj_Plataform_Collision","path":"objects/obj_Plataform_Collision/obj_Plataform_Collision.yy",},},
     {"id":{"name":"obj_Plataform_Genius_Short","path":"objects/obj_Plataform_Genius_Short/obj_Plataform_Genius_Short.yy",},},
     {"id":{"name":"obj_Plataform_Genius","path":"objects/obj_Plataform_Genius/obj_Plataform_Genius.yy",},},

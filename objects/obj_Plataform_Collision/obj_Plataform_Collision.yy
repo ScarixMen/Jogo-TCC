@@ -35,5 +35,5 @@
     "path":"sprites/spr_Plataform_Colision/spr_Plataform_Colision.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

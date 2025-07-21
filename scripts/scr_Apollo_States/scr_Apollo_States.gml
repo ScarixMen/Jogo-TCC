@@ -102,7 +102,7 @@ function Apollo_State_Crouched_Idle() {
 }
 function Apollo_State_Crouched() {
 	
-	sprite_index = spr_Apollo_Crouched
+	if abs(hspd) > 0 { sprite_index = spr_Apollo_Crouched}
 	
     hspd = move * cspd;
 

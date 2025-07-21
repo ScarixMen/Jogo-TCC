@@ -4,11 +4,13 @@ function Button_Genius_Idle(){
 	
 	with(obj_Plataform_Genius_Short){
 		
+		mask_index = spr_Plataform2
 		sprite_index = spr_Plataform2
 		
 	}
 	
 	with(obj_Plataform_Genius){
+		
 		
 		sprite_index = spr_Plataform_Genius
 		
@@ -35,6 +37,8 @@ function Button_Genius_Press(){
 	
 	with(obj_Plataform_Genius_Short)
 	{
+		
+		mask_index = spr_Plataform_Disappear
 		sprite_index = spr_Plataform_Disappear
 		
 		if(image_index >= image_number -1)
