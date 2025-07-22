@@ -65,17 +65,39 @@ function scr_dialog()
 			
 			break;
 			
-			case "Mini_Boss":
+			case "Niobio_Statue":
 			
 			text[0] = "Parece ser diferente das outras estatuas... Espera, é parecido com aqueles símbolos que a gente achou antes! " 
 			text[1] = "Estranho, será que era alguma figura importante pra ilha?"
 			text[2] = "Talvez. Acho que eu consigo traduzir o que tá escrito. Espera um minutinho."
-			text[3] = "Continua..."
 			
 			speaker[0] = Apollo
 			speaker[1] = Luana
 			speaker[2] = Apollo
-			speaker[3] = Ayla
+			
+			
+			break;
+			
+			case "Niobio_Idle_1":
+			
+			text[0] = "\"Se estiver perdido, lembre-se de onde nascestes, e se guie por este caminho\""
+			text[1] = "Apollo... eu acho melhor você sair daí"
+			text[2] = "Calma aí Lu, preciso de um tempinho para ler isso aqui."
+			
+			speaker[0] = Apollo
+			speaker[1] = Luana
+			speaker[2] = Apollo
+			
+			
+			break;
+			
+			case "Niobio_Idle_2":
+			
+			text[0] = "Ah não brinca, essa coisa consegue se mexer também???"
+			text[1] = "Eu vou tentar distrair ele. Vê se o que está escrito aí ajuda a gente parar essa coisa!"
+			
+			speaker[0] = Apollo
+			speaker[1] = Luana
 			
 			break;
 			

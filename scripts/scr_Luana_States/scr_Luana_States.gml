@@ -28,7 +28,7 @@ function Luana_State_Walking(){
 		
 		if(ds_list_size(push_list) > 0)	
 		{
-			state = Luana_State_Push_Idle
+			state = Luana_State_Push
 		}
 	}
 	
@@ -96,22 +96,38 @@ function Luana_State_Falling() {
 		
 	}	
 }
-function Luana_State_Push_Idle() {
+function Luana_State_Push() {
 
 hspd = 0
 			sprite_index = spr_Luana_Push
 			if(image_index >= image_number -1)
 			{	
-			
-				state = Luana_state_push_walking
+				sprite_index = spr_Luana_Push_Idle
+				image_index = 0
+				state = Luana_State_Push_Idle
 				
 			}
 	
 }
 
-function Luana_state_push_walking() {
+function Luana_State_Push_Idle() {
 	
-	image_index =	6
+	sprite_index = spr_Luana_Push_Idle
+	
+	hspd = 0
+	
+	if(left) {state = Luana_State_Push_Walking}
+	if(right) {state = Luana_State_Push_Walking}
+	
+	
+	
+}
+
+function Luana_State_Push_Walking() {
+	
+	sprite_index = spr_Luana_Push_Wallking
+	
+	//if(hspd == 0) {state = Luana_State_Push_Idle;}
 	
 	hspd = move*pspd // movimentação horizontal
 

@@ -1,7 +1,7 @@
 function Input_Player(){
 	
 	pause = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(global.gamepad_id,gp_start)
-	skip = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(global.gamepad_id,gp_face1)
+	global.skip = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(global.gamepad_id,gp_face1)
 	
 }
 
@@ -35,8 +35,8 @@ function Input_Luana(){
 	
 	interact_Luana = gamepad_button_check_pressed(global.gamepad_id,gp_face3) or keyboard_check_pressed(ord("P"))
 	
-	jump = gamepad_button_check_pressed(global.gamepad_id,gp_face1) or keyboard_check_pressed(vk_up)
-	
+	jump = !global.skip and (gamepad_button_check_pressed(global.gamepad_id, gp_face1) or keyboard_check_pressed(vk_up));
+
 	pause = gamepad_button_check_pressed(global.gamepad_id,gp_face1)
 	
 }

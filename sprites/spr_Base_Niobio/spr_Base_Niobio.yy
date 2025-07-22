@@ -1,11 +1,11 @@
 {
   "$GMSprite":"",
   "%Name":"spr_Base_Niobio",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":703,
   "bbox_left":56,
   "bbox_right":531,
-  "bbox_top":472,
+  "bbox_top":500,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
