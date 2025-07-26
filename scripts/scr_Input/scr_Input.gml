@@ -8,10 +8,10 @@ function Input_Player(){
 function Input_Luana(){
 	
 	#region	Block Input
-	if global.cam_override
+	if global.cam_override 
 	{
-		state = Luana_State_Idle
-		exit;	
+		/*state = Luana_State_Idle
+		exit;	*/
 	
 	}
 	

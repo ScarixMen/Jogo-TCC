@@ -45,8 +45,17 @@ global.som = {
     },
 
     // 💥 Tocar efeito sonoro
-    tocarSFX: function(som) {
-        var_id_sfx = audio_play_sound(som, 0, false);
-        audio_sound_gain(var_id_sfx, self.sfx_volume, 0);
-    }
+	tocarSFX: function(som, vol_relativo) {
+	    var volume_rel = (argument_count > 1 && is_real(vol_relativo)) ? vol_relativo : 1;
+	    var volume_final;
+
+	    if (is_real(self.sfx_volume)) {
+	        volume_final = clamp(self.sfx_volume * volume_rel, 0, 1);
+	    } else {
+	        volume_final = clamp(volume_rel, 0, 1);
+	    }
+
+	    var id_sfx = audio_play_sound(som, 0, false);
+	    audio_sound_gain(id_sfx, volume_final, 0);
+	}
 };

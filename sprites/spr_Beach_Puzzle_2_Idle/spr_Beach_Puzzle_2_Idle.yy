@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Construct",
-    "path":"folders/Sprites/Construct.yy",
+    "name":"Beach_Puzzle",
+    "path":"folders/Sprites/Construct/Beach_Puzzle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

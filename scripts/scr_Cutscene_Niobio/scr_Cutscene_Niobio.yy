@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Cutscene_Niobio",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Cutscene_Niobio",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -25,15 +25,14 @@ function Niobio_State_Idle_Dialog_1(){
 	
 	if(image_index >= image_number -1 )
 	{
-		
-		var dialog = instance_create_layer(x, y, "dialog", obj_Dialog);
-	    dialog.npc_name = "Niobio_Idle_1";
-	    global.dialog = true;
-	    activated_box = true; // cria uma variável no Create
-		
+		/*if !global.dialog
+		{
+			var dialog = instance_create_layer(x, y, "dialog", obj_Dialog);
+		    dialog.npc_name = "Niobio_Idle_1";
+		    global.dialog = true;
+		    activated_box = true; // cria uma variável no Create
+		}*/
 	}
-	
-	
 }
 
 function Niobio_State_Jump() {
@@ -98,16 +97,29 @@ function Niobio_State_Idle_Dialog_2(){
 	if(image_index >= image_number -1 )
 	{
 		
-		var dialog = instance_create_layer(x, y, "dialog", obj_Dialog);
-	    dialog.npc_name = "Niobio_Idle_2";
-	    global.dialog = true;
-	    activated_box = true; 
-		
 	}
+}
+
+function Niobio_State_View_Puzzle(){
+	
+	sprite_index = spr_Niobio_Idle
+	
+	global.cam_override = true
+	global.focus_target = obj_Apollo
+		
+    timer--;
+	
+    if (timer <= 0) {
+		
+		obj_Apollo.state = Apollo_State_Idle
+		state = Niobio_State_Run
+	}
+	
 }
 
 function Niobio_State_Run(){
 	
+	global.cam_override = false
 	sprite_index = spr_Niobio_Run
 	
 	hspd = move * spd;

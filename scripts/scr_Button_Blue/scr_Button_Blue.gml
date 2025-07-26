@@ -29,7 +29,7 @@ function Button_Blue_Pressed(){
 		if timer <= 0
 		{
 		
-			global.focus_target = obj_Bridge
+			global.focus_target = instance_nearest(x,y,obj_Bridge)
 			with obj_Bridge
 			{
 	

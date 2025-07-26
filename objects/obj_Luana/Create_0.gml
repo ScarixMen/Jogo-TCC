@@ -1,4 +1,3 @@
-
 event_inherited();
 
 state = Luana_State_Idle

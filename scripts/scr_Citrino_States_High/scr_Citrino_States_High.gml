@@ -94,7 +94,7 @@ function Citrino_High_State_Attack() {
 
     if (tiro_tempo >= tiro_intervalo) {
 		
-		global.som.tocarSFX(sfx_Arrow)
+		global.som.tocarSFX(sfx_Arrow, fator_volume);
 		instance_create_layer(x - 55, y- 175, "Arrow", obj_Arrow);
 		instance_create_layer(x - 55, y - 60, "Arrow", obj_Arrow);
 		tiro_tempo = 0;

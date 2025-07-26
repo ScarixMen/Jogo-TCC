@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"sfx_Push",
+  "%Name":"sfx_Push_Box",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":8.692631,
-  "name":"sfx_Push",
+  "name":"sfx_Push_Box",
   "parent":{
     "name":"Sons",
     "path":"folders/Sons.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sfx_Push.wav",
+  "soundFile":"sfx_Push_Box.wav",
   "type":0,
-  "volume":0.3,
+  "volume":0.5,
 }

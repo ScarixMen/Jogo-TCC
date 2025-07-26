@@ -1,6 +1,12 @@
 // === 1. CÂMERA DE FOCO TEMPORÁRIO ===
 if (global.cam_override) {
     // Mostra apenas a viewport 0
+
+	with(obj_Cinematic_Bars){
+    target_alpha = 1;  // ou 0 para desligar
+	}
+
+	
 	view_visible[2] = true
     view_visible[0] = false;
     view_visible[1] = false;
@@ -14,7 +20,14 @@ if (global.cam_override) {
 
     // Calcula posição para focar
     var fx = instance_exists(global.focus_target) ? global.focus_target.x : room_width / 2;
-    var fy = instance_exists(global.focus_target) ? global.focus_target.y : room_height / 2;
+	if(global.focus_target == obj_Niobio)
+	{
+		var fy = (instance_exists(global.focus_target) ? global.focus_target.y : room_height / 2) + 100;
+	}
+	else{
+		
+		var fy = instance_exists(global.focus_target) ? global.focus_target.y : room_height / 2;
+	}
 
     var tx = clamp(fx - display_get_width() / 2, 0, room_width - display_get_width());
     var ty = clamp(fy - display_get_height() / 2, 0, room_height - display_get_height());
@@ -28,8 +41,13 @@ if (global.cam_override) {
 
     return; // IMPORTANTE! Para interromper o resto do código só enquanto o foco estiver ativo
 }
+else 
+{
+	with(obj_Cinematic_Bars) {
+    target_alpha = 0;  // ou 0 para desligar
+	}
 
-
+}
 // Ajuste de split dinâmico baseado em posição
 if (obj_Player.x > 10000) {
     y_dist_split = 810;
@@ -115,3 +133,4 @@ if (is_split) {
     var new_y2 = lerp(camera_get_view_y(camera_2), target_y2, 0.1);
     camera_set_view_pos(camera_2, new_x2, new_y2);
 }
+

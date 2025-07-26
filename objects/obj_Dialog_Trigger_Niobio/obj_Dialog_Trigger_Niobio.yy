@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Npc",
-    "path":"sprites/spr_Npc/spr_Npc.yy",
+    "name":"spr_Block",
+    "path":"sprites/spr_Block/spr_Block.yy",
   },
   "spriteMaskId":null,
   "visible":false,
