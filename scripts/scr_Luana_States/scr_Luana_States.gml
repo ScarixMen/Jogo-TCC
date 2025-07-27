@@ -200,3 +200,21 @@ function Luana_State_Death() {
 		}
 	}
 }
+function Luana_State_Cutscene() {
+    // Continua andando se hspd for diferente de 0
+    if (hspd != 0) {
+        sprite_index = spr_Luana_Walking;
+        image_xscale = sign(hspd);
+    } else {
+        sprite_index = spr_Luana_Idle;
+    }
+	
+	if(!global.cam_override)
+	{
+		
+		state = Luana_State_Idle
+		
+	}
+	
+}
+

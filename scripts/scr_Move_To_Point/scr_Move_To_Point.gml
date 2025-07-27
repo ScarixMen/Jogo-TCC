@@ -1,6 +1,3 @@
-/// @description Move instância para targetX com velocidade spd e troca sprite de caminhada/idle
-/// @returns true se chegou no destino
-
 function scr_Move_To_Point(_inst, _targetX, _spd, _sprWalk, _sprIdle)
 {
     var dir = sign(_targetX - _inst.x);

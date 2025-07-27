@@ -1,3 +1,5 @@
+if (Check_Pause()) exit;
+
 script_execute(state)
 //colisão horizontal
 if place_meeting(x+hspd,y,obj_Block)

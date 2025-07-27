@@ -1,53 +1,52 @@
 // === 1. CÂMERA DE FOCO TEMPORÁRIO ===
 if (global.cam_override) {
-    // Mostra apenas a viewport 0
+    // Ativa barras cinematográficas
+    with (obj_Cinematic_Bars) target_alpha = 1;
 
-	with(obj_Cinematic_Bars){
-    target_alpha = 1;  // ou 0 para desligar
-	}
-
-	
-	view_visible[2] = true
+    // Mostra apenas a viewport de foco
+    view_visible[2] = true;
     view_visible[0] = false;
     view_visible[1] = false;
-
-    // Usa a câmera de foco
     view_camera[2] = camera_focus;
+
+    // Ajusta tamanho da viewport
     view_set_wport(0, display_get_width());
     view_set_hport(0, display_get_height());
     view_set_xport(0, 0);
     view_set_yport(0, 0);
 
-    // Calcula posição para focar
-    var fx = instance_exists(global.focus_target) ? global.focus_target.x : room_width / 2;
-	if(global.focus_target == obj_Niobio)
-	{
-		var fy = (instance_exists(global.focus_target) ? global.focus_target.y : room_height / 2) + 100;
-	}
-	else{
-		
-		var fy = instance_exists(global.focus_target) ? global.focus_target.y : room_height / 2;
-	}
+    // --- POSIÇÃO DE FOCO ---
+    var fx, fy;
 
-    var tx = clamp(fx - display_get_width() / 2, 0, room_width - display_get_width());
-    var ty = clamp(fy - display_get_height() / 2, 0, room_height - display_get_height());
+    if (instance_exists(global.focus_target)) {
+        // Foco em objeto específico
+        fx = global.focus_target.x;
+        fy = global.focus_target.y;
 
+        // Ajuste especial para Niobio
+        if (global.focus_target == obj_Niobio) fy += 100;
+    } else {
+        // Foco no meio dos dois players
+        fx = (obj_Apollo.x + obj_Luana.x) * 0.5;
+        fy = (obj_Apollo.y + obj_Luana.y) * 0.5;
+    }
+
+    // Limita e centraliza
+    var tx = clamp(fx - display_get_width()  * 0.5, 0, room_width  - display_get_width());
+    var ty = clamp(fy - display_get_height() * 0.5, 0, room_height - display_get_height());
+
+    // Movimenta suavemente a câmera
     var cx = camera_get_view_x(camera_focus);
     var cy = camera_get_view_y(camera_focus);
-
-    // Move a câmera suavemente
     camera_set_view_pos(camera_focus, lerp(cx, tx, 0.1), lerp(cy, ty, 0.1));
     camera_set_view_size(camera_focus, display_get_width(), display_get_height());
 
-    return; // IMPORTANTE! Para interromper o resto do código só enquanto o foco estiver ativo
+    return; // Impede execução do resto quando está em foco forçado
 }
-else 
-{
-	with(obj_Cinematic_Bars) {
-    target_alpha = 0;  // ou 0 para desligar
-	}
+else {
+    with (obj_Cinematic_Bars) target_alpha = 0;
+}
 
-}
 // Ajuste de split dinâmico baseado em posição
 if (obj_Player.x > 10000) {
     y_dist_split = 810;

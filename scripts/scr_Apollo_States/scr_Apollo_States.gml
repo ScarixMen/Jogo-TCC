@@ -142,3 +142,21 @@ function Apollo_State_Death() {
 		}
 	}
 }
+
+function Apollo_State_Cutscene() {
+    if (hspd != 0) {
+        sprite_index = spr_Apollo_Walking;
+        image_xscale = sign(hspd);
+    } else {
+        sprite_index = spr_Apollo_Idle;
+    }
+	
+	
+	if(!global.cam_override)
+	{
+		
+		state = Luana_State_Idle
+		
+	}
+	
+}

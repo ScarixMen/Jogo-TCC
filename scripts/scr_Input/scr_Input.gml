@@ -8,25 +8,22 @@ function Input_Player(){
 function Input_Luana(){
 	
 	#region	Block Input
-	if global.cam_override 
+	if global.cam_override
 	{
-		/*state = Luana_State_Idle
-		exit;	*/
+		state = Luana_State_Cutscene
+		exit;
 	
 	}
-	
-	if global.dialog
+	if (global.dialog && obj_Luana.can_control)
 	{
-		if(global.damage)
-		{
-			state = Luana_State_Death
-			exit;
-		}
-		state = Luana_State_Idle
-		exit;	
-	
+	    if(global.damage)
+	    {
+	        state = Luana_State_Death;
+	        exit;
+	    }
+	    state = Luana_State_Idle;
+	    exit;
 	}
-	
 #endregion
 
 	left = gamepad_axis_value(global.gamepad_id, gp_axislh) < -0.25 or keyboard_check(vk_left) or gamepad_button_check(global.gamepad_id,gp_padl)
@@ -46,22 +43,19 @@ function Input_Apollo(){
 	#region	Block Input
 	if global.cam_override
 	{
-		
-		state = Apollo_State_Idle
-		exit;	
+		state = Apollo_State_Cutscene
+		exit;
 	
 	}
-	
-	if global.dialog
+	if (global.dialog && obj_Apollo.can_control)
 	{
-		if(global.damage)
-		{
-			state = Apollo_State_Death
-			exit;
-		}
-		state = Apollo_State_Idle
-		exit;	
-	
+	    if(global.damage)
+	    {
+	        state = Apollo_State_Death;
+	        exit;
+	    }
+	    state = Apollo_State_Idle;
+	    exit;
 	}
 	
 	#endregion

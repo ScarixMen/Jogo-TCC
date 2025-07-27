@@ -10,6 +10,11 @@ function scr_Cutscene_BossFight(other) {
             obj_Apollo.can_control = false;
             obj_Luana.can_control = false;
             obj_Niobio.can_control = false;
+			
+			// Força estados de cutscene
+			obj_Apollo.state = Apollo_State_Cutscene;
+			obj_Luana.state  = Luana_State_Cutscene;
+
             ctrl.cutscene_step++;
             break;
 
@@ -107,6 +112,10 @@ function scr_Cutscene_BossFight(other) {
             obj_Apollo.can_control = true;
             obj_Luana.can_control = true;
             obj_Niobio.can_control = true;
+			
+			obj_Apollo.state = Apollo_State_Idle;
+			obj_Luana.state  = Luana_State_Idle;
+			
             ctrl.cutscene_step = 0;  // reseta para próxima cutscene
             return true;  // cutscene acabou
     }
