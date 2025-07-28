@@ -9,8 +9,8 @@
   "name":"obj_Beach_Puzzle_2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Construct",
-    "path":"folders/Objetos/Construct.yy",
+    "name":"Beach_Puzzle",
+    "path":"folders/Objetos/Construct/Beach_Puzzle.yy",
   },
   "parentObjectId":null,
   "persistent":false,

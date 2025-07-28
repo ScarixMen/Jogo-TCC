@@ -16,12 +16,15 @@ function Plataform_Button_Idle_Tutorial(){
 		if(place_meeting(x,y-1,obj_Player))
 		{
 			
+			global.som.tocarSFX(sfx_Cristal)
 			state = Plataform_Button_Press_Tutorial
 	
 		}
 	
 }
 function Plataform_Button_Press_Tutorial(){
+	
+	
 	
 	sprite_index = spr_plataform_Apollo
 	

@@ -19,8 +19,8 @@ function scr_Cutscene_BossFight(other) {
             break;
 
         case 1: // Luana e Apollo andam para perto do boss
-            var luana_ok = scr_Move_To_Point(obj_Luana, 31000, obj_Luana.spd, spr_Luana_Walking, spr_Luana_Idle);
-            var apollo_ok = scr_Move_To_Point(obj_Apollo, 31250, obj_Apollo.spd, spr_Apollo_Walking, spr_Apollo_Idle);
+            var luana_ok = scr_Move_To_Point(obj_Luana, 31450, obj_Luana.spd, spr_Luana_Walking, spr_Luana_Idle);
+            var apollo_ok = scr_Move_To_Point(obj_Apollo, 31680, obj_Apollo.spd, spr_Apollo_Walking, spr_Apollo_Idle);
             if (luana_ok && apollo_ok) {
                 ctrl.cutscene_timer = room_speed; // espera 2 segundos
                 ctrl.cutscene_step++;
@@ -67,8 +67,8 @@ function scr_Cutscene_BossFight(other) {
             break;
 
         case 7: // Apollo e Luana correm para sair debaixo do pulo
-            var luana_ok2 = scr_Move_To_Point(obj_Luana, 30800, obj_Luana.spd, spr_Luana_Walking, spr_Luana_Idle);
-            var apollo_ok2 = scr_Move_To_Point(obj_Apollo, 30600, obj_Apollo.spd, spr_Apollo_Walking, spr_Apollo_Idle);
+            var luana_ok2 = scr_Move_To_Point(obj_Luana, 31200, obj_Luana.spd, spr_Luana_Walking, spr_Luana_Idle);
+            var apollo_ok2 = scr_Move_To_Point(obj_Apollo, 31000, obj_Apollo.spd, spr_Apollo_Walking, spr_Apollo_Idle);
 
             // Direção automática
             if (obj_Luana.hspd != 0) obj_Luana.image_xscale = sign(obj_Luana.hspd);
@@ -96,7 +96,7 @@ function scr_Cutscene_BossFight(other) {
         case 9: // Câmera foca outra parte (exemplo: obj_Beach_Puzzle_5)
             global.cam_override = true;
             global.focus_target = obj_Apollo;
-            apollo_ok = scr_Move_To_Point(obj_Apollo, 28850, obj_Apollo.spd, spr_Apollo_Walking, spr_Apollo_Idle);
+            apollo_ok = scr_Move_To_Point(obj_Apollo, 29000, obj_Apollo.spd, spr_Apollo_Walking, spr_Apollo_Idle);
             if (apollo_ok) {
                 ctrl.cutscene_step++;
             }

@@ -1,9 +1,6 @@
 #region VARIABLES
 
-/*can_control = true;    // se o jogador pode controlar
-cutscene_step = 0;     // etapa da cutscene
-cutscene_timer = 0;    // para esperar entre ações
-cutscene_target_x = x; // alvo X do movimento*/
+can_control = true;    // se o jogador pode controlar
 
 no_ar = false;
 global.check_X = x

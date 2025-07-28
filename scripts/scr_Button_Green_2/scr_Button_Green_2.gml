@@ -7,11 +7,13 @@ function Button_Green_Idle_2(){
 		image_index = 0
 		state = Button_Green_Pressed_2
 		
+		global.som.tocarSFX(sfx_Cristal)
 	}
 	
 }
 
 function Button_Green_Pressed_2(){
+	
 
 	
 	sprite_index = spr_Button_Green_Press

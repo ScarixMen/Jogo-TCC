@@ -6,6 +6,7 @@ function Button_Green_Idle(){
 	{
 		image_index = 0
 		state = Button_Green_Pressed
+		global.som.tocarSFX(sfx_Cristal)
 		
 	}
 	

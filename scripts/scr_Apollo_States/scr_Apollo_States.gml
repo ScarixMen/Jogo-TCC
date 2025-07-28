@@ -155,7 +155,7 @@ function Apollo_State_Cutscene() {
 	if(!global.cam_override)
 	{
 		
-		state = Luana_State_Idle
+		state = Apollo_State_Idle
 		
 	}
 	
