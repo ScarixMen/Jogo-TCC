@@ -6,7 +6,8 @@ if (room != room_anterior) {
 
 // Verifica se a música foi interrompida (por room_restart por exemplo)
 if (!audio_is_playing(global.som.musica_id)) {
-    // Reforça a música da room atual
+	// Reforça a música da room atual
+	
     ReconfigurarSomPorRoom();
 }
 

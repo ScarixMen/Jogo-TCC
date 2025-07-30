@@ -20,6 +20,15 @@ if place_meeting(x+hspd,y,obj_Base_Niobio)
     hspd = 0;
 }
 
+/*if place_meeting(x+hspd,y,obj_Luana)
+{
+    while !place_meeting(x+sign(hspd),y,obj_Luana)
+    {
+        x+=sign(hspd);
+    }
+    hspd = 0;
+}*/
+
 x+=hspd
 
 //Colisão vertical

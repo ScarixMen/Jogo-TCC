@@ -22,7 +22,7 @@ function scr_Cutscene_BossFight(other) {
             var luana_ok = scr_Move_To_Point(obj_Luana, 31450, obj_Luana.spd, spr_Luana_Walking, spr_Luana_Idle);
             var apollo_ok = scr_Move_To_Point(obj_Apollo, 31680, obj_Apollo.spd, spr_Apollo_Walking, spr_Apollo_Idle);
             if (luana_ok && apollo_ok) {
-                ctrl.cutscene_timer = room_speed; // espera 2 segundos
+                ctrl.cutscene_timer = room_speed*0; // espera 2 segundos
                 ctrl.cutscene_step++;
             }
             break;
@@ -112,7 +112,7 @@ function scr_Cutscene_BossFight(other) {
             obj_Apollo.can_control = true;
             obj_Luana.can_control = true;
             obj_Niobio.can_control = true;
-			
+			obj_Boss_Fight_Control.battle_active = true
 			obj_Apollo.state = Apollo_State_Idle;
 			obj_Luana.state  = Luana_State_Idle;
 			

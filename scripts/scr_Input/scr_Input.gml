@@ -1,7 +1,7 @@
 function Input_Player(){
 	
 	pause = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(global.gamepad_id,gp_start)
-	global.skip = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(global.gamepad_id,gp_face1)
+	global.skip = keyboard_check_pressed(vk_enter) or gamepad_button_check_pressed(global.gamepad_id,gp_face1) or keyboard_check_pressed(vk_space)
 	
 }
 
@@ -30,11 +30,13 @@ function Input_Luana(){
 	right =  gamepad_axis_value(global.gamepad_id, gp_axislh) > 0.25 or keyboard_check(vk_right) or gamepad_button_check(global.gamepad_id,gp_padr)
 	move = -left+right
 	
-	interact_Luana = gamepad_button_check_pressed(global.gamepad_id,gp_face3) or keyboard_check_pressed(ord("P"))
+	interact_Luana = gamepad_button_check_pressed(global.gamepad_id,gp_face3) or keyboard_check_pressed(vk_rshift)
 	
 	jump = !global.skip and (gamepad_button_check_pressed(global.gamepad_id, gp_face1) or keyboard_check_pressed(vk_up));
 
 	pause = gamepad_button_check_pressed(global.gamepad_id,gp_face1)
+	
+	
 	
 }
 
@@ -68,7 +70,7 @@ function Input_Apollo(){
 	
 	jump = keyboard_check_pressed(vk_space)
 	
-	crounch = keyboard_check(vk_control)
+	crounch = keyboard_check(vk_lcontrol)
 	
 	
 

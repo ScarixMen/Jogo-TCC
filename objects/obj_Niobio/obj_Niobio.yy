@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Niobio_Idle",
-    "path":"sprites/spr_Niobio_Idle/spr_Niobio_Idle.yy",
+    "name":"spr_Niobio_Statue",
+    "path":"sprites/spr_Niobio_Statue/spr_Niobio_Statue.yy",
   },
   "spriteMaskId":null,
   "visible":true,

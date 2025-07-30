@@ -23,16 +23,6 @@ function Niobio_State_Idle_Dialog_1(){
 	
 	sprite_index = spr_Niobio_Idle
 	
-	if(image_index >= image_number -1 )
-	{
-		/*if !global.dialog
-		{
-			var dialog = instance_create_layer(x, y, "dialog", obj_Dialog);
-		    dialog.npc_name = "Niobio_Idle_1";
-		    global.dialog = true;
-		    activated_box = true; // cria uma variável no Create
-		}*/
-	}
 }
 
 function Niobio_State_Jump() {
@@ -58,7 +48,7 @@ function Niobio_State_Jump() {
 	}
 }
 
-	function Niobio_State_Air() {
+function Niobio_State_Air() {
 		if(image_index >= image_number -1)
 		{
 			sprite_index = spr_Niobio_Air
@@ -76,7 +66,6 @@ function Niobio_State_Jump() {
 		}
 		
 }
-
 		
 function Niobio_State_Falling() {
 	
@@ -119,15 +108,99 @@ function Niobio_State_View_Puzzle(){
 
 function Niobio_State_Run(){
 	
-	global.cam_override = false
 	sprite_index = spr_Niobio_Run
 	
-	hspd = move * spd;
+	//hspd = move * spd;
 	
 }
 
 function Niobio_State_Reset(){
 	
 	sprite_index = spr_Niobio_Reset
+	
+	image_xscale = -1
+	
+	if(image_index >= image_number -1 )
+	{
+		
+		state = Niobio_State_Statue
+		
+	}
 		
 }
+
+function Niobio_State_Push() {
+	Input_Luana();
+    sprite_index = spr_Niobio_Run; // precisa de sprite específico, se não tiver pode usar spr_Niobio_Run
+   // Quando a Luana pressiona
+	if (interact_Luana) {
+	    timer2 = 5; // congela por 10 frames (~0,16s a 60fps)
+	}
+
+	// Se está congelado
+	if (timer2 > 0) {
+	    timer2--;
+	    image_index = 2; // trava animação
+	} else {
+	    image_speed = 1;
+	}
+
+}
+function Niobio_State_Cutscene() {
+
+}
+function Niobio_State_Jump_A() {
+	
+	sprite_index = spr_Niobio_Jump
+	
+	if(image_index >= image_number -1 )
+	{
+		
+		vspd = jspd
+		
+		move = 1
+	
+		hspd = move * spd;
+		
+	}
+
+	if(hspd != 0 ) image_xscale = sign(hspd)
+	
+	if (vspd<=0)
+	{	
+		state = Niobio_State_Air_A
+	}
+}
+
+
+function Niobio_State_Air_A() {
+		if(image_index >= image_number -1)
+		{
+			sprite_index = spr_Niobio_Air
+		}
+		
+	
+    hspd = move * spd;
+
+	if(hspd != 0 ) image_xscale = sign(hspd)
+	
+		if place_meeting(x, y + 1, obj_Base_Niobio)
+		{
+			image_index = 0
+			state = Niobio_State_Falling_A
+		}
+		
+}
+		
+function Niobio_State_Falling_A() {
+	
+	hspd = 0
+	sprite_index = spr_Niobio_Falling
+	if(image_index >= image_number -1)
+	{ 
+		image_index = 0
+		state = Niobio_State_Idle_Dialog_2
+		
+	}	
+}
+

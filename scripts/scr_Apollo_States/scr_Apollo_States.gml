@@ -138,6 +138,8 @@ function Apollo_State_Death() {
 			y = global.check_Y
 			obj_Luana.x = global.check_X
 			obj_Luana.y = global.check_Y
+			obj_Niobio.x = 32014
+			obj_Niobio.y = 2386
 			state = Apollo_State_Idle
 		}
 	}

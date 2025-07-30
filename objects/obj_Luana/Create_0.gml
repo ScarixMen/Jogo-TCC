@@ -1,5 +1,7 @@
 event_inherited();
 
+passador_de_frame = 0
+
 state = Luana_State_Idle
 
 pspd = 4

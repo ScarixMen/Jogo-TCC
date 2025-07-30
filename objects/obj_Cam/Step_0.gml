@@ -62,6 +62,13 @@ if (split_now != is_split) {
     is_split = split_now;
 }
 
+if(obj_Boss_Fight_Control.battle_active)
+{
+	
+	is_split = true
+	
+}
+
 // Inicializa valores-alvo com os valores atuais
 var target_width  = cam_width;
 var target_height = cam_height;

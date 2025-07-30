@@ -181,7 +181,7 @@ function Luana_State_Death() {
 	if(image_index >= image_number -1)
 	{
 			
-		image_index = 7
+		image_index = 4
 		if !instance_exists( obj_Transition_Death)
 		{
 			instance_create_layer(0, 0, layer, obj_Transition_Death);
@@ -196,6 +196,10 @@ function Luana_State_Death() {
 			y = global.check_Y
 			obj_Apollo.x = global.check_X
 			obj_Apollo.y = global.check_Y
+			obj_Niobio.x = 32014
+			obj_Niobio.y = 2386
+			obj_Cutscene_Trigger_Niobio.cutscene_started = false
+			obj_Boss_Fight_Control.bar_value = 100
 			state = Luana_State_Idle
 		}
 	}
@@ -214,6 +218,18 @@ function Luana_State_Cutscene() {
 		
 		state = Luana_State_Idle
 		
+	}
+	
+}
+function Luana_State_Push_Niobio() {
+	sprite_index = spr_Luana_Push_Wallking;
+    if (interact_Luana) {
+		passador_de_frame++;
+		
+		image_index = passador_de_frame
+    }else {
+
+		image_speed = 0
 	}
 	
 }

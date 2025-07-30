@@ -1,7 +1,10 @@
+if (Check_Pause()) exit;
 function check_puzzle_step(stone_id) {
     if (solved) return true; // se já resolveu, ignora
 
     var correct = sequence_correct[sequence_progress];
+
+
 
     if (stone_id == correct) {
         sequence_progress++;
@@ -9,7 +12,11 @@ function check_puzzle_step(stone_id) {
         // completou a sequência correta
         if (sequence_progress >= array_length(sequence_correct)) {
             solved = true;
-            show_debug_message("Puzzle Resolvido!");
+			// Apollo terminou puzzle → informa ao controlador
+			var control = obj_Boss_Fight_Control;
+			if (control != noone) control.apollo_finished = true;
+			var cutscene = instance_create_layer(0, 0, "Instances", obj_Cutscene_Manager)
+			obj_Cutscene_Manager.current_cutscene = scr_Cutscene_Niobio_End
 
             // trava todas as pedras (nenhuma mais interage)
             with (obj_Beach_Puzzle_Apollo_1) { locked = true; sprite_index = spr_Beach_Puzzle_Apollo_1_On; image_speed = 0; }
@@ -24,6 +31,11 @@ function check_puzzle_step(stone_id) {
         return true;
     } else {
         // ERRO → reseta tudo
+		
+		// Penaliza a barra da bossfight se Apollo errou
+		var control = obj_Boss_Fight_Control;
+		if (control != noone) control.bar_value -= control.penalty_apollo;
+		
         sequence_progress = 0;
 
         with (obj_Beach_Puzzle_Apollo_1) { if (!locked) { activated = false; sprite_index = spr_Beach_Puzzle_Apollo_1_Idle; image_speed = 0; } }

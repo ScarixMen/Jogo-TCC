@@ -12,8 +12,8 @@ if (!cutscene_started) {
     // Se os dois já chegaram pelo menos uma vez, ativa a cutscene
     if (apollo_ready && luana_ready) {
         cutscene_started = true;
-		var cutscene = instance_create_layer(0, 0, "Instances", obj_CutsceneManager);
-        obj_CutsceneManager.current_cutscene = scr_Cutscene_BossFight;
+		var cutscene = instance_create_layer(0, 0, "Instances", obj_Cutscene_Manager);
+        obj_Cutscene_Manager.current_cutscene = scr_Cutscene_BossFight;
 		global.cam_override = true
 		global.focus_target = noone
     }

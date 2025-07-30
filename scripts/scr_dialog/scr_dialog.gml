@@ -23,7 +23,7 @@ function scr_dialog()
 			case "botao_tutorial":
 		
 			text[0] = "Esperem. Aparentemente os povos que moravam aqui tinha alguns mecanismos.";
-			text[1] = "Apollo, tenta se agachar usando o (S), e levante-se usando o (W), assim fique em cima daquele botão laranja dentro daquele túnel." ;
+			text[1] = "Apollo, tenta se agachar apertando (CTRL), e levante-se soltando-o, assim fique em cima daquele botão laranja dentro daquele túnel." ;
 			text[2] = "Pode deixar!";
 			
 			speaker[0] = Ayla
@@ -95,6 +95,24 @@ function scr_dialog()
 			
 			text[0] = "Ah não brinca, essa coisa consegue se mexer também???"
 			text[1] = "Eu vou tentar distrair ele. Vê se o que está escrito aí ajuda a gente parar essa coisa!"
+			
+			speaker[0] = Apollo
+			speaker[1] = Luana
+			
+			break;
+			
+			case "Niobio_End":
+			
+			text[0] = "Que a luz de nossa mãe nos guie na penumbra!"
+			
+			speaker[0] = Apollo
+			
+			break;
+			
+			case "Niobio_End_2":
+			
+			text[0] = "Ih... foi por pouco... Você tá bem Luana?"
+			text[1] = "Acho que sim. Só vamos continuar andando..."
 			
 			speaker[0] = Apollo
 			speaker[1] = Luana

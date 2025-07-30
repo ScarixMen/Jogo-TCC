@@ -21,7 +21,7 @@ function Plataform_Button_Idle() {
 
             // Só ativa se ninguém estiver em cima da plataforma
             if (!jogador_em_cima) {
-				global.som.tocarSFX(sfx_Cristal)
+				global.som.tocarSFX(sfx_Plataform_Button);
                 state = Plataform_Button_Appear;
             }
         }
