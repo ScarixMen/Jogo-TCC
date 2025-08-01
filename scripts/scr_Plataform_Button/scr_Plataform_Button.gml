@@ -50,23 +50,24 @@ function Plataform_Button_Appear() {
     // Só desativa se ninguém estiver mais no botão
     if (!place_meeting(x, y - 1, obj_Player)) {
         state = Plataform_Button_Disappear;
+		sprite_index = spr_plataform_Apollo_Reset;
+		image_index = 0
     }
 }
 
 function Plataform_Button_Disappear() {
-    sprite_index = spr_plataform_Apollo_Reset;
+    
 
+    // Deixa a animação rodar até o final
     if (image_index >= image_number - 1) {
-        image_index = 10;
-    }
-
-    with (plataform) {
-        state = Plataform_Disappear;
-    }
-
-    with (plataform) {
-        if (pronta) {
-            other.state = Plataform_Button_Idle;
+        // Quando terminar a animação do botão, volta para Idle
+        with (plataform) {
+            state = Plataform_Disappear;
         }
+
+        if (plataform.pronta) {
+            state = Plataform_Button_Idle;
+        }
+        exit;
     }
 }

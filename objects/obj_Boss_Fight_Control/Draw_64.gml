@@ -1,21 +1,11 @@
-if (battle_active) {
+if (global.battle_active) {
+	// Normaliza valor (0 a 1)
+	var ratio = clamp(bar_value / bar_max, 0, 1);
 
-var bx = display_get_gui_width()/2 - 150;
-var by = 50;
-var bw = 300;
-var bh = 20;
-
-draw_set_color(c_gray);
-draw_rectangle(bx, by, bx + bw, by + bh, false);
-
-var ratio = bar_value / bar_max;
-draw_set_color(c_lime);
-draw_rectangle(bx, by, bx + bw * ratio, by + bh, false);
-
-draw_set_color(c_white);
-draw_text(bx, by - 20, "barra contra Níobio");
-
-draw_set_color(c_black);
-draw_text(100, 100,boss_force)
-draw_text(100, 130,luana_force)
+	// Escolhe o frame correto
+	var _x = display_get_gui_width() / 2
+	var _y = 75
+	var frame = floor(ratio * 100); // 0~100
+	draw_sprite(spr_Bar_Boss, frame, _x, _y);
+	
 }

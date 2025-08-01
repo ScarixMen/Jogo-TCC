@@ -140,8 +140,9 @@ function Niobio_State_Push() {
 	// Se está congelado
 	if (timer2 > 0) {
 	    timer2--;
-	    image_index = 2; // trava animação
+	    sprite_index = spr_Niobio_Pushed; // trava animação
 	} else {
+		sprite_index = spr_Niobio_Run
 	    image_speed = 1;
 	}
 

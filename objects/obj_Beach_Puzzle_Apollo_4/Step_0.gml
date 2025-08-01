@@ -1,6 +1,7 @@
 Input_Apollo()
 
-if (place_meeting(x, y, obj_Apollo) && interact_Apollo) {
+if (place_meeting(x, y, obj_Apollo) && interact_Apollo && global.battle_active) {
+	global.som.tocarSFX(sfx_Puzzle_Apollo)
     if (!locked) {
         var control = instance_find(obj_Boss_Fight_Puzzle, 0);
         if (control != noone) {

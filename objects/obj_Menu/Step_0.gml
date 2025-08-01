@@ -34,35 +34,41 @@ if (input != 0) {
 if (estado_menu == "opcoes") {
     var step = 0.1;
 
-    if (keyboard_check_pressed(vk_right)) {
-		global.som.tocarSFX(sfx_Menu_Click);
-        switch (indice) {
-            case 0:
-                global.som.sfx_volume = clamp(global.som.sfx_volume + step, 0, 1);
-                break;
-            case 1:
-                global.som.bgm_volume = clamp(global.som.bgm_volume + step, 0, 1);
-                break;
-            case 2:
-                global.som.amb_volume = clamp(global.som.amb_volume + step, 0, 1);
-                break;
-        }
-    }
+	if (keyboard_check_pressed(vk_right)) {
+	    global.som.tocarSFX(sfx_Menu_Click);
+	    switch (indice) {
+	        case 0: 
+	            global.som.sfx_volume = clamp(global.som.sfx_volume + step, 0, 1);
+	            break;
 
-    if (keyboard_check_pressed(vk_left)) {
-		global.som.tocarSFX(sfx_Menu_Click);
-        switch (indice) {
-            case 0:
-                global.som.sfx_volume = clamp(global.som.sfx_volume - step, 0, 1);
-                break;
-            case 1:
-                global.som.bgm_volume = clamp(global.som.bgm_volume - step, 0, 1);
-                break;
-            case 2:
-                global.som.amb_volume = clamp(global.som.amb_volume - step, 0, 1);
-                break;
-        }
-    }
+	        case 1: 
+	            global.som.set_bgm_volume(global.som.bgm_volume + step);
+	            break;
+
+	        case 2: 
+	            global.som.set_amb_volume(global.som.amb_volume + step);
+	            break;
+	    }
+	}
+
+	if (keyboard_check_pressed(vk_left)) {
+	    global.som.tocarSFX(sfx_Menu_Click);
+	    switch (indice) {
+	        case 0: 
+	            global.som.sfx_volume = clamp(global.som.sfx_volume - step, 0, 1);
+	            break;
+
+	        case 1: 
+	            global.som.set_bgm_volume(global.som.bgm_volume - step);
+	            break;
+
+	        case 2: 
+				if (variable_global_exists("som") && is_struct(global.som)) {
+					global.som.set_amb_volume(global.som.amb_volume - step);
+				}
+	            break;
+	    }
+	}
 }
 
 // Animações visuais

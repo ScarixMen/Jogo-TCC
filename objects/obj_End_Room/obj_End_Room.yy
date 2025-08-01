@@ -8,8 +8,8 @@
   "name":"obj_End_Room",
   "overriddenProperties":[],
   "parent":{
-    "name":"Construct",
-    "path":"folders/Objetos/Construct.yy",
+    "name":"Controls",
+    "path":"folders/Objetos/Controls.yy",
   },
   "parentObjectId":null,
   "persistent":false,

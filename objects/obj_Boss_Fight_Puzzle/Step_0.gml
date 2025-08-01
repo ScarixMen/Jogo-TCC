@@ -4,8 +4,6 @@ function check_puzzle_step(stone_id) {
 
     var correct = sequence_correct[sequence_progress];
 
-
-
     if (stone_id == correct) {
         sequence_progress++;
 
@@ -17,7 +15,9 @@ function check_puzzle_step(stone_id) {
 			if (control != noone) control.apollo_finished = true;
 			var cutscene = instance_create_layer(0, 0, "Instances", obj_Cutscene_Manager)
 			obj_Cutscene_Manager.current_cutscene = scr_Cutscene_Niobio_End
-
+			global.som.PararMusicaFade(5)
+			global.som.tocarSFX(sfx_Puzzle_Apollo_Win)
+			
             // trava todas as pedras (nenhuma mais interage)
             with (obj_Beach_Puzzle_Apollo_1) { locked = true; sprite_index = spr_Beach_Puzzle_Apollo_1_On; image_speed = 0; }
             with (obj_Beach_Puzzle_Apollo_2) { locked = true; sprite_index = spr_Beach_Puzzle_Apollo_2_On; image_speed = 0; }
@@ -37,6 +37,7 @@ function check_puzzle_step(stone_id) {
 		if (control != noone) control.bar_value -= control.penalty_apollo;
 		
         sequence_progress = 0;
+		global.som.tocarSFX(sfx_Genius_Error)
 
         with (obj_Beach_Puzzle_Apollo_1) { if (!locked) { activated = false; sprite_index = spr_Beach_Puzzle_Apollo_1_Idle; image_speed = 0; } }
         with (obj_Beach_Puzzle_Apollo_2) { if (!locked) { activated = false; sprite_index = spr_Beach_Puzzle_Apollo_2_Idle; image_speed = 0; } }
@@ -49,4 +50,10 @@ function check_puzzle_step(stone_id) {
 
         return false;
     }
+}
+
+if (instance_exists(obj_Luana)) {
+	 if (obj_Luana.state == Luana_State_Death) {
+	     scr_Reset_Apollo_Puzzle();
+	 }
 }

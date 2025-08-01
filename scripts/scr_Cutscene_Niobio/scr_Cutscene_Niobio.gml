@@ -105,6 +105,7 @@ function scr_Cutscene_BossFight(other) {
         case 10: // Espera timer acabar e desfaz foco da câmera
                 global.cam_override = false;
                 global.focus_target = noone;
+				global.som.tocarMusicaNiobio(bgm_Insane_Beach)
                 ctrl.cutscene_step++;
             break;
 
@@ -112,7 +113,7 @@ function scr_Cutscene_BossFight(other) {
             obj_Apollo.can_control = true;
             obj_Luana.can_control = true;
             obj_Niobio.can_control = true;
-			obj_Boss_Fight_Control.battle_active = true
+			global.battle_active = true
 			obj_Apollo.state = Apollo_State_Idle;
 			obj_Luana.state  = Luana_State_Idle;
 			

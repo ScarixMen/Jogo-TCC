@@ -222,15 +222,14 @@ function Luana_State_Cutscene() {
 	
 }
 function Luana_State_Push_Niobio() {
-	sprite_index = spr_Luana_Push_Wallking;
+	sprite_index = spr_Luana_Push_Niobio_Wallking;
     if (interact_Luana) {
 		passador_de_frame++;
 		
 		image_index = passador_de_frame
     }else {
-
+		
 		image_speed = 0
 	}
 	
 }
-

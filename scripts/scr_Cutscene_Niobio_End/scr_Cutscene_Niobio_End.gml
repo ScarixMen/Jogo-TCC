@@ -7,6 +7,7 @@ function scr_Cutscene_Niobio_End(other) {
     switch(ctrl.cutscene_step) {
 
         case 0: // Desabilitar controle
+			instance_deactivate_object(inst_5966244)
             obj_Apollo.can_control = false;
             obj_Luana.can_control = false;
             obj_Niobio.can_control = false;

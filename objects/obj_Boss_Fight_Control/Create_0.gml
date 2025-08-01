@@ -12,7 +12,7 @@ penalty_apollo = 15;
 penalty_luana = 0.5;
 
 // Estados
-battle_active = false;
+global.battle_active = false;
 apollo_finished = false;
 battle_result = 0; // 0 = em andamento, 1 = vitória, -1 = derrota
 

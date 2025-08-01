@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Reset_Apollo_Puzzle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Reset_Apollo_Puzzle",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

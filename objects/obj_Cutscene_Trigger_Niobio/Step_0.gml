@@ -11,6 +11,10 @@ if (!cutscene_started) {
 
     // Se os dois já chegaram pelo menos uma vez, ativa a cutscene
     if (apollo_ready && luana_ready) {
+		global.som.tocarMusicaFade(bgm_Symbol,10)
+		global.som.pararAmbiente("forest");
+		global.som.pararAmbiente("ocean");
+		instance_deactivate_object(inst_5966244)
         cutscene_started = true;
 		var cutscene = instance_create_layer(0, 0, "Instances", obj_Cutscene_Manager);
         obj_Cutscene_Manager.current_cutscene = scr_Cutscene_BossFight;
