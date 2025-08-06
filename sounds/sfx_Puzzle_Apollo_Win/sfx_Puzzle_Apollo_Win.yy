@@ -12,8 +12,8 @@
   "duration":3.1518366,
   "name":"sfx_Puzzle_Apollo_Win",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Scenario",
+    "path":"folders/Sons/Scenario.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

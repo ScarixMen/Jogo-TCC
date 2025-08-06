@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Boca_Jacare_States",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Boca_Jacare_States",
+  "parent":{
+    "name":"Enemys",
+    "path":"folders/Scripts/Enemys.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -12,8 +12,8 @@
   "duration":-1.0,
   "name":"bgm_The_Moon",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"BGM",
+    "path":"folders/Sons/BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

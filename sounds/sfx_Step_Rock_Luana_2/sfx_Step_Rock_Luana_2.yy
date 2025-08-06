@@ -12,8 +12,8 @@
   "duration":0.5981179,
   "name":"sfx_Step_Rock_Luana_2",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Luana",
+    "path":"folders/Sons/Luana.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

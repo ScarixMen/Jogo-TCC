@@ -12,8 +12,8 @@
   "duration":0.0,
   "name":"sfx_Step_Niobio_2",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Enemys",
+    "path":"folders/Sons/Enemys.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

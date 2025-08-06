@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_Button_Green",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Controls",
+    "path":"folders/Scripts/Controls.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

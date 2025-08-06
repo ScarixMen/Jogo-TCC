@@ -12,8 +12,8 @@
   "duration":1.0,
   "name":"sfx_Jump_Rock_Luana",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Luana",
+    "path":"folders/Sons/Luana.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

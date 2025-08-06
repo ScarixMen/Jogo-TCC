@@ -12,8 +12,8 @@
   "duration":192.06699,
   "name":"bgm_Menu",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"BGM",
+    "path":"folders/Sons/BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

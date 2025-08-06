@@ -12,8 +12,8 @@
   "duration":1.6059864,
   "name":"sfx_Cristal",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Scenario",
+    "path":"folders/Sons/Scenario.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -10,8 +10,8 @@
   "name":"obj_Niobio",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Objetos/Enemy.yy",
+    "name":"Beach",
+    "path":"folders/Objetos/Enemys/Beach.yy",
   },
   "parentObjectId":null,
   "persistent":false,

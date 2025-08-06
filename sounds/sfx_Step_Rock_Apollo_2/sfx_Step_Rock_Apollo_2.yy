@@ -12,8 +12,8 @@
   "duration":0.55192745,
   "name":"sfx_Step_Rock_Apollo_2",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Apollo",
+    "path":"folders/Sons/Apollo.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

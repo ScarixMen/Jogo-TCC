@@ -12,8 +12,8 @@
   "duration":18.365534,
   "name":"bgm_Ocean_Ambience",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"BGM",
+    "path":"folders/Sons/BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

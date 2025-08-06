@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_Cutscene_Niobio_End",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Controls",
+    "path":"folders/Scripts/Controls.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

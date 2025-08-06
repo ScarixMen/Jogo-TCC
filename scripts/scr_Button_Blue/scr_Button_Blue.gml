@@ -21,6 +21,7 @@ function Button_Blue_Idle(){
 function Button_Blue_Pressed(){
 	global.cam_override = true
 	global.focus_target = instance_nearest(x,y,obj_Box)
+	audio_stop_sound(sfx_Push_Box)
 	
 	if(image_index >= image_number -1)
 	{	
@@ -28,13 +29,13 @@ function Button_Blue_Pressed(){
 		 timer --;
 		if timer <= 0
 		{
-		
+			
 			global.focus_target = instance_nearest(x,y,obj_Bridge)
 			with obj_Bridge
 			{
-	
 				sprite_index = spr_Bridge_Appear
 		
+				if(image_index == 0)global.som.tocarSFX(sfx_Bridge)
 				if(image_index >= image_number -1)
 				{	
 			
@@ -43,8 +44,7 @@ function Button_Blue_Pressed(){
 					instance_destroy(obj_Button_Blue);
 			
 				}
-		}
-		
+			}
 		}
 	}
 	
@@ -57,4 +57,5 @@ function Button_Blue_Pressed(){
 		image_index = 7
 	
 	}
+	
 }

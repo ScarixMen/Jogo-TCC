@@ -138,11 +138,39 @@ function Apollo_State_Death() {
 			y = global.check_Y
 			obj_Luana.x = global.check_X
 			obj_Luana.y = global.check_Y
-			obj_Niobio.x = 32014
-			obj_Niobio.y = 2386
 			state = Apollo_State_Idle
 		}
 	}
+}
+
+function Apollo_State_Death_Forest() {
+	
+	sprite_index = spr_Noone
+	
+	hspd = 0
+	vspd = 0
+	
+	if(image_index >= image_number -1)
+	{
+			
+		image_index = 7
+		instance_create_layer(0, 0, layer, obj_Transition_Death);
+		
+	}
+	
+	if instance_exists( obj_Transition_Death)
+	{
+		if obj_Transition_Death.alpha == 1
+		{	
+			x = global.check_X
+			y = global.check_Y
+			obj_Luana.x = global.check_X
+			obj_Luana.y = global.check_Y
+			state = Apollo_State_Idle
+		}
+	}
+	
+	
 }
 
 function Apollo_State_Cutscene() {

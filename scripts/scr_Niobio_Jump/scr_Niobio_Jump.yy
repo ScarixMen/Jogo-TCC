@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_Niobio_Jump",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Enemys",
+    "path":"folders/Scripts/Enemys.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

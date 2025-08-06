@@ -12,8 +12,8 @@
   "duration":0.4699093,
   "name":"sfx_step5",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Both",
+    "path":"folders/Sons/Both.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

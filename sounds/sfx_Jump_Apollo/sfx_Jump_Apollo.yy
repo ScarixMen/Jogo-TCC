@@ -12,8 +12,8 @@
   "duration":1.0,
   "name":"sfx_Jump_Apollo",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Apollo",
+    "path":"folders/Sons/Apollo.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

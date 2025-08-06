@@ -16,7 +16,7 @@ function Plataform_Button_Idle_Tutorial(){
 		if(place_meeting(x,y-1,obj_Player))
 		{
 			
-			//global.som.tocarSFX(sfx_Cristal)
+			global.som.tocarSFX(sfx_Plataform_Button)
 			state = Plataform_Button_Press_Tutorial
 	
 		}

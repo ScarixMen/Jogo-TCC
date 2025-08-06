@@ -1,3 +1,6 @@
+if(keyboard_check_pressed(ord("M")))  global.som.set_bgm_volume(0)
+
+
 // Detecta troca de room
 if (room != room_anterior) {
     room_anterior = room;

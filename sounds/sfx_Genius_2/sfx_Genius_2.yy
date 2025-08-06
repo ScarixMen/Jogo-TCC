@@ -12,8 +12,8 @@
   "duration":2.459433,
   "name":"sfx_Genius_2",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Scenario",
+    "path":"folders/Sons/Scenario.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

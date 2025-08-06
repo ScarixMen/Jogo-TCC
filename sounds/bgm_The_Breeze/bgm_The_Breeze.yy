@@ -12,8 +12,8 @@
   "duration":109.87682,
   "name":"bgm_The_Breeze",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"BGM",
+    "path":"folders/Sons/BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

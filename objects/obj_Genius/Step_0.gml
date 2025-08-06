@@ -34,7 +34,7 @@ switch (estado) {
         delay_vitoria--;
     } else {
         if (array_length(sequencia) >= 7) {
-            //show_debug_message("Genius finalizado!");
+			
 			global.som.tocarSFX(sfx_Genius_Win)
 			
 			delay_vitoria = room_speed * 1
@@ -73,6 +73,7 @@ switch (estado) {
 
     with obj_Bridge_Genius {
         sprite_index = spr_Bridge_Appear;
+		if(image_index == 0)global.som.tocarSFX(sfx_Bridge)
         image_index = 0;
         image_speed = 1;
     }
@@ -98,7 +99,6 @@ switch (estado) {
     if (delay_vitoria > 0) {
         delay_vitoria--;
     } else {
-		// show_debug_message("Errou! Reiniciando sequência...")
 		
 		 with (obj_Genius_Red) {
              ativar();
@@ -125,6 +125,4 @@ switch (estado) {
         estado = "esperando_proxima";
     }
     break;
-
-
 }

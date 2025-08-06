@@ -12,8 +12,8 @@
   "duration":1.0,
   "name":"sfx_Equinnito",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Enemys",
+    "path":"folders/Sons/Enemys.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

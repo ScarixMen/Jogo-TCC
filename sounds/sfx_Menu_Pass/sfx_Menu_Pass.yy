@@ -12,8 +12,8 @@
   "duration":0.7497279,
   "name":"sfx_Menu_Pass",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Scenario",
+    "path":"folders/Sons/Scenario.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

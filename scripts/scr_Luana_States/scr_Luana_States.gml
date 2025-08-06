@@ -204,6 +204,36 @@ function Luana_State_Death() {
 		}
 	}
 }
+
+function Luana_State_Death_Forest() {
+	
+	sprite_index = spr_Noone
+	
+	hspd = 0
+	vspd = 0
+	
+	if(image_index >= image_number -1)
+	{
+			
+		image_index = 7
+		instance_create_layer(0, 0, layer, obj_Transition_Death);
+		
+	}
+	
+	if instance_exists( obj_Transition_Death)
+	{
+		if obj_Transition_Death.alpha == 1
+		{	
+			x = global.check_X
+			y = global.check_Y
+			obj_Apollo.x = global.check_X
+			obj_Apollo.y = global.check_Y
+			state = Luana_State_Idle
+		}
+	}
+	
+	
+}
 function Luana_State_Cutscene() {
     // Continua andando se hspd for diferente de 0
     if (hspd != 0) {

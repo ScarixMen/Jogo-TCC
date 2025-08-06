@@ -12,8 +12,8 @@
   "duration":0.612517,
   "name":"sfx_Fall_Rock_Apollo",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Apollo",
+    "path":"folders/Sons/Apollo.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

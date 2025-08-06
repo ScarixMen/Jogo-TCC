@@ -3,7 +3,7 @@ function Plataform_Button_Idle() {
     image_index = 0;
 
     // Só continua se algum jogador estiver pisando no botão
-    if (place_meeting(x, y - 1, obj_Player)) {
+    if (place_meeting(x, y - 1, obj_Apollo)) {
         var p = plataform;
 
         // Verifica se a plataforma está válida e pronta
@@ -13,6 +13,12 @@ function Plataform_Button_Idle() {
             var jogador_em_cima = false;
 
             with (obj_Player) {
+                // Confere se este jogador está colidindo com a plataforma associada ao botão
+                if (place_meeting(x, y, other.plataform)) {
+                    jogador_em_cima = true;
+                }
+            }
+			with (obj_Box) {
                 // Confere se este jogador está colidindo com a plataforma associada ao botão
                 if (place_meeting(x, y, other.plataform)) {
                     jogador_em_cima = true;
@@ -48,7 +54,7 @@ function Plataform_Button_Appear() {
         exit;
 
     // Só desativa se ninguém estiver mais no botão
-    if (!place_meeting(x, y - 1, obj_Player)) {
+    if (!place_meeting(x, y - 1, obj_Apollo)) {
         state = Plataform_Button_Disappear;
 		sprite_index = spr_plataform_Apollo_Reset;
 		image_index = 0

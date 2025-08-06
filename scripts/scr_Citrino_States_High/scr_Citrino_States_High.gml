@@ -33,6 +33,7 @@ function Citrino_High_State_Idle() {
 		
 		sprite_index = spr_Citrino_Lighting;
 		image_index = 0
+		global.som.tocarSFX(sfx_Citrino)
         state = Citrino_High_State_Lighting;
 		
     }

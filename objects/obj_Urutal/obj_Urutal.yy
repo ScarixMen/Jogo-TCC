@@ -6,8 +6,8 @@
   "name":"obj_Urutal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Objetos/Enemy.yy",
+    "name":"Forest",
+    "path":"folders/Objetos/Enemys/Forest.yy",
   },
   "parentObjectId":null,
   "persistent":false,

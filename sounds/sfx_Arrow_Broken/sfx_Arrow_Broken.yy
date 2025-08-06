@@ -12,8 +12,8 @@
   "duration":0.7557143,
   "name":"sfx_Arrow_Broken",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Enemys",
+    "path":"folders/Sons/Enemys.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -12,8 +12,8 @@
   "duration":1.3458049,
   "name":"sfx_Arrow",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Enemys",
+    "path":"folders/Sons/Enemys.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -12,8 +12,8 @@
   "duration":46.48837,
   "name":"bgm_Symbol",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"BGM",
+    "path":"folders/Sons/BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

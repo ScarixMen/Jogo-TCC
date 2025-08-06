@@ -13,8 +13,8 @@
     "path":"folders/Objetos/Construct/Plataforms.yy",
   },
   "parentObjectId":{
-    "name":"obj_Block",
-    "path":"objects/obj_Block/obj_Block.yy",
+    "name":"obj_Rock_Colision",
+    "path":"objects/obj_Rock_Colision/obj_Rock_Colision.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

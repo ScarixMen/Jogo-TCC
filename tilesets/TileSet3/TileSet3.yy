@@ -18,8 +18,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_Tile_All",
-    "path":"sprites/spr_Tile_All/spr_Tile_All.yy",
+    "name":"spr_Tile_Beach",
+    "path":"sprites/spr_Tile_Beach/spr_Tile_Beach.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

@@ -18,9 +18,9 @@ function Equinnito_State_Attack(){
 	if (image_index == 1) {
 		global.som.tocarSFX(sfx_Equinnito);
 	
-		if (!instance_exists(minha_hitbox) || !instance_exists(minha_hitbox.id)) {
-			minha_hitbox = instance_create_layer(x, y, layer, obj_Hitbox_Equinnito);
-			minha_hitbox.dono = id; // opcional, pra linkar o dono
+		if (!instance_exists(hitbox) || !instance_exists(hitbox.id)) {
+			hitbox = instance_create_layer(x, y, layer, obj_Hitbox_Equinnito);
+			hitbox.dono = id; // opcional, pra linkar o dono
 		}
 	}
 
@@ -39,8 +39,8 @@ function Equinnito_State_Reset(){
 	
 	if(image_index >= image_number -1)
 	{
-		if (instance_exists(minha_hitbox)) {
-		instance_destroy(minha_hitbox);
+		if (instance_exists(hitbox)) {
+		instance_destroy(hitbox);
 		}
 		state = Equinnito_State_Idle
 		

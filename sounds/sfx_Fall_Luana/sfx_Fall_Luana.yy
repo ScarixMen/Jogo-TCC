@@ -12,8 +12,8 @@
   "duration":0.7327891,
   "name":"sfx_Fall_Luana",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Luana",
+    "path":"folders/Sons/Luana.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

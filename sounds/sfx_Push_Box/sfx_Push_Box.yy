@@ -12,8 +12,8 @@
   "duration":8.692631,
   "name":"sfx_Push_Box",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Scenario",
+    "path":"folders/Sons/Scenario.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

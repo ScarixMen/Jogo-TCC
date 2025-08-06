@@ -12,8 +12,8 @@
   "duration":0.68517005,
   "name":"sfx_Jump_Rock_Apollo",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Apollo",
+    "path":"folders/Sons/Apollo.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

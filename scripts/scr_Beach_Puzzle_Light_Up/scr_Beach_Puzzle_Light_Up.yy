@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_Beach_Puzzle_Light_Up",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Controls",
+    "path":"folders/Scripts/Controls.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

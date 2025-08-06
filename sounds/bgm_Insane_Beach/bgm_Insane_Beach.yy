@@ -12,8 +12,8 @@
   "duration":195.91856,
   "name":"bgm_Insane_Beach",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"BGM",
+    "path":"folders/Sons/BGM.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"bgm_Insane_Beach.wav",
   "type":0,
-  "volume":0.7,
+  "volume":0.5,
 }

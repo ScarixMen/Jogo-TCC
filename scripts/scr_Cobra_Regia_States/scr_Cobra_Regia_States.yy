@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Cobra_Regia_States",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Cobra_Regia_States",
+  "parent":{
+    "name":"Enemys",
+    "path":"folders/Scripts/Enemys.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

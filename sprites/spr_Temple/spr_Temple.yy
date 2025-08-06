@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Backgrounds",
-    "path":"folders/Sprites/Backgrounds.yy",
+    "name":"Beach",
+    "path":"folders/Sprites/Backgrounds/Beach.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

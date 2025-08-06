@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_Input",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Persons",
+    "path":"folders/Scripts/Persons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
