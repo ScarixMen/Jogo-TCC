@@ -1,17 +1,15 @@
 if (Check_Pause()) exit;
 
-var estava_no_chao = place_meeting(x, y+1, obj_Block) || place_meeting(x, y+1, obj_Box);
+// Verifica se estava no chão no frame anterior
+var estava_no_chao = place_meeting(x, y + 1, obj_Block) || place_meeting(x, y + 1, obj_Box);
 
-
-// Colisão vertical
-if place_meeting(x,y+vspd,obj_Block)
-{
-    while !place_meeting(x,y+sign(vspd),obj_Block)
-    {
-        y+=sign(vspd);
+// === Colisão vertical ===
+if (place_meeting(x, y + vspd, obj_Block) || place_meeting(x, y + vspd, obj_Box)) {
+    while (!place_meeting(x, y + sign(vspd), obj_Block) && !place_meeting(x, y + sign(vspd), obj_Box)) {
+        y += sign(vspd);
     }
 
-    // Tocando som apenas na transição AR → CHÃO
+    // Toca som somente se caiu do ar para o chão
     if (!no_chao_anterior && vspd > 0) {
         global.som.tocarSFX(sfx_Box_Fall);
     }
@@ -22,18 +20,16 @@ if place_meeting(x,y+vspd,obj_Block)
 y += vspd;
 vspd += grv;
 
-// Dano nos jogadores
+// === Dano nos jogadores ===
 if (vspd > grv) {
-    if (place_meeting(x, y + vspd, obj_Apollo)) {
-        with (instance_place(x, y + vspd, obj_Apollo)) {
-            damage_Apollo();
-        }
+    var alvo = instance_place(x, y + vspd, obj_Apollo);
+    if (alvo != noone) {
+        with (alvo) damage_Apollo();
     }
 
-    if (place_meeting(x, y + vspd, obj_Luana)) {
-        with (instance_place(x, y + vspd, obj_Luana)) {
-            damage_Luana();
-        }
+    alvo = instance_place(x, y + vspd, obj_Luana);
+    if (alvo != noone) {
+        with (alvo) damage_Luana();
     }
 }
 

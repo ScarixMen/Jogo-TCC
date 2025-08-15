@@ -1,11 +1,11 @@
 var _videoData = video_draw();
 var _videoStatus = _videoData[0];
 
-video_set_volume(0.8)
+video_set_volume(0.1)
 if(_videoStatus == 0)
 {
 	
-	draw_surface(_videoData[1],display_get_gui_width() /2,display_get_gui_height()/2)
+	draw_surface(_videoData[1],0,0)
 }
 
 var _status = video_get_status();

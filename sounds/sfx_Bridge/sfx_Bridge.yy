@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sfx_Bridge.wav",
   "type":0,
-  "volume":0.7,
+  "volume":1.0,
 }
