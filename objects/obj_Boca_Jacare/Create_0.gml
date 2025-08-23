@@ -1,5 +1,5 @@
 state = Boca_Jacare_State_Idle
 
-timer = 90
+timer = 120
 
 hitbox = noone

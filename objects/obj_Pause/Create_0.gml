@@ -28,3 +28,8 @@ alt_exit = alt_fim_exit
 
 larg_ini_exit = larg_fim_exit / 1.5 
 alt_ini_exit = alt_fim_exit / 1.5 
+
+axis_up_previously = false
+axis_down_previously = false
+axis_right_previously = false
+axis_left_previously = false

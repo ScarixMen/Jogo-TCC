@@ -8,9 +8,25 @@ if (keyboard_check(ord("R"))) {
     room_restart();	
 }
 
+// Voltar pro menu principal ao apertar ESC
+if (back) {
+    switch (estado_menu) {
+        case "fases":
+        case "opcoes":
+        case "creditos":
+            global.som.tocarSFX(sfx_Menu_Click); // som de clique
+            estado_menu = "principal";
+            opc = opc_principal; // array de opções do menu principal
+            opc_max = array_length(opc);
+            indice = 0;
+            mostrar_creditos = false; // caso venha dos créditos
+            break;
+    }
+}
+
 // Define os itens do menu de opções (uma vez só)
 if (estado_menu == "opcoes") {
-    opc = ["Efeitos", "Música", "Ambiente", "Voltar"];
+    opc = ["Efeitos", "Música", "Ambiente"];
     opc_max = array_length(opc);
 }
 
@@ -21,7 +37,7 @@ if (input != 0) {
     indice += input;
     global.som.tocarSFX(sfx_Menu_Pass);
     
-	var limit = (estado_menu == "principal") ? opc_max : opc_max - 1;
+    var limit = opc_max; // agora sempre conta +1 pro botão extra
     if (indice > limit) indice = 0;
     if (indice < 0) indice = limit;
     
@@ -34,38 +50,24 @@ if (input != 0) {
 if (estado_menu == "opcoes") {
     var step = 0.1;
 
-	if (keyboard_check_pressed(vk_right)) {
+	if (right) {
 	    global.som.tocarSFX(sfx_Menu_Click);
 	    switch (indice) {
-	        case 0: 
-	            global.som.sfx_volume = clamp(global.som.sfx_volume + step, 0, 1);
-	            break;
-
-	        case 1: 
-	            global.som.set_bgm_volume(global.som.bgm_volume + step);
-	            break;
-
-	        case 2: 
-	            global.som.set_amb_volume(global.som.amb_volume + step);
-	            break;
+	        case 0: global.som.sfx_volume = clamp(global.som.sfx_volume + step, 0, 1); break;
+	        case 1: global.som.set_bgm_volume(global.som.bgm_volume + step); break;
+	        case 2: global.som.set_amb_volume(global.som.amb_volume + step); break;
 	    }
 	}
 
-	if (keyboard_check_pressed(vk_left)) {
+	if (left) {
 	    global.som.tocarSFX(sfx_Menu_Click);
 	    switch (indice) {
-	        case 0: 
-	            global.som.sfx_volume = clamp(global.som.sfx_volume - step, 0, 1);
-	            break;
-
-	        case 1: 
-	            global.som.set_bgm_volume(global.som.bgm_volume - step);
-	            break;
-
-	        case 2: 
-				if (variable_global_exists("som") && is_struct(global.som)) {
-					global.som.set_amb_volume(global.som.amb_volume - step);
-				}
+	        case 0: global.som.sfx_volume = clamp(global.som.sfx_volume - step, 0, 1); break;
+	        case 1: global.som.set_bgm_volume(global.som.bgm_volume - step); break;
+	        case 2:
+	            if (variable_global_exists("som") && is_struct(global.som)) {
+	                global.som.set_amb_volume(global.som.amb_volume - step);
+	            }
 	            break;
 	    }
 	}
@@ -79,63 +81,67 @@ if (larg > larg_fim - 2) {
 
 // Ação ao pressionar ENTER
 if (enter) {
-
     switch (estado_menu) {
 		
         case "principal":
-			global.som.tocarSFX(sfx_Menu_Click);
-            switch (indice) {
-                case 0:
-                    room_goto(rm_Tutorial);
-                    break;
-                case 1:
-                    opc = ["Tutorial", "Praia", "Floresta", "4", "5", "Voltar"];
-                    opc_max = array_length(opc);
-                    indice = 0;
-                    estado_menu = "fases";
-                    break;
-                case 2:
-                    opc = ["Efeitos", "Música", "Ambiente", "Voltar"];
-                    opc_max = array_length(opc);
-                    indice = 0;
-                    estado_menu = "opcoes";
-                    mostrar_creditos = false;
-                    break;
-                case 3:
-                    opc = ["Voltar"];
-                    opc_max = 1;
-                    indice = 0;
-                    estado_menu = "creditos";
-                    mostrar_creditos = true;
-                    break;
-                case 4:
-			    game_end();
-			    break;
-
+            if (indice < opc_max) {
+                global.som.tocarSFX(sfx_Menu_Click);
+                switch (indice) {
+                    case 0: room_goto(rm_Tutorial); break;
+                    case 1:
+                        opc = ["Tutorial", "Praia", "Floresta", "4", "5"];
+                        opc_max = array_length(opc);
+                        indice = 0;
+                        estado_menu = "fases";
+                        break;
+                    case 2:
+                        opc = ["Efeitos", "Música", "Ambiente"];
+                        opc_max = array_length(opc);
+                        indice = 0;
+                        estado_menu = "opcoes";
+                        mostrar_creditos = false;
+                        break;
+                    case 3:
+                        opc = []; // créditos só usam botão voltar separado
+                        opc_max = 0;
+                        indice = 0;
+                        estado_menu = "creditos";
+                        mostrar_creditos = true;
+                        break;
+                }
+            }
+            else if (indice == opc_max) {
+                // Botão SAIR
+                global.som.tocarSFX(sfx_Menu_Click);
+                game_end();
             }
             break;
 
         case "fases":
-		
-			global.som.tocarSFX(sfx_Menu_Click);
-            switch (indice) {
-                case 0: room_goto(rm_Tutorial); break;
-                case 1: room_goto(rm_Beach); break;
-                case 2: room_goto(rm_Forest); break;
-                case 3: room_goto(rm_Fase4); break;
-                case 4: room_goto(rm_Fase5); break;
-                case 5:
-                    estado_menu = "principal";
-                    opc = opc_principal;
-                    opc_max = array_length(opc);
-                    indice = 0;
-                    break;
+            if (indice < opc_max) {
+                global.som.tocarSFX(sfx_Menu_Click);
+                switch (indice) {
+                    case 0: room_goto(rm_Tutorial); break;
+                    case 1: room_goto(rm_Beach); break;
+                    case 2: room_goto(rm_Forest); break;
+                    case 3: room_goto(rm_Fase4); break;
+                    case 4: room_goto(rm_Fase5); break;
+                }
+            }
+            else if (indice == opc_max) {
+                // Botão VOLTAR
+                global.som.tocarSFX(sfx_Menu_Click);
+                estado_menu = "principal";
+                opc = opc_principal;
+                opc_max = array_length(opc);
+                indice = 0;
             }
             break;
 
         case "opcoes":
-            if (indice == 3) {
-				global.som.tocarSFX(sfx_Menu_Click);
+            if (indice == opc_max) {
+                // Botão VOLTAR
+                global.som.tocarSFX(sfx_Menu_Click);
                 estado_menu = "principal";
                 opc = opc_principal;
                 opc_max = array_length(opc);
@@ -144,13 +150,15 @@ if (enter) {
             break;
 
         case "creditos":
-			
-			global.som.tocarSFX(sfx_Menu_Click);
-            mostrar_creditos = false;
-            estado_menu = "principal";
-            opc = opc_principal;
-            opc_max = array_length(opc);
-            indice = 0;
+            if (indice == opc_max) {
+                // Botão VOLTAR
+                global.som.tocarSFX(sfx_Menu_Click);
+                mostrar_creditos = false;
+                estado_menu = "principal";
+                opc = opc_principal;
+                opc_max = array_length(opc);
+                indice = 0;
+            }
             break;
     }
 }

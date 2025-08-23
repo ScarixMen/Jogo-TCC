@@ -77,22 +77,35 @@ function Input_Apollo(){
 }
 
 function Input_Menu(){
-	
 // No step:
 var limiar = 0.5;
-var eixo_valor = gamepad_axis_value(global.gamepad_id, gp_axislv);
+var eixo_valor_v = gamepad_axis_value(global.gamepad_id, gp_axislv);
+var eixo_valor_h = gamepad_axis_value(global.gamepad_id, gp_axislh);
 
-var axis_up_now = (eixo_valor < -limiar);
+var axis_up_now = (eixo_valor_v < -limiar);
 var axis_up_pressed = (axis_up_now == true) and (axis_up_previously == false);
 axis_up_previously = axis_up_now;
 
-var axis_down_now = (eixo_valor > limiar);
+var axis_down_now = (eixo_valor_v > limiar);
 var axis_down_pressed = (axis_down_now == true) and (axis_down_previously == false);
 axis_down_previously = axis_down_now;
+
+var axis_right_now = (eixo_valor_h > limiar);
+var axis_right_pressed = (axis_right_now == true) and (axis_right_previously == false);
+axis_right_previously = axis_right_now;
+
+var axis_left_now = (eixo_valor_h > -limiar);
+var axis_left_pressed = (axis_left_now == true) and (axis_left_previously == false);
+axis_left_previously = axis_left_now;
+
 
 
 pause = keyboard_check_pressed(vk_escape) or gamepad_button_check_pressed(global.gamepad_id,gp_start)
 
+back = keyboard_check_pressed(vk_escape) or keyboard_check_pressed(vk_rshift) or gamepad_button_check_pressed(global.gamepad_id,gp_face2)
+
+right = keyboard_check_pressed(ord("D")) or axis_right_pressed or keyboard_check_pressed(vk_right) or gamepad_button_check_pressed(global.gamepad_id,gp_padr);
+left = keyboard_check_pressed(ord("A")) or axis_left_pressed or keyboard_check_pressed(vk_left) or gamepad_button_check_pressed(global.gamepad_id,gp_padl);
 up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W")) or gamepad_button_check_pressed(global.gamepad_id, gp_padu) or axis_up_pressed;
 down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S")) or gamepad_button_check_pressed(global.gamepad_id, gp_padd) or axis_down_pressed;
 enter = keyboard_check_pressed(vk_enter) or keyboard_check_pressed(vk_space) or gamepad_button_check_pressed(global.gamepad_id,gp_face1)

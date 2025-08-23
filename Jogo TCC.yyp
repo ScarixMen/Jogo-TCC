@@ -297,6 +297,8 @@
     {"id":{"name":"spr_Arrow_Broken","path":"sprites/spr_Arrow_Broken/spr_Arrow_Broken.yy",},},
     {"id":{"name":"spr_Arrow","path":"sprites/spr_Arrow/spr_Arrow.yy",},},
     {"id":{"name":"spr_Ayla_Portrait","path":"sprites/spr_Ayla_Portrait/spr_Ayla_Portrait.yy",},},
+    {"id":{"name":"spr_Back_Off","path":"sprites/spr_Back_Off/spr_Back_Off.yy",},},
+    {"id":{"name":"spr_Back_On","path":"sprites/spr_Back_On/spr_Back_On.yy",},},
     {"id":{"name":"spr_Bar_Boss","path":"sprites/spr_Bar_Boss/spr_Bar_Boss.yy",},},
     {"id":{"name":"spr_Base_Niobio","path":"sprites/spr_Base_Niobio/spr_Base_Niobio.yy",},},
     {"id":{"name":"spr_Beach_Puzzle_1_Idle","path":"sprites/spr_Beach_Puzzle_1_Idle/spr_Beach_Puzzle_1_Idle.yy",},},

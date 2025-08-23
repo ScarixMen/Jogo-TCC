@@ -1,5 +1,5 @@
 function Boca_Jacare_State_Idle(){
-	timer = 42
+	timer = 60
 	
 	sprite_index = spr_Boca_Jacare_Idle
 	
@@ -39,7 +39,7 @@ function Boca_Jacare_State_Touching(){
 	}
 }
 function Boca_Jacare_State_Reset(){
-	timer = 42
+	timer = 60
 	
 	sprite_index = spr_Boca_Jacare_Reset_Touching
 	
@@ -51,7 +51,7 @@ function Boca_Jacare_State_Reset(){
 	
 }
 function Boca_Jacare_State_Attack(){
-	timer = 42
+	timer = 60
 	
 	sprite_index = spr_Boca_Jacare_Attack
 	
@@ -74,7 +74,7 @@ function Boca_Jacare_State_Attack(){
 }
 
 function Boca_Jacare_State_Reset_Attack(){
-	timer = 42
+	timer = 60
 	
 	if (instance_exists(hitbox)) {
 	
