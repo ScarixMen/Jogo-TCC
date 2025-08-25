@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Cobra_Regia_Walking",
-    "path":"sprites/spr_Cobra_Regia_Walking/spr_Cobra_Regia_Walking.yy",
+    "name":"spr_Cobra_Regia_Walking_cima",
+    "path":"sprites/spr_Cobra_Regia_Walking_cima/spr_Cobra_Regia_Walking_cima.yy",
   },
   "spriteMaskId":null,
   "visible":true,
