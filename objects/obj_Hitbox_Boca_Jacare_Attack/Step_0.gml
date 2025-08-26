@@ -13,10 +13,10 @@ if place_meeting(x,y,obj_Apollo)
 if place_meeting(x,y,obj_Luana)
 {
 	with obj_Luana{
-		if state != Luana_State_Death_Forest
+		if state != Luana_State_Death_Boca
 		{
 			image_index = 0
-			damage_Luana_Forest()
+			damage_Luana_Boca()
 		
 		}
 	}

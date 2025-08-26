@@ -1,5 +1,10 @@
 // Retângulo base
-base = obj_plat_test;
+// Criar a hitbox da cobra
+hitbox = instance_create_layer(x, y, "Instances", obj_Colision_Cobra_Regia);
+hitbox.owner = id; // referencia a cobra "dona" da hitbox
+
+
+base = instance_nearest(x,y,obj_Plataform_Cobra);
 
 // Velocidade de deslocamento
 speed = 2;

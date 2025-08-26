@@ -16,6 +16,14 @@ damage_Luana = function(){
 
 }
 
+damage_Luana_Boca = function(){
+
+	state  = Luana_State_Death_Boca
+	
+	global.damage = true
+
+}
+
 damage_Luana_Forest = function(){
 
 	state  = Luana_State_Death_Forest

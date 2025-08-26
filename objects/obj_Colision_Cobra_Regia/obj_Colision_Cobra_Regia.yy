@@ -31,10 +31,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_Colision_Cobra_Regia_0",
-    "path":"sprites/spr_Colision_Cobra_Regia_0/spr_Colision_Cobra_Regia_0.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

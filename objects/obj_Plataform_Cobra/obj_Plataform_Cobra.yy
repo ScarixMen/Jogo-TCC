@@ -1,15 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_plat_test",
+  "%Name":"obj_Plataform_Cobra",
   "eventList":[],
   "managed":true,
-  "name":"obj_plat_test",
+  "name":"obj_Plataform_Cobra",
   "overriddenProperties":[],
   "parent":{
     "name":"Plataforms",
     "path":"folders/Objetos/Construct/Plataforms.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Rock_Colision",
+    "path":"objects/obj_Rock_Colision/obj_Rock_Colision.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_plat_test",
-    "path":"sprites/spr_plat_test/spr_plat_test.yy",
+    "name":"spr_Plataform_Cobra",
+    "path":"sprites/spr_Plataform_Cobra/spr_Plataform_Cobra.yy",
   },
   "spriteMaskId":null,
   "visible":true,

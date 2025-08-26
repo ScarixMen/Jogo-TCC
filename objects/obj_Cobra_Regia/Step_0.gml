@@ -61,3 +61,11 @@ if(dx == 0){ // vertical
 
 // 🔹 Trocar sprite **após atualizar lado e posição**
 sprite_index = side_sprites[side_index];
+
+// Atualiza hitbox
+
+    // Segue a cobra
+	hitbox.x = x;
+	hitbox.y = y;
+	hitbox.mask_index = side_sprites[side_index]; // cada lado da cobra
+
