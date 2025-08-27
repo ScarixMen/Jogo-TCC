@@ -37,6 +37,13 @@ function ReconfigurarSomPorRoom() {
 			global.som.pararAmbiente("forest");
 			
             break;
+			
+		case rm_Forest:
+			global.som.tocarMusica(bgm_The_Breeze);
+			global.som.pararAmbiente("ocean");
+			global.som.tocarAmbiente("forest", bgm_Forest);
+			
+            break;
 
         // Adicione outros cases para outras rooms/fases
 

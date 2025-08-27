@@ -3,7 +3,7 @@ var apollo_right = (obj_Apollo.x > 4700);
 var luana_right  = (obj_Luana.x  > 4700);
 
 if (!obj_Cam.is_split) {
-    var target_global = (apollo_right && luana_right) ? 0.0 : 0.1;
+    var target_global = (apollo_right && luana_right) ? 0.0 : 0.13;
 
     // Transição suave
     alpha_global = lerp(alpha_global, target_global, 0.05);
@@ -14,8 +14,8 @@ if (!obj_Cam.is_split) {
 
 } else {
     // Split screen
-    var target_left = apollo_right ? 0.0 : 0.1;
-    var target_right = luana_right ? 0.0 : 0.1;
+    var target_left = apollo_right ? 0.0 : 0.13;
+    var target_right = luana_right ? 0.0 : 0.13;
 
     // Transição suave
     alpha_camera_left = lerp(alpha_camera_left, target_left, 0.05);
