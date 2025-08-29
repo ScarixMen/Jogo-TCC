@@ -13,7 +13,10 @@
     "name":"Beach_Puzzle",
     "path":"folders/Objetos/Construct/Beach_Puzzle.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Beach_Puzzle_Apollo_Main",
+    "path":"objects/obj_Beach_Puzzle_Apollo_Main/obj_Beach_Puzzle_Apollo_Main.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

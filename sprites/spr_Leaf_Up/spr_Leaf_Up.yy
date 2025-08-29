@@ -5,21 +5,21 @@
   "bbox_bottom":551,
   "bbox_left":0,
   "bbox_right":1279,
-  "bbox_top":40,
+  "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"32ce4221-bf3e-47a2-a52f-db7701cd3ffe","name":"32ce4221-bf3e-47a2-a52f-db7701cd3ffe","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c9f2d223-998e-419a-b2c6-43c36f7f2363","name":"c9f2d223-998e-419a-b2c6-43c36f7f2363","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":1388,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"2be11c1f-f6f2-41c3-a582-8f93c37b9c92","blendMode":0,"displayName":"default","isLocked":false,"name":"2be11c1f-f6f2-41c3-a582-8f93c37b9c92","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"dce66536-95f8-4edb-ab9c-987648560e0d","blendMode":0,"displayName":"default","isLocked":false,"name":"dce66536-95f8-4edb-ab9c-987648560e0d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Leaf_Up",
   "nineSlice":null,
@@ -71,8 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"32ce4221-bf3e-47a2-a52f-db7701cd3ffe","path":"sprites/spr_Leaf_Up/spr_Leaf_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7acb6a02-ce75-4550-a8c1-4408d76da6e4","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c9f2d223-998e-419a-b2c6-43c36f7f2363","path":"sprites/spr_Leaf_Up/spr_Leaf_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"323f8b45-dd63-422b-8856-cb736762be07","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -39,7 +39,7 @@ function ReconfigurarSomPorRoom() {
             break;
 			
 		case rm_Forest:
-			global.som.tocarMusica(bgm_The_Breeze);
+			global.som.tocarMusica(bgm_Sunset);
 			global.som.pararAmbiente("ocean");
 			global.som.tocarAmbiente("forest", bgm_Forest);
 			

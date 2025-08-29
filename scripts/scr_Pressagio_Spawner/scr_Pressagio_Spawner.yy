@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Pressagio_Spawner",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Pressagio_Spawner",
+  "parent":{
+    "name":"Enemys",
+    "path":"folders/Scripts/Enemys.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

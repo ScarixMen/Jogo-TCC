@@ -74,3 +74,4 @@ if (!global.pause) {
     }
 }
 
+btn_frame = (btn_frame + btn_speed) mod sprite_get_number(spr_Interact_Button_E);

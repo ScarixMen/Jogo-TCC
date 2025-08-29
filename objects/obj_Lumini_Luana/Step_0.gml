@@ -1,3 +1,5 @@
+if (Check_Pause()) exit;
+
 if (instance_exists(target)) {
     // --- Distância "atrás" dependendo do lado ---
     if (target.image_xscale < 0) {

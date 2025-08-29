@@ -1,3 +1,4 @@
+if (Check_Pause()) exit;
 if (global.battle_active) {
 	// Normaliza valor (0 a 1)
 	var ratio = clamp(bar_value / bar_max, 0, 1);

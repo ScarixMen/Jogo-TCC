@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Plataform_Lumini",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Plataform_Lumini",
+  "parent":{
+    "name":"Controls",
+    "path":"folders/Scripts/Controls.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
