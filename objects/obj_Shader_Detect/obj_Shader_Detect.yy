@@ -32,5 +32,5 @@
     "path":"sprites/spr_Block_Grass/spr_Block_Grass.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

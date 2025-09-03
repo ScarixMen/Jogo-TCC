@@ -17,6 +17,51 @@ if !global.cam_override
 	    }
 	}
 }
+if !global.cam_override
+{
+	with (obj_Beach_Puzzle_1) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+	    if (place_meeting(x,y,obj_Apollo)) {
+	        other.target = id; // define target como a instância encontrada
+			other.y = other.target.y + 50
+	    }
+	}
+}
+if !global.cam_override
+{
+	with (obj_Beach_Puzzle_2) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+	    if (place_meeting(x,y,obj_Apollo)) {
+	        other.target = id; // define target como a instância encontrada
+			other.y = other.target.y + 50
+	    }
+	}
+}
+if !global.cam_override
+{
+	with (obj_Beach_Puzzle_3) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+	    if (place_meeting(x,y,obj_Apollo)) {
+	        other.target = id; // define target como a instância encontrada
+			other.y = other.target.y + 50
+	    }
+	}
+}
+if !global.cam_override
+{
+	with (obj_Beach_Puzzle_4) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+	    if (place_meeting(x,y,obj_Apollo)) {
+	        other.target = id; // define target como a instância encontrada
+			other.y = other.target.y + 50
+	    }
+	}
+}
+if !global.cam_override
+{
+	with (obj_Beach_Puzzle_5) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+	    if (place_meeting(x,y,obj_Apollo)) {
+	        other.target = id; // define target como a instância encontrada
+			other.y = other.target.y + 50
+	    }
+	}
+}
 
 // Se encontrou um alvo, posiciona o botão
 if (target != noone) {

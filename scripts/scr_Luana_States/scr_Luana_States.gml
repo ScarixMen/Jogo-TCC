@@ -176,7 +176,6 @@ function Luana_State_Death() {
 	sprite_index = spr_Luana_Death
 	
 	hspd = 0
-	vspd = 0
 	
 	if(image_index >= image_number -1)
 	{
@@ -240,7 +239,6 @@ function Luana_State_Death_Forest() {
 	sprite_index = spr_Luana_Death
 	
 	hspd = 0
-	vspd = 0
 	
 	if(image_index >= image_number -1)
 	{

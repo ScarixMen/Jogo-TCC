@@ -33,7 +33,7 @@ function Citrino_GetTarget() {
 
 /// Estado OFF
 function Citrino_Low_State_Off() {
-	tiro_intervalo = 180
+		tiro_tempo = 0
     sprite_index = spr_Citrino_Idle;
     if (image_index >= image_number - 1) {
         image_index = 5;
@@ -50,7 +50,7 @@ function Citrino_Low_State_Off() {
 
 /// Estado Idle
 function Citrino_Low_State_Idle() {
-	tiro_intervalo = 180
+		tiro_tempo = 0
     sprite_index = spr_Citrino_Idle;
     if (image_index >= image_number - 1) {
         image_index = 5;
@@ -73,7 +73,7 @@ function Citrino_Low_State_Idle() {
 
 /// Estado Lighting (alerta)
 function Citrino_Low_State_Lighting() {
-	tiro_intervalo = 180
+	tiro_tempo = 0
     sprite_index = spr_Citrino_Lighting;
 
     if (image_index >= image_number - 1) {

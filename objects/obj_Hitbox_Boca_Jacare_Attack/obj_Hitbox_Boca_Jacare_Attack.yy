@@ -34,5 +34,5 @@
     "path":"sprites/spr_Colision_Boca_Jacare_Attack/spr_Colision_Boca_Jacare_Attack.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

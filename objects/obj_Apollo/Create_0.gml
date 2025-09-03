@@ -1,5 +1,7 @@
 event_inherited();
 
+timer = 120
+
 crounch = 0
 cspd = 3
 state = Apollo_State_Idle

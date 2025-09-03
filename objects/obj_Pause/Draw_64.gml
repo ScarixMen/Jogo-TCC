@@ -54,36 +54,7 @@ if (pause_state != "normal") {
 	        draw_set_color(_cor);
 	        draw_text_ext_transformed(_x_Portrait_Pause, y_string, opc[i], 0, 100, 0.6, 0.6, 0);
 	    }
-		//-----------------------------------
-		// 🔹 NOVO: Desenho de 5 sprites diferentes
-		//-----------------------------------
-		var icon_offset_x = 40; // Distância da borda esquerda
-		var icon_offset_y = 40; // Distância da borda superior
-
-		// Layout personalizado (como você mostrou)
-		var layout = [
-		    [0, 0],
-		    [68, 0],
-		    [0, 68],
-		    [68, 68],
-		    [34, 128]
-		];
-
-		// Sprites diferentes (troque pelos seus)
-		var spr_list = [
-		    spr_Symbol_2,
-		    spr_Symbol_4,
-		    spr_Symbol_1,
-		    spr_Symbol_3,
-		    spr_Symbol_5
-		];
-
-		for (var i = 0; i < array_length(spr_list); i++) {
-		    draw_sprite(spr_list[i], 0, icon_offset_x + layout[i][0], icon_offset_y + layout[i][1]);
-		}
-
-        //-----------------------------------
-    }
+	}
 }
 
 // Reset draw

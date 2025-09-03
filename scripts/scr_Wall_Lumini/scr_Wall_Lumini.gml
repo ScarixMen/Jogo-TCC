@@ -21,8 +21,9 @@ function Wall_Lumini_Deactive(){
 	image_speed = 1
 	if(image_index >= image_number -1)
 	{
-		instance_destroy(id)
-		//id.state = Wall_Lumini_Active
+		mask_index = spr_Noone
+		image_speed = 0
+		
 	}
 
 }

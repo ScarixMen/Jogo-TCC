@@ -1,11 +1,12 @@
+global.save = false;
 global.dialog = false;
 global.on = false;
 randomize();
 
-/*u_texture   = shader_get_uniform(shd_sunset, "u_texture");
-u_intensity = shader_get_uniform(shd_sunset, "u_intensity");
-intensity   = 0.2; // deixa forte de propósito*/
+timer = 90
 
+frame = 0
+frame_spd = 0.2
 
 if (!variable_global_exists("som")) {
     global.som = undefined;

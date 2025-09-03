@@ -35,5 +35,5 @@
     "path":"sprites/spr_Plataform_Lumini_Appear_1/spr_Plataform_Lumini_Appear_1.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

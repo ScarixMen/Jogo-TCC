@@ -7,7 +7,7 @@ with (obj_Genius_Main) { // pega todas as instâncias dos filhos, já que eles s
     if (place_meeting(x,y,obj_Luana)) {
         other.target = id; // define target como a instância encontrada
 		other.y = other.target.y - 70
-		other.x = other.target.x + target.sprite_width/2
+		other.x = other.target.x + other.target.sprite_width/2
     }
 }
 

@@ -121,7 +121,6 @@ function Apollo_State_Death() {
 	sprite_index = spr_Apollo_Death
 	
 	hspd = 0
-	vspd = 0
 	
 	if(image_index >= image_number -1)
 	{
@@ -148,7 +147,6 @@ function Apollo_State_Death_Forest() {
 	sprite_index = spr_Apollo_Death
 	
 	hspd = 0
-	vspd = 0
 	
 	if(image_index >= image_number -1)
 	{
@@ -219,4 +217,46 @@ function Apollo_State_Cutscene() {
 		
 	}
 	
+}
+function Apollo_State_Book(){
+	
+	hspd = 0
+	
+	sprite_index = spr_Apollo_Book;
+	
+	if(image_index >= image_number -1)
+	{
+		
+		state = Apollo_State_Write
+		
+	}
+}
+function Apollo_State_Write()
+{
+	
+	hspd = 0
+	
+	sprite_index = spr_Apollo_Write
+	
+	timer--;
+	if(timer<=0)
+	{
+		timer = 120
+		state = Apollo_State_Book_Reset
+		
+	}
+}
+function Apollo_State_Book_Reset()
+{
+	
+	hspd = 0
+	
+	sprite_index = spr_Apollo_Book_Reset
+	
+	if(image_index >= image_number -1)
+	{
+		
+		state = Apollo_State_Idle
+		
+	}
 }
