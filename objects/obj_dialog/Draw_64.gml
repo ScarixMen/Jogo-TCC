@@ -5,16 +5,21 @@ var guiw = display_get_gui_width();
 var guih = display_get_gui_height();
 
 var xx = 0;
-var yy = 600;
-var c = c_black;
-var _c_purple = make_color_rgb(10, 0, 11);
+var yy = 620;
 
-draw_rectangle_color(xx,yy,guiw,guih,_c_purple,_c_purple,_c_purple,c,false);
+draw_sprite(spr_Dialog_Box,0,0,0)
 
 draw_sprite(speaker[page],0,0,565)
 
 draw_set_color(c_white)
 
-draw_text_ext(xx + 192, yy + 32, text[page], 32, guiw - 256);
+draw_set_valign(fa_middle)
+draw_set_halign(fa_center)
+draw_text(525,570,name[page]);
+
+draw_set_valign(-1)
+draw_set_halign(-1)
+
+draw_text_ext(xx + 192, yy , text[page], 32, guiw - 384);
 
 draw_set_color(-1)

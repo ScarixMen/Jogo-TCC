@@ -13,6 +13,11 @@ function scr_dialog()
 			text[2] = "Salve! Sim a gente te escuta. Câmbio.";
 			text[3] = "Maravilha. O sinal é fraco, mas sempre que possível vou manter contato com vocês. Vou guia-los pela ilha."
 			
+			name[0] ="Ayla"
+			name[1] ="Luana"
+			name[2] ="Apollo"
+			name[3] ="Ayla"
+			
 			speaker[0] = Ayla
 			speaker[1] = Luana
 			speaker[2] = Apollo
@@ -26,6 +31,10 @@ function scr_dialog()
 			text[1] = "Apollo, tenta se agachar apertando (CTRL), e levante-se soltando-o, assim fique em cima daquele botão laranja dentro daquele túnel." ;
 			text[2] = "Pode deixar!";
 			
+			name[0] = "Ayla"
+			name[1] = "Ayla"
+			name[2] = "Apollo"
+			
 			speaker[0] = Ayla
 			speaker[1] = Ayla
 			speaker[2] = Apollo
@@ -37,6 +46,9 @@ function scr_dialog()
 			text[0] = "Essas caixas parecem pesadas... Será que...";
 			text[1] = "Relaxa, isso você pode deixar comigo!" ;
 			
+			name[0] = "Ayla"
+			name[1] = "Luana"
+			
 			speaker[0] = Ayla
 			speaker[1] = Luana
 			
@@ -46,6 +58,9 @@ function scr_dialog()
 			
 			text[0] = "Eles parecem ser diferentes dos botões anteriores..." 
 			text[1] = "Apollo, pode esperar? Preciso que a Luana investigue mais pra frente."
+			
+			name[0] = "Ayla"
+			name[1] = "Ayla"
 			
 			speaker[0] = Ayla
 			speaker[1] = Ayla
@@ -57,6 +72,11 @@ function scr_dialog()
 			text[1] = "Aliás, reparei em uma coisa; Parece que esses botões azuis eles são ativados com essas caixas. Ficaria atenta com eles."
 			text[2] = "Tá, botão azul... tá, anotado. Valeu de óculos! Câmbio."
 			text[3] = "Não precisa falar câmbio no final da frase Apollo..."
+			
+			name[0] = "Ayla"
+			name[1] = "Ayla"
+			name[2] = "Apollo"
+			name[3] = "Ayla"
 			
 			speaker[0] = Ayla
 			speaker[1] = Ayla
@@ -71,6 +91,10 @@ function scr_dialog()
 			text[1] = "Estranho, será que era alguma figura importante pra ilha?"
 			text[2] = "Talvez. Acho que eu consigo traduzir o que tá escrito. Espera um minutinho."
 			
+			name[0] = "Apollo"
+			name[1] = "Luana"
+			name[2] = "Apollo"
+			
 			speaker[0] = Apollo
 			speaker[1] = Luana
 			speaker[2] = Apollo
@@ -84,6 +108,10 @@ function scr_dialog()
 			text[1] = "Apollo... eu acho melhor você sair daí"
 			text[2] = "Calma aí Lu, preciso de um tempinho para ler isso aqui."
 			
+			name[0] = "Apollo"
+			name[1] = "Luana"
+			name[2] = "Apollo"
+			
 			speaker[0] = Apollo
 			speaker[1] = Luana
 			speaker[2] = Apollo
@@ -96,6 +124,9 @@ function scr_dialog()
 			text[0] = "Ah não brinca, essa coisa consegue se mexer também???"
 			text[1] = "Eu vou tentar distrair ele. Vê se o que está escrito aí ajuda a gente parar essa coisa!"
 			
+			name[0] = "Apollo"
+			name[1] = "Luana"
+			
 			speaker[0] = Apollo
 			speaker[1] = Luana
 			
@@ -105,6 +136,8 @@ function scr_dialog()
 			
 			text[0] = "Que a luz de nossa mãe nos guie na penumbra!"
 			
+			name[0] = "Apollo"
+			
 			speaker[0] = Apollo
 			
 			break;
@@ -113,6 +146,9 @@ function scr_dialog()
 			
 			text[0] = "Ih... foi por pouco... Você tá bem Luana?"
 			text[1] = "Acho que sim. Só vamos continuar andando..."
+			
+			name[0] = "Apollo"
+			name[1] = "Luana"
 			
 			speaker[0] = Apollo
 			speaker[1] = Luana

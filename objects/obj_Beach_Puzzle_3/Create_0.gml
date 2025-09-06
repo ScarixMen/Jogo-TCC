@@ -1,8 +1,6 @@
 state = Beach_Puzzle_State_Idle
 
-draw_ok = false
-btn_frame = 9
-btn_speed = 0.17
+input = false;
 
 Idle =  spr_Beach_Puzzle_3_Idle
 Light_Up = spr_Beach_Puzzle_3_Light_Up

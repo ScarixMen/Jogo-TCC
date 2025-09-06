@@ -4,7 +4,6 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_Beach_Puzzle_1",
@@ -13,7 +12,10 @@
     "name":"Beach_Puzzle",
     "path":"folders/Objetos/Construct/Beach_Puzzle.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Beach_Puzzle_Main",
+    "path":"objects/obj_Beach_Puzzle_Main/obj_Beach_Puzzle_Main.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
