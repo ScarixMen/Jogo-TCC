@@ -77,6 +77,7 @@ function Input_Apollo(){
 }
 
 function Input_Menu(){
+	
 // No step:
 var limiar = 0.5;
 var eixo_valor_v = gamepad_axis_value(global.gamepad_id, gp_axislv);

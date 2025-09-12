@@ -1,12 +1,19 @@
+Input_Menu();
+
 if (next == -1) {
-    if (keyboard_check_pressed(vk_right)) {
+    if (right) {
         if (current < array_length(comics) - 1) {
+            // ainda tem quadrinho -> avança
             next = current + 1;
             progress = 0;
             dir = 1;
         }
+        else {
+            // já está no último -> vai pra sala
+            room_goto(rm_Tutorial);
+        }
     }
-    if (keyboard_check_pressed(vk_left)) {
+    if (left) {
         if (current > 0) {
             next = current - 1;
             progress = 0;

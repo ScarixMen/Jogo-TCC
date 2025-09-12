@@ -1,3 +1,4 @@
+
 #region Intro Animation
 if (!iniciar_alpha) {
     tempo_espera += 1;

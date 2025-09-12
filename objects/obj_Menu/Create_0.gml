@@ -45,5 +45,3 @@ axis_up_previously = false;
 axis_down_previously = false;
 axis_right_previously = false;
 axis_left_previously = false;
-
-

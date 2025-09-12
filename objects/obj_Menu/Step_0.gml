@@ -87,7 +87,7 @@ if (enter) {
             if (indice < opc_max) {
                 global.som.tocarSFX(sfx_Menu_Click);
                 switch (indice) {
-                    case 0: room_goto(rm_Tutorial); break;
+                    case 0: room_goto(rm_Cutscene); break;
                     case 1:
                         opc = ["Tutorial", "Praia", "Floresta", "4", "5"];
                         opc_max = array_length(opc);
