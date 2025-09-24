@@ -14,6 +14,14 @@ damage_Apollo = function(){
 
 }
 
+damage_Apollo_Boca = function(){
+
+	state  = Apollo_State_Death_Boca
+	
+	global.damage = true
+
+}
+
 damage_Apollo_Forest = function(){
 
 	state  = Apollo_State_Death_Forest

@@ -1,10 +1,10 @@
 if place_meeting(x,y,obj_Apollo)
 {
 	with obj_Apollo{
-		if state != Apollo_State_Death_Forest
+		if state != Apollo_State_Death_Boca
 		{
 			image_index = 0
-			damage_Apollo_Forest()
+			damage_Apollo_Boca()
 		
 		}
 	}
