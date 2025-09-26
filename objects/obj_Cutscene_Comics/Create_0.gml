@@ -12,4 +12,4 @@ progress = 0;
 dir = 0;
 
 cutscene_timer = 0; // contador
-cutscene_delay = room_speed * 1; // tempo em steps (3 segundos por quadro)
+cutscene_delay = room_speed * 5; // tempo em steps (3 segundos por quadro)

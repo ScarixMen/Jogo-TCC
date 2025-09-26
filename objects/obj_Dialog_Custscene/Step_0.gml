@@ -6,10 +6,6 @@ if !start && npc_name != ""
     start = true;
 }
 
-
-
-
-
 //CHANGE PAGES OF DIALOG
 if global.skip
 {

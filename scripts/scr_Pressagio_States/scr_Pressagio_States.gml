@@ -9,7 +9,7 @@ function Pressagio_State_Following(){
 	    // seguir suavemente
 		var dir = point_direction(base_x, base_y, tx, ty)
 		
-		if (point_distance(base_x, base_y, obj_Pressagio_Spawner.x, obj_Pressagio_Spawner.y) < 1300)
+		if (point_distance(base_x, base_y, obj_Pressagio_Spawner.x, obj_Pressagio_Spawner.y) > 1300)
 		{
 			
 			state = Pressagio_State_Reset;

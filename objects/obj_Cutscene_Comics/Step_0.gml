@@ -20,12 +20,12 @@ if (next == -1) {
     }
 }
 
-if current == 8
+/*if current == 8
 {	
 	var dialog = instance_create_layer(x, y,layer , obj_Dialog_Custscene);
     dialog.npc_name = "Cutscene_1";
     global.dialog = true;
-}
+}*/
 
 // animação da transição
 if (next != -1) {
