@@ -155,6 +155,25 @@ function scr_dialog()
 			
 			break;
 			
+			case "Cutscene_1":
+			
+			text[0] = "Ei, Luana, dá uma olhada!"
+			text[1] = "Tem um monte de símbolos desconhecidos. Acho que deve ser a escrita ser das pessoas que já moraram aqui"
+			text[2]	= "E se a gente tirar foto? Não dá pra deixar passar um achado desses moscando. Quem sabe, assim confiem mais em você sobre essa ilha."
+			text[3]	= "É, você tem razão."
+			
+			name[0] = "Apollo"
+			name[1] = "Luana"
+			name[2] = "Apollo"
+			name[3] = "Luana"
+			
+			speaker[0] = Apollo
+			speaker[1] = Luana
+			speaker[2] = Apollo
+			speaker[3] = Luana
+			
+			break;
+			
 			
 	}
 	

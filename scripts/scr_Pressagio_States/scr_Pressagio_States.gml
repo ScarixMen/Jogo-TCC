@@ -9,6 +9,12 @@ function Pressagio_State_Following(){
 	    // seguir suavemente
 		var dir = point_direction(base_x, base_y, tx, ty)
 		
+		if (point_distance(base_x, base_y, obj_Pressagio_Spawner.x, obj_Pressagio_Spawner.y) < 1300)
+		{
+			
+			state = Pressagio_State_Reset;
+		
+		}
 		
 		if (point_distance(base_x, base_y, tx, ty) < 1300)
 		{
@@ -42,9 +48,29 @@ function Pressagio_State_Following(){
 }
 
 function Pressagio_State_Touching(){
+	if(target == obj_Apollo){
+		with(obj_Apollo){
+			if(state != Apollo_State_Death_Forest){
+				image_index = 0;
+				damage_Apollo_Forest();
+	        }
+	    }
+	}
+	
+	if(target == obj_Luana){
+		with(obj_Luana){
+	        if(state != Luana_State_Death_Forest){
+	            image_index = 0;
+	            damage_Luana_Forest();
+	        }
+	    }
+	}
+	state = Pressagio_State_Reset
 	
 }
 
 function Pressagio_State_Reset(){
+	
+	instance_destroy();
 	
 }

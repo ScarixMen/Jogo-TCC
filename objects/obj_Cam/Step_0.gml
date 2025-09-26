@@ -73,6 +73,11 @@ if(room = rm_Beach)
 	}
 
 }
+
+if(room = rm_Miniboss_Forest)
+{
+	is_split = true
+}
 // Inicializa valores-alvo com os valores atuais
 var target_width  = cam_width;
 var target_height = cam_height;
