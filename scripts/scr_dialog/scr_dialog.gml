@@ -174,7 +174,87 @@ function scr_dialog()
 			
 			break;
 			
+			case "Cutscene_Luminis_1":
 			
+			text[0] = "Apollo? Luana? Conseguem me escutar?"
+			text[1] = "Oi ayla. A gente tá escutando"
+			text[2]	= "Sim! Tamo na escuta. Câmbio."
+			text[3]	= "Ótimo. Vejo que já chegaram nas florestas de Umbra. Segundo os dados que estou captando,"
+			text[4]	= "vocês não devem estar muito longe de chegar ao templo."
+			text[5]	= "Entretanto, há muitas interferências nessa região, recomendo seguirem com cautela."
+			text[6]	= "Será que são mais daquelas estátuas?"
+			text[7]	= "Não sei dizer, parece ser outra coisa... de qualquer forma, tomem cuidado."
+			
+			name[0] = "Ayla"
+			name[1] = "Luana"
+			name[2] = "Apollo"
+			name[3] = "Ayla"
+			name[4] = "Ayla"
+			name[5] = "Ayla"
+			name[6] = "Luana"
+			name[7] = "Ayla"
+			
+			speaker[0] = Ayla
+			speaker[1] = Luana
+			speaker[2] = Apollo
+			speaker[3] = Ayla
+			speaker[4] = Ayla
+			speaker[5] = Ayla
+			speaker[6] = Luana
+			speaker[7] = Ayla
+			
+			break;
+			
+			case "Cutscene_Luminis_2":
+			
+			text[0] = "O Luana, eu to ficando louco ou parece ter algo ali?"
+			
+			name[0] = "Apollo"
+			
+			speaker[0] = Apollo
+			
+			break;
+			
+			case "Cutscene_Luminis_3":
+			
+			text[0] = "Ei, vocês estão bem? Acharam algo?"
+			text[1] = "Ah, a gente tá bem, mas a gente encontro duas coisas que estão brilhando... Eles não parecem querer atacar a gente."
+			text[2]	= "Parecem ser pacíficos."
+			text[3]	= "Estranho... enfim, me avisem se houver outro problema."
+			text[4]	= "Tá bom! Câmbio."
+			text[5]	= "Apollo... deixa quieto."
+			text[6]	= "Tá legal, vamos continuar andando então."
+			text[7]	= "Certo. Vambora luminis!"
+			text[8]	= "Luminis?"
+			text[9]	= "É... Eles brilham e tals. Você achou ruim?"
+			text[10] = "Não hehehe. Só achei engraçado. Enfim, vamos lá!"
+			
+			name[0] = "Ayla"
+			name[1] = "Luana"
+			name[2] = "Apollo"
+			name[3] = "Ayla"
+			name[4] = "Apollo"
+			name[5] = "Ayla"
+			name[6] = "Luana"
+			name[7] = "Apollo"
+			name[8] = "Luana"
+			name[9] = "Apollo"
+			name[10] = "Luana"
+			
+			speaker[0] = Ayla 
+			speaker[1] = Luana 
+			speaker[2] = Apollo  
+			speaker[3] = Ayla 
+			speaker[4] = Apollo 
+			speaker[5] = Ayla 
+			speaker[6] = Luana  
+			speaker[7] = Apollo 
+			speaker[8] = Luana  
+			speaker[9] = Apollo  
+			speaker[10] = Luana
+
+			break;
+
 	}
 	
-}
+}	

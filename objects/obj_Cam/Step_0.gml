@@ -33,7 +33,8 @@ if (global.cam_override) {
 
     // Limita e centraliza
     var tx = clamp(fx - display_get_width()  * 0.5, 0, room_width  - display_get_width());
-    var ty = clamp(fy - display_get_height() * 0.5, 0, room_height - display_get_height());
+	var ty = clamp(fy - display_get_height() * 0.5, 0, room_height - display_get_height());
+	if (rm_Forest) ty = clamp(fy - display_get_height() * 0.5, 0, room_height - display_get_height() + 150);
 
     // Movimenta suavemente a câmera
     var cx = camera_get_view_x(camera_focus);
@@ -74,10 +75,6 @@ if(room = rm_Beach)
 
 }
 
-if(room = rm_Miniboss_Forest)
-{
-	is_split = true
-}
 // Inicializa valores-alvo com os valores atuais
 var target_width  = cam_width;
 var target_height = cam_height;

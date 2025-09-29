@@ -195,10 +195,10 @@ function Luana_State_Death() {
 			y = global.check_Y
 			obj_Apollo.x = global.check_X
 			obj_Apollo.y = global.check_Y
-			obj_Niobio.x = 32014
-			obj_Niobio.y = 2386
-			obj_Cutscene_Trigger_Niobio.cutscene_started = false
-			obj_Boss_Fight_Control.bar_value = 100
+			if(instance_exists(obj_Niobio))obj_Niobio.x = 32014
+			if(instance_exists(obj_Niobio))obj_Niobio.y = 2386
+			if(instance_exists(obj_Cutscene_Trigger_Niobio))obj_Cutscene_Trigger_Niobio.cutscene_started = false
+			if(instance_exists(obj_Boss_Fight_Control))obj_Boss_Fight_Control.bar_value = 100
 			state = Luana_State_Idle
 		}
 	}
