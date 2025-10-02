@@ -49,9 +49,11 @@ else {
 }
 
 // Ajuste de split dinâmico baseado em posição
-if (obj_Player.x > 10000) {
+
+if (obj_Player.x > 10000 & room == rm_Beach) {
     y_dist_split = 810;
 }
+
 
 // Distância entre jogadores
 var dx = abs(obj_Apollo.x - obj_Luana.x);

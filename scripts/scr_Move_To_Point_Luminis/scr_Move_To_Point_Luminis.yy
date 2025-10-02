@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Move_To_Point_Luminis",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Move_To_Point_Luminis",
+  "parent":{
+    "name":"Persons",
+    "path":"folders/Scripts/Persons.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,7 +1,15 @@
 // Distâncias de split
+
 x_dist_split = 1600;
 y_dist_split = 700;
 
+if(room == rm_Forest)
+{
+
+	x_dist_split = 1600;
+	y_dist_split = 580;
+
+}
 // Estados
 is_split = false;
 cam_width = display_get_width();

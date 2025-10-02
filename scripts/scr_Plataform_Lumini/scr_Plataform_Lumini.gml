@@ -5,7 +5,7 @@ function Plataform_Lumini_Portrait()
     
     sprite_index = spr_Plataform_Lumini_Portrait;
     
-    if point_distance(x, y, obj_Apollo.x, obj_Apollo.y) < 400
+    if point_distance(x, y, obj_Apollo.x, obj_Apollo.y) < 600
     {
         if (interact_Apollo)
         {
@@ -38,7 +38,7 @@ function Plataform_Lumini_Appear()
         
     }
     
-    if point_distance(x, y, obj_Apollo.x, obj_Apollo.y) < 400
+    if point_distance(x, y, obj_Apollo.x, obj_Apollo.y) < 600
     {
         if (interact_Apollo)
         {

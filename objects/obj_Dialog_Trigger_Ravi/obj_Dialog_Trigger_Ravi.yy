@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_Things_Of_Ravi",
+  "%Name":"obj_Dialog_Trigger_Ravi",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_Things_Of_Ravi",
+  "name":"obj_Dialog_Trigger_Ravi",
   "overriddenProperties":[],
   "parent":{
-    "name":"Construct",
-    "path":"folders/Objetos/Construct.yy",
+    "name":"Controls",
+    "path":"folders/Objetos/Controls.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_things_Of_Ravi",
-    "path":"sprites/spr_things_Of_Ravi/spr_things_Of_Ravi.yy",
+    "name":"spr_Block",
+    "path":"sprites/spr_Block/spr_Block.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

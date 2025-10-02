@@ -3,7 +3,7 @@ function Wall_Lumini_Active(){
 	if(obj_Luana.can_control)script_execute(Input_Luana)
 	image_speed = 0
 	
-	if point_distance(x,y,obj_Luana.x,obj_Luana.y) < 400
+	if point_distance(x,y,obj_Luana.x,obj_Luana.y) < 600
 	{
 	
 	if(interact_Luana)

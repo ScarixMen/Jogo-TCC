@@ -53,7 +53,12 @@ function scr_Cutscene_Luminis(other) {
             break;
 			
         case 5: // Espera os luminis chegarem
-				ctrl.cutscene_step++;
+			var lumini_moon_ok = scr_Move_To_Point_Luminis(obj_Lumini_Luana, 520, 6090, 5)
+			var lumini_sun_ok = scr_Move_To_Point_Luminis(obj_Lumini_Apollo, 270, 6120, 5)
+				if(lumini_sun_ok & lumini_moon_ok)
+				{	
+					ctrl.cutscene_step++;
+				}
             break;
 			
 		case 6: // Cria diálogo
@@ -74,6 +79,8 @@ function scr_Cutscene_Luminis(other) {
 
 
         case 8: // Finaliza cutscene e devolve controle
+			obj_Lumini_Apollo.start = true;
+			obj_Lumini_Luana.start = true;
 			global.cam_override = false;
 			global.focus_target = noone;
             obj_Apollo.can_control = true;

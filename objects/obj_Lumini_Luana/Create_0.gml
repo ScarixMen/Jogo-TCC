@@ -1,6 +1,8 @@
 // quem será seguido
 target = obj_Luana; 
 
+start = false
+
 base_x = x;
 base_y = y;
 osc = irandom(360);

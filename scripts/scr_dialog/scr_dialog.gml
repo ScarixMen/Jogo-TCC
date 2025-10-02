@@ -254,7 +254,28 @@ function scr_dialog()
 			speaker[10] = Luana
 
 			break;
+			
+			case "Things_Of_Ravi":
+			
+			text[0] = "O Luana, se meu conhecimento tá em dia, acho que essa parada aqui não é da ilha."
+			text[1] = "Estranho, eu já vi essas coisas em algum lugar... Ayla, sabe se tem mais alguém além da gente?"
+			text[2]	= "Não. Mesmo com as interferências, eu conseguiria saber disso."
+			text[3]	= "Esquisito. Vai ver alguém naufragou aqui a um tempo?"
+			text[4]	= "Mas sem saber o caminho exato, é quase impossível vir parar aqui..."
+			
+			name[0] = "Apollo"
+			name[1] = "Luana"
+			name[2] = "Ayla"
+			name[3] = "Apollo"
+			name[4] = "Luana"
+			
+			speaker[0] = Apollo
+			speaker[1] = Luana
+			speaker[2] = Ayla
+			speaker[3] = Apollo
+			speaker[4] = Luana
+			
+			break;
 
 	}
-	
 }	

@@ -1,6 +1,8 @@
 // quem será seguido
 target = obj_Apollo; 
 
+start = false
+
 base_x = x;
 base_y = y;
 osc = irandom(360);
