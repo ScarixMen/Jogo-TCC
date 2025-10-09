@@ -16,13 +16,15 @@ function Input_Luana(){
 	}
 	if (global.dialog && obj_Luana.can_control)
 	{
-	    if(global.damage)
-	    {
-	        state = Luana_State_Death;
-	        exit;
-	    }
-	    state = Luana_State_Idle;
-	    exit;
+		if(object_index == obj_Luana){
+		    if(global.damage)
+		    {
+		        state = Luana_State_Death;
+		        exit;
+		    }
+		    state = Luana_State_Idle;
+		    exit;
+		}
 	}
 #endregion
 
@@ -51,13 +53,15 @@ function Input_Apollo(){
 	}
 	if (global.dialog && obj_Apollo.can_control)
 	{
-	    if(global.damage)
-	    {
-	        state = Apollo_State_Death;
-	        exit;
-	    }
-	    state = Apollo_State_Idle;
-	    exit;
+		if(object_index == obj_Apollo){
+		    if(global.damage)
+		    {
+		        state = Apollo_State_Death;
+		        exit;
+		    }
+		    state = Apollo_State_Idle;
+		    exit;
+		}
 	}
 	
 	#endregion
@@ -74,6 +78,18 @@ function Input_Apollo(){
 	
 	
 
+}
+function Input_Apollo_God(){
+	
+	left = keyboard_check(ord("A"))
+	right = keyboard_check(ord("D"))
+	up = keyboard_check(ord("W"))
+	down = keyboard_check(ord("S"))
+	move = -left+right
+	movev = -up+down
+	
+	interact_Apollo = keyboard_check_pressed(ord("E"))
+	
 }
 
 function Input_Menu(){

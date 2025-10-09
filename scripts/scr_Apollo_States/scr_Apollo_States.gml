@@ -8,6 +8,7 @@ function Apollo_State_Idle(){
 	if(right) {state = Apollo_State_Walking}
 	if(crounch) {state = Apollo_State_Crouched_Idle}
 	if(jump) {image_index = 0 state = Apollo_State_Jump}
+	if(keyboard_check_pressed(ord("G"))) {state = Apollo_State_God;}
 	
 }
 function Apollo_State_Walking(){
@@ -21,6 +22,7 @@ function Apollo_State_Walking(){
 	if(hspd == 0) {state = Apollo_State_Idle;}
 	if(crounch) {state = Apollo_State_Crouched_Idle}
 	if(jump) {image_index = 0 state = Apollo_State_Jump}
+	if(keyboard_check_pressed(ord("G"))) {state = Apollo_State_God;}
 	if(!place_meeting(x,y+10, obj_Ramp))
 	{
 		
@@ -259,4 +261,19 @@ function Apollo_State_Book_Reset()
 		state = Apollo_State_Idle
 		
 	}
+}
+function Apollo_State_God(){
+	
+	script_execute(Input_Apollo_God)
+	grv = 0
+	spd = 14
+	
+	if(keyboard_check_pressed(ord("G"))) {state = Apollo_State_Idle; grv = 0.7 spd = 7}
+	
+	if(hspd != 0 ) image_xscale = sign(hspd)
+	
+	hspd = move*spd
+	vspd = movev*spd
+	sprite_index = spr_Apollo_Idle
+	
 }

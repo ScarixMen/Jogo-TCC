@@ -26,7 +26,7 @@ if !global.cam_override
 	    }
 	}
 }
-
+if(room = rm_Forest){
 	if(obj_Dialog_Trigger_Ravi.duo_ready)
 	{
 	
@@ -38,7 +38,7 @@ if !global.cam_override
 		    }
 		}
 	}
-
+}
 
 // Se encontrou um alvo, posiciona o botão
 if (target != noone) {
