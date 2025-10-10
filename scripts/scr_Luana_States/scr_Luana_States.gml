@@ -7,6 +7,7 @@ function Luana_State_Idle(){
 	if(left) {state = Luana_State_Walking}
 	if(right) {state = Luana_State_Walking}
 	if(jump) {image_index = 0 state = Luana_State_Jump}
+	if(keyboard_check_pressed(ord("G"))) {state = Luana_State_God;}
 	
 }
 function Luana_State_Walking(){
@@ -265,12 +266,12 @@ function Luana_State_Death_Forest() {
 
 function Luana_State_Cutscene() {
     // Continua andando se hspd for diferente de 0
-    if (hspd != 0) {
+  /*  if (hspd != 0) {
         sprite_index = spr_Luana_Walking;
         image_xscale = sign(hspd);
     } else {
         sprite_index = spr_Luana_Idle;
-    }
+    }*/
 	
 	if(!global.cam_override)
 	{
@@ -290,5 +291,21 @@ function Luana_State_Push_Niobio() {
 		
 		image_speed = 0
 	}
+	
+}
+
+function Luana_State_God(){
+	
+	script_execute(Input_Luana_God)
+	grv = 0
+	spd = 14
+	
+	if(keyboard_check_pressed(ord("G"))) {state = Luana_State_Idle; grv = 0.7 spd = 7}
+	
+	if(hspd != 0 ) image_xscale = sign(hspd)
+	
+	hspd = move*spd
+	vspd = movev*spd
+	sprite_index = spr_Luana_Idle
 	
 }

@@ -41,6 +41,18 @@ function Input_Luana(){
 	
 	
 }
+function Input_Luana_God(){
+	
+	left = keyboard_check(ord("A"))
+	right = keyboard_check(ord("D"))
+	up = keyboard_check(ord("W"))
+	down = keyboard_check(ord("S"))
+	move = -left+right
+	movev = -up+down
+	
+	interact_Apollo = keyboard_check_pressed(ord("E"))
+	
+}
 
 function Input_Apollo(){
 	
@@ -65,7 +77,7 @@ function Input_Apollo(){
 	}
 	
 	#endregion
-
+	
 	left = keyboard_check(ord("A"))
 	right = keyboard_check(ord("D"))
 	move = -left+right

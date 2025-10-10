@@ -1,7 +1,7 @@
 function Plataform_Lumini_Portrait()
 {
     image_speed = 1;
-    	if(obj_Apollo.can_control)script_execute(Input_Apollo);
+    	if(!global.cam_override)script_execute(Input_Apollo);
     
     sprite_index = spr_Plataform_Lumini_Portrait;
     

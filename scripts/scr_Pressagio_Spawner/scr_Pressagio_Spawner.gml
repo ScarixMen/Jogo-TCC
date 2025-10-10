@@ -2,8 +2,8 @@ function Pressagio_Idle(){
 	
 	image_speed = 0
 	image_index = 0
-	if(obj_Luana.can_control)script_execute(Input_Luana)
-	if(obj_Apollo.can_control)script_execute(Input_Apollo)
+	if(!global.cam_override)script_execute(Input_Luana)
+	if(!global.cam_override)script_execute(Input_Apollo)
 	
 	
 	if point_distance(x,y,obj_Apollo.x,obj_Apollo.y) < 700

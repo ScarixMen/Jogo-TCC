@@ -1,7 +1,7 @@
 function Ravi_Things_triggered(){
 	
-	if(obj_Luana.can_control)script_execute(Input_Luana)
-	if(obj_Apollo.can_control)script_execute(Input_Apollo)
+	if(!global.cam_override)script_execute(Input_Luana)
+	if(!global.cam_override)script_execute(Input_Apollo)
 	
 	if(place_meeting(x,y,obj_Player) && obj_Dialog_Trigger_Ravi.duo_ready){
 	

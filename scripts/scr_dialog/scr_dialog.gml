@@ -276,6 +276,51 @@ function scr_dialog()
 			speaker[4] = Luana
 			
 			break;
+			
+			case "Anhanga_1":
+		
+			text[0] = "Ah? O que é essa coisa?";
+			text[1] = "Parece que ele não quer que a gente chegue mais perto...";
+			text[2] = "Outro guardião? E agora?";
+			text[3] = "Hm, talvez..."
+			
+			name[0] ="Apollo"
+			name[1] ="Luana"
+			name[2] ="Apollo"
+			name[3] ="Luana"
+			
+			speaker[0] = Apollo
+			speaker[1] = Luana
+			speaker[2] = Apollo
+			speaker[3] = Luana
+			
+			break;
+			
+			case "Anhanga_2":
+		
+			text[0] = "Tive uma ideia. Talvez se a gente cansar ele usando os luminis, ele deixe a gente passar!";
+			text[1] = "Ah, bacana... Perai, você tá falando sério?";
+			
+			name[0] ="Luana"
+			name[1] ="Apollo"
+			
+			speaker[0] = Luana
+			speaker[1] = Apollo
+			
+			break;
+			
+			case "Anhanga_3":
+		
+			text[0] = "Me perdoe, mas eu preciso passar";
+			text[1] = "E lá vamos nós...";
+
+			name[0] ="Luana"
+			name[1] ="Apollo"
+			
+			speaker[0] = Luana
+			speaker[1] = Apollo
+			
+			break;
 
 	}
 }	

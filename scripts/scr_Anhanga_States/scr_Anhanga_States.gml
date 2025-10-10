@@ -1,25 +1,46 @@
-function Anhanga_State_Attack_Spear_Left(){
-
-	
-	 instance_create_layer(524, y+100, layer, obj_Spear);
-	 select_plat = "middle"
-	 state = Anhanga_State_Waiting
-
-}
 function Anhanga_State_Attack_Spear_Middle(){
 
-	 instance_create_layer(960, y+100, layer, obj_Spear);
-	 select_plat = "right"
+	instance_create_layer(center_x ,center_y - 300, layer, obj_Spear);
+	select_plat = "middle"
+	state = Anhanga_State_Waiting
+
+}
+
+function Anhanga_State_Attack_Spear_1(){
+	
+	instance_create_layer(center_x + 400,center_y - 500, layer, obj_Spear);
+	instance_create_layer(center_x - 400, center_y - 500, layer, obj_Spear);
+	select_plat = "1"
+	state = Anhanga_State_Waiting
+
+}
+
+function Anhanga_State_Attack_Spear_2(){
+	
+	 instance_create_layer(center_x - 760, center_y - 600, layer, obj_Spear);
+	 instance_create_layer(center_x + 760, center_y - 600, layer, obj_Spear);
+	 select_plat = "2"
 	 state = Anhanga_State_Waiting
 
 }
-function Anhanga_State_Attack_Spear_Right(){
 
-	 instance_create_layer(1384, y+100, layer, obj_Spear);
-	 select_plat = "left"
+function Anhanga_State_Attack_Spear_3(){
+	
+	 instance_create_layer(center_x - 1030, center_y - 700, layer, obj_Spear);
+	 instance_create_layer(center_x + 1030, center_y - 700, layer, obj_Spear);
+	 select_plat = "3"
 	 state = Anhanga_State_Waiting
 
 }
+function Anhanga_State_Attack_Spear_4(){
+	
+	 instance_create_layer(center_x - 560, center_y - 800, layer, obj_Spear);
+	 instance_create_layer(center_x + 560, center_y - 800, layer, obj_Spear);
+	 select_plat = "4"
+	 state = Anhanga_State_Waiting
+
+}
+
 function Anhanga_State_Waiting(){
 	timer++;
 	
@@ -28,29 +49,42 @@ function Anhanga_State_Waiting(){
 		
 		switch select_plat
 		{
-			case "left":
+			case "middle":
 			
 				timer = 0
-				state = Anhanga_State_Attack_Spear_Left
+				state = Anhanga_State_Attack_Spear_1
 			
 			break;
 			
-			case "middle":
+			case "1":
+			
+				timer = 0
+				state = Anhanga_State_Attack_Spear_2
+			
+			break;
+			
+			case "2":
+			
+				timer = 0
+				state = Anhanga_State_Attack_Spear_3
+			
+			break;
+			
+			case "3":
+			
+				timer = 0
+				state = Anhanga_State_Attack_Spear_4
+			
+			break;
+			
+			case "4":
 			
 				timer = 0
 				state = Anhanga_State_Attack_Spear_Middle
 			
 			break;
 			
-			case "right":
-			
-				timer = 0
-				state = Anhanga_State_Attack_Spear_Right
-			
-			break;
-			
 		}
 		
 	}
-	
 }
