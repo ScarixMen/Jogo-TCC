@@ -598,6 +598,7 @@
     {"id":{"name":"spr_Portrait_Pause","path":"sprites/spr_Portrait_Pause/spr_Portrait_Pause.yy",},},
     {"id":{"name":"spr_Post","path":"sprites/spr_Post/spr_Post.yy",},},
     {"id":{"name":"spr_Pressagio_Attack","path":"sprites/spr_Pressagio_Attack/spr_Pressagio_Attack.yy",},},
+    {"id":{"name":"spr_Pressagio_Explosion","path":"sprites/spr_Pressagio_Explosion/spr_Pressagio_Explosion.yy",},},
     {"id":{"name":"spr_Pressagio_Spawner","path":"sprites/spr_Pressagio_Spawner/spr_Pressagio_Spawner.yy",},},
     {"id":{"name":"spr_Pressagio","path":"sprites/spr_Pressagio/spr_Pressagio.yy",},},
     {"id":{"name":"spr_Ramp","path":"sprites/spr_Ramp/spr_Ramp.yy",},},

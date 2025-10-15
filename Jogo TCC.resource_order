@@ -546,6 +546,7 @@
     {"name":"spr_Portrait_Pause","order":7,"path":"sprites/spr_Portrait_Pause/spr_Portrait_Pause.yy",},
     {"name":"spr_Post","order":46,"path":"sprites/spr_Post/spr_Post.yy",},
     {"name":"spr_Pressagio_Attack","order":31,"path":"sprites/spr_Pressagio_Attack/spr_Pressagio_Attack.yy",},
+    {"name":"spr_Pressagio_Explosion","order":32,"path":"sprites/spr_Pressagio_Explosion/spr_Pressagio_Explosion.yy",},
     {"name":"spr_Pressagio_Spawner","order":23,"path":"sprites/spr_Pressagio_Spawner/spr_Pressagio_Spawner.yy",},
     {"name":"spr_Pressagio","order":2,"path":"sprites/spr_Pressagio/spr_Pressagio.yy",},
     {"name":"spr_Ramp","order":11,"path":"sprites/spr_Ramp/spr_Ramp.yy",},

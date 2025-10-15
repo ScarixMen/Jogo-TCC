@@ -59,7 +59,8 @@ function Input_Apollo(){
 	#region	Block Input
 	if global.cam_override
 	{
-		state = Apollo_State_Cutscene
+		if(state != Apollo_State_Death){
+		state = Apollo_State_Cutscene}
 		exit;
 	
 	}

@@ -1,6 +1,8 @@
-Input_Apollo()
+if(!global.cam_override)Input_Apollo()
 
-if (place_meeting(x, y, obj_Apollo) && interact_Apollo && global.battle_active) {
+if(!global.cam_override)
+{
+	if (place_meeting(x, y, obj_Apollo) && interact_Apollo && global.battle_active) {
 	global.som.tocarSFX(sfx_Puzzle_Apollo)
     if (!locked) {
         var control = instance_find(obj_Boss_Fight_Puzzle, 0);
@@ -19,4 +21,5 @@ if (place_meeting(x, y, obj_Apollo) && interact_Apollo && global.battle_active) 
             }
         }
     }
+}
 }

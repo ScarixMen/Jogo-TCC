@@ -1,4 +1,4 @@
-Input_Apollo()
+if(!global.cam_override)Input_Apollo()
 
 if (place_meeting(x, y, obj_Apollo) && interact_Apollo && global.battle_active) {
 	global.som.tocarSFX(sfx_Puzzle_Apollo)
