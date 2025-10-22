@@ -34,7 +34,7 @@ if (global.cam_override) {
     // Limita e centraliza
     var tx = clamp(fx - display_get_width()  * 0.5, 0, room_width  - display_get_width());
 	var ty = clamp(fy - display_get_height() * 0.5, 0, room_height - display_get_height());
-	if (rm_Forest) ty = clamp(fy - display_get_height() * 0.5, 0, room_height - display_get_height() + 150);
+	if (room == rm_Forest) ty = clamp(fy - display_get_height() * 0.5, 0, room_height - display_get_height() + 150);
 
     // Movimenta suavemente a câmera
     var cx = camera_get_view_x(camera_focus);
@@ -147,4 +147,3 @@ if (is_split) {
     var new_y2 = lerp(camera_get_view_y(camera_2), target_y2, 0.1);
     camera_set_view_pos(camera_2, new_x2, new_y2);
 }
-

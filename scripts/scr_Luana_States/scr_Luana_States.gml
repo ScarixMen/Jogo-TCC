@@ -200,6 +200,7 @@ function Luana_State_Death() {
 			if(instance_exists(obj_Niobio))obj_Niobio.y = 2386
 			if(instance_exists(obj_Cutscene_Trigger_Niobio))obj_Cutscene_Trigger_Niobio.cutscene_started = false
 			if(instance_exists(obj_Boss_Fight_Control))obj_Boss_Fight_Control.bar_value = 100
+			if(instance_exists(obj_Boss_Fight_Control))obj_Boss_Fight_Control.boss_force = 0.4
 			state = Luana_State_Idle
 		}
 	}
@@ -261,6 +262,39 @@ function Luana_State_Death_Forest() {
 		}
 	}
 	
+	
+}
+
+function Luana_State_Death_Forest_Anhanga() {
+	
+	sprite_index = spr_Luana_Death
+	
+	hspd = 0
+	
+	if(image_index >= image_number -1)
+	{
+			
+		image_index = 4
+		instance_create_layer(0, 0, layer, obj_Transition_Death);
+		
+	}
+	
+	if instance_exists( obj_Transition_Death)
+	{
+		if obj_Transition_Death.alpha == 1
+		{	
+			x = global.check_X
+			y = global.check_Y
+			obj_Apollo.x = global.check_X
+			obj_Apollo.y = global.check_Y
+			instance_destroy(obj_Spear);
+			instance_destroy(obj_Spear_Grounded);
+			obj_Anhanga.state = Anhanga_State_Idle;
+			obj_Anhanga.timer_down = 0
+			obj_Anhanga.select_plat = "4"
+			state = Luana_State_Idle
+		}
+	}
 	
 }
 

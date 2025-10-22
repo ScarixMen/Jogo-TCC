@@ -1,10 +1,16 @@
-state = Anhanga_State_Waiting
+state = Anhanga_State_Idle
 
 timer = 0
 
+timer_down = 0
+
 timer_delay = 90
 
+timer_delay_down = 180
+
 select_plat = "4"
+
+last_thicket_id = noone;
 
 center_x = x; // X do ponto central (ajuste conforme necessário)
 center_y = y ; // Y do ponto central (ajuste conforme necessário)

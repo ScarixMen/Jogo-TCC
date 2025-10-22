@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Hud",
-    "path":"folders/Sprites/Hud.yy",
+    "path":"folders/Sprites/Enemys/Hud.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

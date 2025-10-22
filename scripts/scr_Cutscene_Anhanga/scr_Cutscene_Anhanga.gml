@@ -92,9 +92,13 @@ function scr_Cutscene_Anhanga(other) {
         case 9: // Finaliza cutscene e devolve controle
 			global.cam_override = false;
 			global.focus_target = noone;
+			obj_Cutscene_Trigger_Anhanga.cutscene_started = false;
+			obj_Cutscene_Trigger_Anhanga.apollo_ready = false;
+			obj_Cutscene_Trigger_Anhanga.luana_ready = false;
             obj_Apollo.can_control = true;
 			obj_Lumini_Luana.start = true;
             obj_Luana.can_control = true;
+			obj_Anhanga.state = Anhanga_State_Choose_Thicket;
 			obj_Apollo.state = Apollo_State_Idle;
 			obj_Luana.state  = Luana_State_Idle;
 			

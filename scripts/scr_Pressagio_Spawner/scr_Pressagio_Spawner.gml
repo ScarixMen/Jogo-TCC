@@ -31,8 +31,12 @@ function Pressagio_Active(){
 	if(image_index >= image_number -1)
 	{
 		instance_create_layer(x,y,layer,obj_Pressagio)
-		id.state = Pressagio_Idle
+		sprite_index = spr_Noone
+		id.state = Pressagio_End
 	}
-
+	
+}
+function Pressagio_End(){
+	
 }
 	

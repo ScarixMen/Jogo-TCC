@@ -29,3 +29,11 @@ damage_Apollo_Forest = function(){
 	global.damage = true
 
 }
+
+damage_Apollo_Forest_Anhanga = function(){
+
+	state  = Apollo_State_Death_Forest_Anhanga
+	
+	global.damage = true
+
+}

@@ -31,3 +31,11 @@ damage_Luana_Forest = function(){
 	global.damage = true
 
 }
+
+damage_Luana_Forest_Anhanga = function(){
+
+	state  = Luana_State_Death_Forest_Anhanga
+	
+	global.damage = true
+
+}

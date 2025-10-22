@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Pressagio",
-    "path":"sprites/spr_Pressagio/spr_Pressagio.yy",
+    "name":"spr_Pressagio_Explosion",
+    "path":"sprites/spr_Pressagio_Explosion/spr_Pressagio_Explosion.yy",
   },
   "spriteMaskId":null,
   "visible":true,

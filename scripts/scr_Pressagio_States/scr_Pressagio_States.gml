@@ -1,4 +1,15 @@
+function Pressagio_Spawn() {
+
+	sprite_index = spr_Pressagio_Explosion
+	
+	 if (image_index >= image_number - 1) {
+        state = Pressagio_State_Following
+    }
+}
+
 function Pressagio_Follow_Movement() {
+	
+	
     if (!instance_exists(target)) return;
 
     // --- Posição alvo ---

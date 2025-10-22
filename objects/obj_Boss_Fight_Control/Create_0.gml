@@ -8,7 +8,7 @@ bar_min = 0;
 // Forças
 boss_force = 0.4;
 luana_force = 9;
-penalty_apollo = 15;
+penalty_apollo = 20;
 penalty_luana = 0.5;
 
 // Estados

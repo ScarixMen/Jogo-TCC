@@ -1,4 +1,4 @@
-state = Pressagio_State_Following
+state = Pressagio_Spawn
 
 target = noone; 
 

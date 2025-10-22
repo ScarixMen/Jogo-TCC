@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Anhanga_idle",
-    "path":"sprites/spr_Anhanga_idle/spr_Anhanga_idle.yy",
+    "name":"spr_Anhanga_Idle",
+    "path":"sprites/spr_Anhanga_Idle/spr_Anhanga_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

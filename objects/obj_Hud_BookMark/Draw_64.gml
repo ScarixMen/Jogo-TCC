@@ -1,1 +1,1 @@
-if (draw) draw_sprite(spr_Bookmark_1,frame,0,0);
+if (draw) draw_sprite(spr_Bookmark_1_Beach,frame,0,0);
