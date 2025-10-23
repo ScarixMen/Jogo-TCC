@@ -19,6 +19,16 @@ if !global.cam_override
 }
 if !global.cam_override
 {
+	with (obj_Forest_Puzzle_Main) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+	    if (place_meeting(x,y,obj_Apollo) and !input) {
+	        other.target = id; // define target como a instância encontrada
+			other.y = other.target.y + 50
+	    }
+	}
+}
+
+if !global.cam_override
+{
 	with (obj_Beach_Puzzle_Main) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
 	    if (place_meeting(x,y,obj_Apollo) and !input) {
 	        other.target = id; // define target como a instância encontrada
@@ -26,6 +36,7 @@ if !global.cam_override
 	    }
 	}
 }
+
 if(room = rm_Forest){
 	if(obj_Dialog_Trigger_Ravi.duo_ready)
 	{

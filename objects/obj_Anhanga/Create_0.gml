@@ -1,12 +1,11 @@
 state = Anhanga_State_Idle
 
 timer = 0
-
 timer_down = 0
-
+timer_exhausted = 0
 timer_delay = 90
-
 timer_delay_down = 180
+timer_delay_exhausted = 380
 
 select_plat = "4"
 

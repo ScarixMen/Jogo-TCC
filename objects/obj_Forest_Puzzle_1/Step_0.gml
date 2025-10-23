@@ -8,9 +8,9 @@ if (!input)
 	{
 		
 		input = true
-		obj_Hud_BookMark.draw = true;
-		obj_Hud_BookMark.spd = 0.2
-		obj_Hud_BookMark.limit = 9
+		obj_Hud_BookMark_Forest.draw = true;
+		obj_Hud_BookMark_Forest.spd = 0.2
+		obj_Hud_BookMark_Forest.limit = 9
 		obj_Apollo.state = Apollo_State_Book;
 
 	}

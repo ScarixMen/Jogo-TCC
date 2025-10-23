@@ -1,3 +1,38 @@
+function Anhanga_State_Disappear() {
+
+	sprite_index = spr_Anhanga_Disappear
+	
+	if(image_index >= image_number -1)
+	{
+		y = y + 300
+		state = Anhanga_State_Appear
+	}
+	
+}
+function Anhanga_State_Appear() {
+
+	sprite_index = spr_Anhanga_Appear
+	
+	if(image_index >= image_number -1)
+	{
+		
+		state = Anhanga_State_Exhausted
+	}
+	
+}
+
+function Anhanga_State_Exhausted() {
+	
+	timer_exhausted++;
+	
+	
+	sprite_index = spr_Anhanga_Exhausted
+	
+	if (timer_exhausted >= timer_delay_exhausted)
+	{
+		state = Anhanga_State_Idle
+	}
+}
 function Anhanga_GetFaceAndAttackTarget(_range) {
     // _range = distância máxima pra criar hitbox
     var target1 = instance_exists(obj_Apollo) ? obj_Apollo : noone;
@@ -21,6 +56,8 @@ function Anhanga_GetFaceAndAttackTarget(_range) {
 }
 
 function Anhanga_State_Idle(){
+	
+	sprite_index = spr_Anhanga_Idle
 	
 }
 
