@@ -1,5 +1,11 @@
 state = Anhanga_State_Idle
 
+damage_Anhanga = function(){
+
+	state  = Anhanga_State_Damage
+	
+}
+
 timer = 0
 timer_down = 0
 timer_exhausted = 0

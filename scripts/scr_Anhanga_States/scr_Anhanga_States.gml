@@ -1,3 +1,9 @@
+function Anhanga_State_Damage() {
+	
+	
+	
+}
+
 function Anhanga_State_Disappear() {
 
 	sprite_index = spr_Anhanga_Disappear
@@ -28,8 +34,14 @@ function Anhanga_State_Exhausted() {
 	
 	sprite_index = spr_Anhanga_Exhausted
 	
+	if(image_index >= image_number -1)
+	{
+		image_speed = 0
+	}
+	
 	if (timer_exhausted >= timer_delay_exhausted)
 	{
+		image_speed = 1
 		state = Anhanga_State_Idle
 	}
 }
