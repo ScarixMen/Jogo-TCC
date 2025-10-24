@@ -3,6 +3,7 @@
 hitbox = instance_create_layer(x, y, "Instances", obj_Colision_Cobra_Regia);
 hitbox.owner = id; // referencia a cobra "dona" da hitbox
 
+fator_volume = 0
 
 base = instance_nearest(x,y,obj_Plataform_Cobra);
 

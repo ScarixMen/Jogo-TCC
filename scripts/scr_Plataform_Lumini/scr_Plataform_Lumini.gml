@@ -8,7 +8,8 @@ function Plataform_Lumini_Portrait()
     if point_distance(x, y, obj_Apollo.x, obj_Apollo.y) < 600
     {
         if (interact_Apollo)
-        {
+        {	
+			global.som.tocarSFX(sfx_Plataform_Button)
             // só deixa ativar se o Apollo não estiver no espaço da futura colisão
             if !place_meeting(x, y, obj_Player)
             {
@@ -42,6 +43,7 @@ function Plataform_Lumini_Appear()
     {
         if (interact_Apollo)
         {
+			global.som.tocarSFX(sfx_Plataform_Button)
             state = Plataform_Lumini_Disappear;
         }
     }

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_Runa",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":1.5973469,
+  "name":"sfx_Runa",
+  "parent":{
+    "name":"Scenario",
+    "path":"folders/Sons/Scenario.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_Runa.wav",
+  "type":0,
+  "volume":1.0,
+}

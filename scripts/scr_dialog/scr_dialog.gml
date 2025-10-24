@@ -321,6 +321,28 @@ function scr_dialog()
 			speaker[1] = Apollo
 			
 			break;
+			
+			case "Anhanga_end":
+		
+			text[0] = "Deu certo! Bom trabalho distraindo ele.";
+			text[1] = "Uff...Uff...Por nada Lu...";
+			text[2] = "Bom, já ouvi falar em \"espiritos guardiões\" que nem ele sabe. Normalmente uma figura com traços de animal que protege as florestas.";
+			text[3] = "Mas eles normalmente aparecem quando alguém causa problemas severos ao meio..."
+			text[4] = "Se isso é verdade, é sinistro viu. Bom, vamo foca, a entrada do templo já ta bem próxima daqui."
+
+			name[0] ="Luana"
+			name[1] ="Apollo"
+			name[2] ="Luana"
+			name[3] ="Luana"
+			name[4] ="Apollo"	
+			
+			speaker[0] = Luana
+			speaker[1] = Apollo
+			speaker[2] = Luana
+			speaker[3] = Luana
+			speaker[4] = Apollo
+			
+			break;
 
 	}
 }	

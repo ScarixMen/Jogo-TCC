@@ -258,6 +258,7 @@ function Luana_State_Death_Forest() {
 			y = global.check_Y
 			obj_Apollo.x = global.check_X
 			obj_Apollo.y = global.check_Y
+			obj_Pressagio_Spawner.state = Pressagio_Idle
 			state = Luana_State_Idle
 		}
 	}
@@ -289,9 +290,20 @@ function Luana_State_Death_Forest_Anhanga() {
 			obj_Apollo.y = global.check_Y
 			instance_destroy(obj_Spear);
 			instance_destroy(obj_Spear_Grounded);
-			obj_Anhanga.state = Anhanga_State_Idle;
-			obj_Anhanga.timer_down = 0
-			obj_Anhanga.select_plat = "4"
+			instance_destroy(obj_Anhanga_Ball);
+			instance_destroy(obj_Box);
+			instance_create_layer(18560, 5515, layer, obj_Box);
+			instance_create_layer(18240, 5515, layer, obj_Box);
+			with(obj_Anhanga)
+			{
+				
+				state = Anhanga_State_Idle;
+				timer_down = 0;
+				attack_turn = 0;
+				damage = 0;
+				select_plat = "4";
+				
+			}
 			state = Luana_State_Idle
 		}
 	}

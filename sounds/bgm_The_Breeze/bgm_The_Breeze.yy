@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":109.87682,
+  "duration":0.0,
   "name":"bgm_The_Breeze",
   "parent":{
     "name":"BGM",

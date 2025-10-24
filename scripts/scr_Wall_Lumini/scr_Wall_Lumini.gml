@@ -8,7 +8,7 @@ function Wall_Lumini_Active(){
 	
 	if(interact_Luana)
 	{
-		
+		global.som.tocarSFX(sfx_Lumini_Wall)
 		id.state = Wall_Lumini_Deactive
 			
 	}

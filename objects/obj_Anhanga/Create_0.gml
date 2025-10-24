@@ -1,17 +1,17 @@
 state = Anhanga_State_Idle
 
-damage_Anhanga = function(){
+damage = 0
 
-	state  = Anhanga_State_Damage
-	
-}
+attack_turn = 0
 
+timer_attack = 0
 timer = 0
 timer_down = 0
 timer_exhausted = 0
 timer_delay = 90
+timer_delay_attack = 120
 timer_delay_down = 180
-timer_delay_exhausted = 380
+timer_delay_exhausted = 600
 
 select_plat = "4"
 

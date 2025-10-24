@@ -197,10 +197,22 @@ function Apollo_State_Death_Forest_Anhanga() {
 			obj_Luana.y = global.check_Y
 			instance_destroy(obj_Spear);
 			instance_destroy(obj_Spear_Grounded);
-			obj_Anhanga.state = Anhanga_State_Idle;
-			obj_Anhanga.timer_down = 0
-			obj_Anhanga.select_plat = "4"
-			state = Apollo_State_Idle
+			instance_destroy(obj_Anhanga_Ball);
+			instance_destroy(obj_Box);
+			instance_create_layer(18560, 5515, layer, obj_Box);
+			instance_create_layer(18240, 5515, layer, obj_Box);
+			
+			with(obj_Anhanga)
+			{
+				
+				state = Anhanga_State_Idle;
+				timer_down = 0;
+				attack_turn = 0;
+				damage = 0;
+				select_plat = "4";
+				
+			}
+			state = Apollo_State_Idle;
 		}
 	}
 	

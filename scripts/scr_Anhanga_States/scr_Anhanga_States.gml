@@ -1,6 +1,61 @@
-function Anhanga_State_Damage() {
+function Anhanga_State_End() {
+	
+	global.cam_override = obj_Anhanga
+	
+	sprite_index = spr_Anhanga_Disappear
+	
+	if(image_index >= image_number -1)
+	{
+		instance_destroy(obj_Spear);
+		instance_destroy(obj_Spear_Grounded);
+		instance_destroy(obj_Anhanga_Ball);
+		
+		state = Anhanga_State_Dialog
+		
+	}
 	
 	
+}
+
+function Anhanga_State_Dialog() {
+	
+	sprite_index = spr_Noone
+	
+	global.cam_override = noone
+	
+	var dialog = instance_create_layer(x, y, layer, obj_Dialog);
+    dialog.npc_name = "Anhanga_end";
+    global.dialog = true;
+	
+	state = Anhanga_State_Missing
+	
+}
+function Anhanga_State_Missing() {
+	
+}
+
+function Anhanga_State_Disappear_Exhausted() {
+	
+	if(damage >= 2)
+	{
+		
+		state = Anhanga_State_End
+		exit
+		
+	}
+
+	sprite_index = spr_Anhanga_Disappear
+	
+	if(image_index >= image_number -1)
+	{
+		y = center_y
+		x = center_x
+		
+		
+		state = Anhanga_State_Appear_Exhausted
+		
+	
+	}
 	
 }
 
@@ -10,7 +65,8 @@ function Anhanga_State_Disappear() {
 	
 	if(image_index >= image_number -1)
 	{
-		y = y + 300
+		y = center_y + 300
+		x = center_x
 		state = Anhanga_State_Appear
 	}
 	
@@ -27,6 +83,18 @@ function Anhanga_State_Appear() {
 	
 }
 
+function Anhanga_State_Appear_Exhausted() {
+
+	sprite_index = spr_Anhanga_Appear
+	
+	if(image_index >= image_number -1)
+	{
+		attack_turn = 0
+		state = Anhanga_State_Waiting
+	}
+	
+}
+
 function Anhanga_State_Exhausted() {
 	
 	timer_exhausted++;
@@ -39,10 +107,18 @@ function Anhanga_State_Exhausted() {
 		image_speed = 0
 	}
 	
+	if(place_meeting(x,y,obj_Box))
+	{
+		instance_deactivate_object(instance_nearest(x,y,obj_Box));
+		damage ++;
+		state = Anhanga_State_Disappear_Exhausted
+		
+	}
+	
 	if (timer_exhausted >= timer_delay_exhausted)
 	{
 		image_speed = 1
-		state = Anhanga_State_Idle
+		state = Anhanga_State_Disappear_Exhausted
 	}
 }
 function Anhanga_GetFaceAndAttackTarget(_range) {
@@ -69,6 +145,9 @@ function Anhanga_GetFaceAndAttackTarget(_range) {
 
 function Anhanga_State_Idle(){
 	
+	x = center_x + lengthdir_x(radius, angle);
+	y = center_y + lengthdir_y(radius, angle);
+	
 	sprite_index = spr_Anhanga_Idle
 	
 }
@@ -78,8 +157,6 @@ function Anhanga_State_Choose_Thicket() {
     sprite_index = spr_Anhanga_Disappear;
 
     if (image_index >= image_number - 1) {
-        // Remove hitbox antiga e oculta o sprite
-        instance_destroy(obj_Anhanga_Grab_Hitbox);
         sprite_index = spr_Noone;
 
         // --- Escolher um arbusto aleatório diferente do último ---
@@ -120,25 +197,49 @@ function Anhanga_State_Choose_Thicket() {
 function Anhanga_State_Jump_Thicket(){
 	
 	sprite_index = spr_Anhanga_Jump
+	timer_attack++;
 	
+	if (timer_attack == timer_delay_attack)
+	{
+		attack_turn ++;
+		state = Anhanga_State_Grab_Thicket
+	}
 	if(image_index >= image_number -1)
 	{
 		
-		state = Anhanga_State_Grab_Thicket
+		image_speed = 0
 
 	}
 	
 }
 function Anhanga_State_Grab_Thicket(){
 	
+	timer_attack = 0
+	
 	sprite_index = spr_Anhanga_Grab
 	var target = Anhanga_GetFaceAndAttackTarget(150);
+	
+	if(image_index >= 3)
+	{
+		var sinal = (target.x > x) ? 1 : -1;
+		var hit = instance_create_layer(x + sinal*50, y, layer, obj_Anhanga_Grab_Hitbox);
+	}
+	
 	if(image_index >= image_number -1)
 	{
-		sinal = (target.x > x) ? 1 : -1;
-		var hit = instance_create_layer(x + sinal*50, y, layer, obj_Anhanga_Grab_Hitbox);
 		image_speed =   0
-		state = Anhanga_State_Choose_Thicket
+		
+		instance_destroy(obj_Anhanga_Grab_Hitbox);
+		
+		if(attack_turn >= 3)
+		{
+			
+			state = Anhanga_State_Disappear
+			
+		}else
+		{	
+			state = Anhanga_State_Choose_Thicket
+		}
 	}
 }
 
@@ -153,29 +254,31 @@ function Anhanga_State_Attack_Spear_Down(){
 	{
 		sprite_index = spr_Anhanga_Attack_Down
 		
-	instance_create_layer(center_x - 120, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x - 200, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x - 280, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x - 360, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x - 440, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x - 520, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x - 600, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x - 680, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x - 760, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x - 840, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x, center_y , layer, obj_Anhanga_Ball);
+		
+		instance_create_layer(center_x - 120, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 200, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 280, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 360, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 440, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 520, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 600, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 680, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 760, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 840, center_y + 700, layer, obj_Spear_Grounded);
 													  
-	instance_create_layer(center_x + 120, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x + 200, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x + 280, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x + 360, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x + 440, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x + 520, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x + 600, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x + 680, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x + 760, center_y + 700, layer, obj_Spear_Grounded);
-	instance_create_layer(center_x + 840, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 120, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 200, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 280, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 360, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 440, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 520, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 600, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 680, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 760, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 840, center_y + 700, layer, obj_Spear_Grounded);
 	
-	obj_Spear_Grounded.image_angle = 180
+		obj_Spear_Grounded.image_angle = 180
 	
 	}
 
@@ -210,7 +313,9 @@ function Anhanga_State_Attack_Spear_Middle(){
 	
 	if(image_index >= image_number -1)
 	{
-		instance_create_layer(center_x ,center_y - 300, layer, obj_Spear);
+		instance_create_layer(center_x ,center_y - 400, layer, obj_Spear);
+		instance_create_layer(center_x + 60 ,center_y - 400, layer, obj_Spear);
+		instance_create_layer(center_x - 60 ,center_y - 400, layer, obj_Spear);
 		select_plat = "middle"
 		state = Anhanga_State_Waiting
 	}
@@ -275,6 +380,7 @@ function Anhanga_State_Attack_Spear_4(){
 		instance_create_layer(center_x - 560, center_y - 800, layer, obj_Spear);
 		instance_create_layer(center_x + 560, center_y - 800, layer, obj_Spear);
 		select_plat = "4"
+		attack_turn ++;
 		state = Anhanga_State_Waiting
 	}
 
@@ -326,9 +432,17 @@ function Anhanga_State_Waiting(){
 			break;
 			
 			case "4":
-			
 				timer = 0
-				state = Anhanga_State_Attack_Spear_Middle
+				
+				if(attack_turn >= 2)
+				{
+					state = Anhanga_State_Choose_Thicket
+					attack_turn = 0
+					
+				}else{
+				
+					state = Anhanga_State_Attack_Spear_Middle
+				}
 				image_index = 0
 				
 			break;

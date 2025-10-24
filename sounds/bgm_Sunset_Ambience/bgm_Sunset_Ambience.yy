@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"bgm_Sunset_Ambience",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":69.88748,
+  "name":"bgm_Sunset_Ambience",
+  "parent":{
+    "name":"BGM",
+    "path":"folders/Sons/BGM.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"bgm_Sunset_Ambience.wav",
+  "type":0,
+  "volume":1.0,
+}

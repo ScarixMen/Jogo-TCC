@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":18.365534,
+  "duration":57.044174,
   "name":"bgm_Ocean_Ambience",
   "parent":{
     "name":"BGM",

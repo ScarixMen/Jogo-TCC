@@ -35,5 +35,5 @@
     "path":"sprites/spr_Anhanga_Grab_Hitbox/spr_Anhanga_Grab_Hitbox.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

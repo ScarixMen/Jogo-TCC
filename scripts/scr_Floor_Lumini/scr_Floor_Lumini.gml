@@ -2,7 +2,7 @@ function Floor_Lumini_Active(){
 	
 	mask_index = spr_Floor_Lumini_Deactive
 	
-	script_execute(Input_Luana)
+	if(!global.cam_override)script_execute(Input_Luana)
 	image_speed = 0
 	
 	if point_distance(x,y,obj_Luana.x,obj_Luana.y) < 400

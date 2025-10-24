@@ -5,10 +5,9 @@ function Boca_Jacare_State_Idle(){
 	
 	if (place_meeting(x,y-1,obj_Player))
 	{
-		
+		global.som.tocarSFX(sfx_Boca_Jacare_Touch)
 		sprite_index = spr_Boca_Jacare_Touching
 		state = Boca_Jacare_State_Touching
-			
 	}
 }
 

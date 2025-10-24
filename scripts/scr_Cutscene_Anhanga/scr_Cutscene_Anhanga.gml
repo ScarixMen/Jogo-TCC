@@ -98,7 +98,7 @@ function scr_Cutscene_Anhanga(other) {
             obj_Apollo.can_control = true;
 			obj_Lumini_Luana.start = true;
             obj_Luana.can_control = true;
-			obj_Anhanga.state = Anhanga_State_Disappear;
+			obj_Anhanga.state = Anhanga_State_Attack_Spear_Down;
 			obj_Apollo.state = Apollo_State_Idle;
 			obj_Luana.state  = Luana_State_Idle;
 			
