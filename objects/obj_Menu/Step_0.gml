@@ -89,7 +89,7 @@ if (enter) {
                 switch (indice) {
                     case 0: room_goto(rm_Cutscene); break;
                     case 1:
-                        opc = ["Tutorial", "Praia", "Floresta", "4", "5"];
+                        opc = ["Tutorial", "Praia", "Floresta", "Templo", "5"];
                         opc_max = array_length(opc);
                         indice = 0;
                         estado_menu = "fases";
@@ -124,7 +124,7 @@ if (enter) {
                     case 0: room_goto(rm_Tutorial); break;
                     case 1: room_goto(rm_Beach); break;
                     case 2: room_goto(rm_Forest); break;
-                    case 3: room_goto(rm_Fase4); break;
+                    case 3: room_goto(rm_Temple); break;
                     case 4: room_goto(rm_Fase5); break;
                 }
             }

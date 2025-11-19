@@ -340,6 +340,15 @@ function Luana_State_Push_Niobio() {
 	
 }
 
+function Luana_State_Moth_Attack()
+{
+	
+	hspd = 0
+	vspd = 0
+	sprite_index = spr_Luana_Moth_Attack;
+	
+}
+
 function Luana_State_God(){
 	
 	script_execute(Input_Luana_God)

@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Luana_Push_Niobio_Wallking",
   "bboxMode":2,
   "bbox_bottom":209,
@@ -12,12 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"cae258a6-0ef0-41d8-8ce0-2a6a1d7b65b7","name":"cae258a6-0ef0-41d8-8ce0-2a6a1d7b65b7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"81ae65f2-4f25-4fc9-ab10-754988dae5d3","name":"81ae65f2-4f25-4fc9-ab10-754988dae5d3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"45af34cf-76bf-47e2-bbef-69cd99cc364c","name":"45af34cf-76bf-47e2-bbef-69cd99cc364c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"a1440cf6-53fb-41e6-abc6-df9973cb47e8","name":"a1440cf6-53fb-41e6-abc6-df9973cb47e8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"d9226137-df0c-4431-93b2-f703e3d9a920","name":"d9226137-df0c-4431-93b2-f703e3d9a920","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"ec24fabd-7f6c-42d0-a1d8-f49aa20f0ba8","name":"ec24fabd-7f6c-42d0-a1d8-f49aa20f0ba8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"cae258a6-0ef0-41d8-8ce0-2a6a1d7b65b7","name":"cae258a6-0ef0-41d8-8ce0-2a6a1d7b65b7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"81ae65f2-4f25-4fc9-ab10-754988dae5d3","name":"81ae65f2-4f25-4fc9-ab10-754988dae5d3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"45af34cf-76bf-47e2-bbef-69cd99cc364c","name":"45af34cf-76bf-47e2-bbef-69cd99cc364c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"a1440cf6-53fb-41e6-abc6-df9973cb47e8","name":"a1440cf6-53fb-41e6-abc6-df9973cb47e8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"d9226137-df0c-4431-93b2-f703e3d9a920","name":"d9226137-df0c-4431-93b2-f703e3d9a920","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ec24fabd-7f6c-42d0-a1d8-f49aa20f0ba8","name":"ec24fabd-7f6c-42d0-a1d8-f49aa20f0ba8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -75,24 +75,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cae258a6-0ef0-41d8-8ce0-2a6a1d7b65b7","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6b33c930-0dc1-482f-ba46-fd58130bcd6b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"81ae65f2-4f25-4fc9-ab10-754988dae5d3","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3a376643-eed8-469c-aab4-7a288c538c52","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"45af34cf-76bf-47e2-bbef-69cd99cc364c","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"61bcdef9-f2f9-4078-b2f2-d96e1c5e401d","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a1440cf6-53fb-41e6-abc6-df9973cb47e8","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9b54e2f4-843b-4c06-8bb2-847a31f16bb2","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9226137-df0c-4431-93b2-f703e3d9a920","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"da1b30bd-32a9-44e1-b98c-23fac2f9f1f3","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec24fabd-7f6c-42d0-a1d8-f49aa20f0ba8","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fb24213a-46a4-4541-b2b0-f147a69bb08b","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"cae258a6-0ef0-41d8-8ce0-2a6a1d7b65b7","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6b33c930-0dc1-482f-ba46-fd58130bcd6b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"81ae65f2-4f25-4fc9-ab10-754988dae5d3","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3a376643-eed8-469c-aab4-7a288c538c52","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"45af34cf-76bf-47e2-bbef-69cd99cc364c","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"61bcdef9-f2f9-4078-b2f2-d96e1c5e401d","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"a1440cf6-53fb-41e6-abc6-df9973cb47e8","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9b54e2f4-843b-4c06-8bb2-847a31f16bb2","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"d9226137-df0c-4431-93b2-f703e3d9a920","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"da1b30bd-32a9-44e1-b98c-23fac2f9f1f3","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec24fabd-7f6c-42d0-a1d8-f49aa20f0ba8","path":"sprites/spr_Luana_Push_Niobio_Wallking/spr_Luana_Push_Niobio_Wallking.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fb24213a-46a4-4541-b2b0-f147a69bb08b","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

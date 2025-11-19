@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Forest_Puzzle_2_Light_Up",
   "bboxMode":0,
   "bbox_bottom":511,
@@ -12,12 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"7106c604-e074-4a39-b3ec-4c3c0166e87e","name":"7106c604-e074-4a39-b3ec-4c3c0166e87e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"36e9f30c-c7ca-4340-970d-7f558f860c09","name":"36e9f30c-c7ca-4340-970d-7f558f860c09","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"75a0b1b2-ce8c-4e63-aa7b-41e078fa6913","name":"75a0b1b2-ce8c-4e63-aa7b-41e078fa6913","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"f40b0e4d-7a93-48aa-822a-3ac7c0fa73c6","name":"f40b0e4d-7a93-48aa-822a-3ac7c0fa73c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"7b3613f1-b962-430b-b668-a45bb18ba7e0","name":"7b3613f1-b962-430b-b668-a45bb18ba7e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"02431cc2-68ce-4f7a-819d-aac08bc364d5","name":"02431cc2-68ce-4f7a-819d-aac08bc364d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7106c604-e074-4a39-b3ec-4c3c0166e87e","name":"7106c604-e074-4a39-b3ec-4c3c0166e87e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"36e9f30c-c7ca-4340-970d-7f558f860c09","name":"36e9f30c-c7ca-4340-970d-7f558f860c09","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"75a0b1b2-ce8c-4e63-aa7b-41e078fa6913","name":"75a0b1b2-ce8c-4e63-aa7b-41e078fa6913","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f40b0e4d-7a93-48aa-822a-3ac7c0fa73c6","name":"f40b0e4d-7a93-48aa-822a-3ac7c0fa73c6","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"7b3613f1-b962-430b-b668-a45bb18ba7e0","name":"7b3613f1-b962-430b-b668-a45bb18ba7e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"02431cc2-68ce-4f7a-819d-aac08bc364d5","name":"02431cc2-68ce-4f7a-819d-aac08bc364d5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -75,24 +75,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7106c604-e074-4a39-b3ec-4c3c0166e87e","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fc2d8caf-3729-46a8-8c88-679736adc22d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"36e9f30c-c7ca-4340-970d-7f558f860c09","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f061872a-2dfb-4128-b239-bc94fad15fd7","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"75a0b1b2-ce8c-4e63-aa7b-41e078fa6913","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3e9fd57b-344d-4cce-a5a8-3b4de993bd4a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f40b0e4d-7a93-48aa-822a-3ac7c0fa73c6","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"df7d3579-7664-43d3-9b71-a877369488dd","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7b3613f1-b962-430b-b668-a45bb18ba7e0","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1bda686b-2df6-4b9d-a378-933e5651e2c1","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"02431cc2-68ce-4f7a-819d-aac08bc364d5","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a319e19a-cfe4-4b9c-88c5-b4cb2a3bacd4","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7106c604-e074-4a39-b3ec-4c3c0166e87e","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"fc2d8caf-3729-46a8-8c88-679736adc22d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"36e9f30c-c7ca-4340-970d-7f558f860c09","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"f061872a-2dfb-4128-b239-bc94fad15fd7","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"75a0b1b2-ce8c-4e63-aa7b-41e078fa6913","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3e9fd57b-344d-4cce-a5a8-3b4de993bd4a","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"f40b0e4d-7a93-48aa-822a-3ac7c0fa73c6","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"df7d3579-7664-43d3-9b71-a877369488dd","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"7b3613f1-b962-430b-b668-a45bb18ba7e0","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1bda686b-2df6-4b9d-a378-933e5651e2c1","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"02431cc2-68ce-4f7a-819d-aac08bc364d5","path":"sprites/spr_Forest_Puzzle_2_Light_Up/spr_Forest_Puzzle_2_Light_Up.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"a319e19a-cfe4-4b9c-88c5-b4cb2a3bacd4","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

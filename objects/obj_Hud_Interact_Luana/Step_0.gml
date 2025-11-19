@@ -18,6 +18,17 @@ with (obj_Luana) { // pega todas as instâncias dos filhos, já que eles são fi
 		other.x = other.target.x
     }
 }
+
+if !global.cam_override
+{
+	with (obj_Apollo) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+	    if(point_distance(x, y, obj_Luana.x, obj_Luana.y) < 300 and state == Apollo_State_Moth_Attack) {
+	        other.target = id; // define target como a instância encontrada
+			other.y = other.target.y - 350
+	    }
+	}
+}
+
 if(room = rm_Forest){
 	if(obj_Dialog_Trigger_Ravi.duo_ready)
 	{
@@ -32,14 +43,13 @@ if(room = rm_Forest){
 	}
 }
 
-
-
 // Se encontrou um alvo, posiciona o botão
-
 
 btn_frame = (btn_frame + btn_speed) mod sprite_get_number(spr_Interact_Button_X);
 
 if (target != noone) {
+	
+	if (target == obj_Apollo.id) x = target.x
 	
     visible = true;
 } else {

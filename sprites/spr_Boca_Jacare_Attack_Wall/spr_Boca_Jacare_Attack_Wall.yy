@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Boca_Jacare_Attack_Wall",
   "bboxMode":2,
   "bbox_bottom":211,
@@ -12,11 +12,11 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"6fa43e1f-0652-4e4b-ab7e-1fb3b9ed6292","name":"6fa43e1f-0652-4e4b-ab7e-1fb3b9ed6292","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"74f0a566-e264-4446-9987-4e5ec9d48941","name":"74f0a566-e264-4446-9987-4e5ec9d48941","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"040208cb-577b-4681-91ed-0488ef3caf2f","name":"040208cb-577b-4681-91ed-0488ef3caf2f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"df08aa3c-754b-47fa-bcde-3bb5fb12a49b","name":"df08aa3c-754b-47fa-bcde-3bb5fb12a49b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"4d520c01-98eb-49d6-94ca-b91630024fca","name":"4d520c01-98eb-49d6-94ca-b91630024fca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"6fa43e1f-0652-4e4b-ab7e-1fb3b9ed6292","name":"6fa43e1f-0652-4e4b-ab7e-1fb3b9ed6292","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"74f0a566-e264-4446-9987-4e5ec9d48941","name":"74f0a566-e264-4446-9987-4e5ec9d48941","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"040208cb-577b-4681-91ed-0488ef3caf2f","name":"040208cb-577b-4681-91ed-0488ef3caf2f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"df08aa3c-754b-47fa-bcde-3bb5fb12a49b","name":"df08aa3c-754b-47fa-bcde-3bb5fb12a49b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4d520c01-98eb-49d6-94ca-b91630024fca","name":"4d520c01-98eb-49d6-94ca-b91630024fca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -74,21 +74,11 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6fa43e1f-0652-4e4b-ab7e-1fb3b9ed6292","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"73ff2ca7-6a91-4c49-9b13-a43c89c09d14","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"74f0a566-e264-4446-9987-4e5ec9d48941","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9311187b-8aee-43a4-b595-40e61acdd644","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"040208cb-577b-4681-91ed-0488ef3caf2f","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"4d03fda4-66f5-4896-932a-c5b76cb1c95e","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"df08aa3c-754b-47fa-bcde-3bb5fb12a49b","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d39738d7-adc6-44b3-8749-2d6a8daeda00","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4d520c01-98eb-49d6-94ca-b91630024fca","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3639cbc0-333d-4f25-9426-786ac37a15ac","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"6fa43e1f-0652-4e4b-ab7e-1fb3b9ed6292","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"73ff2ca7-6a91-4c49-9b13-a43c89c09d14","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"74f0a566-e264-4446-9987-4e5ec9d48941","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"9311187b-8aee-43a4-b595-40e61acdd644","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"040208cb-577b-4681-91ed-0488ef3caf2f","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"4d03fda4-66f5-4896-932a-c5b76cb1c95e","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"df08aa3c-754b-47fa-bcde-3bb5fb12a49b","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"d39738d7-adc6-44b3-8749-2d6a8daeda00","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"4d520c01-98eb-49d6-94ca-b91630024fca","path":"sprites/spr_Boca_Jacare_Attack_Wall/spr_Boca_Jacare_Attack_Wall.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"3639cbc0-333d-4f25-9426-786ac37a15ac","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

@@ -307,6 +307,16 @@ function Apollo_State_Book_Reset()
 		
 	}
 }
+
+function Apollo_State_Moth_Attack()
+{
+
+	hspd = 0
+	vspd = 0
+	sprite_index = spr_Apollo_Moth_Attack;
+	
+}
+
 function Apollo_State_God(){
 	
 	script_execute(Input_Apollo_God)

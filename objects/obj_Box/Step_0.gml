@@ -1,3 +1,16 @@
+if(room == rm_Temple)
+{
+	
+	sprite_index = spr_Box_Temple
+	
+}
+else{
+	
+	sprite_index = spr_Box
+	
+}
+
+
 if (Check_Pause()) exit;
 
 // Verifica se estava no chão no frame anterior

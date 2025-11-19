@@ -1,5 +1,5 @@
 {
-  "$GMSprite":"",
+  "$GMSprite":"v2",
   "%Name":"spr_Beach_Puzzle_Apollo_5_Turn_Off",
   "bboxMode":0,
   "bbox_bottom":511,
@@ -12,12 +12,12 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"ea203ea1-9031-452a-9ffa-5d9aadbbb2a4","name":"ea203ea1-9031-452a-9ffa-5d9aadbbb2a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"74dedce5-5cb6-49b4-8d7c-546ea2fa1c78","name":"74dedce5-5cb6-49b4-8d7c-546ea2fa1c78","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"e8d7340b-f60c-44c9-a082-623e86fb89a1","name":"e8d7340b-f60c-44c9-a082-623e86fb89a1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"c407aec0-fa3d-47fc-a1c8-8c920d8d3219","name":"c407aec0-fa3d-47fc-a1c8-8c920d8d3219","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"3edd8ba8-3cb3-448a-acf6-6c677a1ee762","name":"3edd8ba8-3cb3-448a-acf6-6c677a1ee762","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"b69588cb-8453-4eb9-a109-0f7990511743","name":"b69588cb-8453-4eb9-a109-0f7990511743","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ea203ea1-9031-452a-9ffa-5d9aadbbb2a4","name":"ea203ea1-9031-452a-9ffa-5d9aadbbb2a4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"74dedce5-5cb6-49b4-8d7c-546ea2fa1c78","name":"74dedce5-5cb6-49b4-8d7c-546ea2fa1c78","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e8d7340b-f60c-44c9-a082-623e86fb89a1","name":"e8d7340b-f60c-44c9-a082-623e86fb89a1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"c407aec0-fa3d-47fc-a1c8-8c920d8d3219","name":"c407aec0-fa3d-47fc-a1c8-8c920d8d3219","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"3edd8ba8-3cb3-448a-acf6-6c677a1ee762","name":"3edd8ba8-3cb3-448a-acf6-6c677a1ee762","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"b69588cb-8453-4eb9-a109-0f7990511743","name":"b69588cb-8453-4eb9-a109-0f7990511743","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -75,24 +75,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea203ea1-9031-452a-9ffa-5d9aadbbb2a4","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"6e3cc20c-28f5-4ffa-9a1d-855d0f51dc06","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"74dedce5-5cb6-49b4-8d7c-546ea2fa1c78","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"0bd0290f-02e5-4240-970b-21f6a8c50890","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e8d7340b-f60c-44c9-a082-623e86fb89a1","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"85047bfc-bc0f-4d9d-9c0d-aff4cb9b374f","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c407aec0-fa3d-47fc-a1c8-8c920d8d3219","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"1626788e-8f5f-41fb-90a8-773453677d16","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3edd8ba8-3cb3-448a-acf6-6c677a1ee762","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"27b489f5-9f4d-4d3d-a319-2a491fbaa99a","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"b69588cb-8453-4eb9-a109-0f7990511743","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"11102e9a-eeaa-48e8-9f3c-43c8ae6f1342","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"ea203ea1-9031-452a-9ffa-5d9aadbbb2a4","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"6e3cc20c-28f5-4ffa-9a1d-855d0f51dc06","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"74dedce5-5cb6-49b4-8d7c-546ea2fa1c78","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"0bd0290f-02e5-4240-970b-21f6a8c50890","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"e8d7340b-f60c-44c9-a082-623e86fb89a1","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"85047bfc-bc0f-4d9d-9c0d-aff4cb9b374f","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"c407aec0-fa3d-47fc-a1c8-8c920d8d3219","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"1626788e-8f5f-41fb-90a8-773453677d16","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"3edd8ba8-3cb3-448a-acf6-6c677a1ee762","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"27b489f5-9f4d-4d3d-a319-2a491fbaa99a","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"b69588cb-8453-4eb9-a109-0f7990511743","path":"sprites/spr_Beach_Puzzle_Apollo_5_Turn_Off/spr_Beach_Puzzle_Apollo_5_Turn_Off.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"11102e9a-eeaa-48e8-9f3c-43c8ae6f1342","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

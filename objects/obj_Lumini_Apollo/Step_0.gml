@@ -1,5 +1,8 @@
 if (Check_Pause()) exit;
 
+if(room == rm_Temple) start = true
+
+
 if(start){
 	if (instance_exists(target)) {
 	    // --- Distância "atrás" dependendo do lado ---

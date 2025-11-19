@@ -51,10 +51,20 @@ if(room = rm_Forest){
 	}
 }
 
+if !global.cam_override
+{
+	with (obj_Luana) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+	    if(point_distance(x, y, obj_Apollo.x, obj_Apollo.y) < 300 and state == Luana_State_Moth_Attack) {
+	        other.target = id; // define target como a instância encontrada
+			other.y = other.target.y - 350
+	    }
+	}
+}
+
 // Se encontrou um alvo, posiciona o botão
 if (target != noone) {
     x = target.x + target.sprite_width/2;
-
+	if (target == obj_Luana.id) x = target.x
     visible = true;
 } else {
     visible = false;
