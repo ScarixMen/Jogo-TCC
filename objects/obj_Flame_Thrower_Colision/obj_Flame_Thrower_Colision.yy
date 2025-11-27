@@ -34,5 +34,5 @@
     "path":"sprites/spr_Flame_Thrower_Colision/spr_Flame_Thrower_Colision.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

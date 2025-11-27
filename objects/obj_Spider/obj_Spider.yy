@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Spider",
-    "path":"sprites/spr_Spider/spr_Spider.yy",
+    "name":"spr_Spider_Down",
+    "path":"sprites/spr_Spider_Down/spr_Spider_Down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

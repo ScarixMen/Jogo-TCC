@@ -1,3 +1,4 @@
+if (Check_Pause()) exit;
 if place_meeting(x,y,obj_Apollo)
 {
 	with obj_Apollo{

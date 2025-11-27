@@ -9,6 +9,9 @@ function scr_Cutscene_Luminis(other) {
         case 0: // Desabilitar controle
             obj_Apollo.can_control = false;
             obj_Luana.can_control = false;
+			obj_Apollo.sprite_index = spr_Apollo_Idle
+			obj_Apollo.hspd = 0
+			obj_Luana.state = Luana_State_Idle
 			// Força estados de cutscene
 			global.cam_override = true;
 			obj_Apollo.state = Apollo_State_Cutscene;

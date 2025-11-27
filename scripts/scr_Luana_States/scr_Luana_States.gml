@@ -344,7 +344,6 @@ function Luana_State_Moth_Attack()
 {
 	
 	hspd = 0
-	vspd = 0
 	sprite_index = spr_Luana_Moth_Attack;
 	
 }
@@ -353,7 +352,7 @@ function Luana_State_God(){
 	
 	script_execute(Input_Luana_God)
 	grv = 0
-	spd = 14
+	spd = 20
 	
 	if(keyboard_check_pressed(ord("G"))) {state = Luana_State_Idle; grv = 0.7 spd = 7}
 	

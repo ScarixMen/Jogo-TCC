@@ -1,3 +1,5 @@
+if (Check_Pause()) exit;
+
 script_execute(state);
 
 var _x1 = obj_Apollo.x;
