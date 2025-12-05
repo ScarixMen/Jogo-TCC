@@ -1,0 +1,1 @@
+state = Fox_Spawner_1_State_Idle;

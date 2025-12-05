@@ -316,6 +316,20 @@ function Apollo_State_Moth_Attack()
 	
 }
 
+function Apollo_State_Moth_Reset()
+{
+	vspd = 0
+	hspd = 0
+    sprite_index = spr_Apollo_Moth_Reset;
+
+    // Quando a animação terminar, volta ao idle
+    if (image_index >= image_number - 1)
+    {
+        state = Apollo_State_Idle;
+    }
+}
+
+
 function Apollo_State_God(){
 	
 	script_execute(Input_Apollo_God)

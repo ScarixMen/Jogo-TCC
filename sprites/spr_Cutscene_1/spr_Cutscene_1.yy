@@ -12,19 +12,19 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"fb1a763f-7d6f-4c38-aedf-8c2a1c2bf122","name":"fb1a763f-7d6f-4c38-aedf-8c2a1c2bf122","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"441d2bd8-587c-4731-8ead-eb8bfb6a84ed","name":"441d2bd8-587c-4731-8ead-eb8bfb6a84ed","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"858d379c-5a68-4c73-a175-21ca9dcef9ba","name":"858d379c-5a68-4c73-a175-21ca9dcef9ba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"e8e61a24-a7b7-43d9-90fc-b51d614b024e","name":"e8e61a24-a7b7-43d9-90fc-b51d614b024e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":540,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"66c0cd5d-a61f-4708-9e3a-c8422660efba","blendMode":0,"displayName":"default","isLocked":false,"name":"66c0cd5d-a61f-4708-9e3a-c8422660efba","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"404c844d-848f-4dd3-8c18-f2b83120cf6a","blendMode":0,"displayName":"default","isLocked":false,"name":"404c844d-848f-4dd3-8c18-f2b83120cf6a","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Cutscene_1",
   "nineSlice":null,
-  "origin":4,
+  "origin":0,
   "parent":{
     "name":"Cutscenes",
     "path":"folders/Sprites/Cutscenes.yy",
@@ -71,14 +71,18 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"fb1a763f-7d6f-4c38-aedf-8c2a1c2bf122","path":"sprites/spr_Cutscene_1/spr_Cutscene_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"28568259-33ad-4c91-b597-88bb41a3f654","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"441d2bd8-587c-4731-8ead-eb8bfb6a84ed","path":"sprites/spr_Cutscene_1/spr_Cutscene_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"20d66bb1-8a07-423d-ac72-dc68a063c6ff","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"858d379c-5a68-4c73-a175-21ca9dcef9ba","path":"sprites/spr_Cutscene_1/spr_Cutscene_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"85e6cf27-1985-47dc-84e4-84a5366b5508","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"e8e61a24-a7b7-43d9-90fc-b51d614b024e","path":"sprites/spr_Cutscene_1/spr_Cutscene_1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"78140a66-5541-48a6-b8cb-5559aea9562e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":480,
-    "yorigin":270,
+    "xorigin":0,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

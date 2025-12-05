@@ -9,6 +9,8 @@ function scr_Cutscene_Niobio_End(other) {
         case 0: // Desabilitar controle
 			instance_deactivate_object(inst_5966244)
             obj_Apollo.can_control = false;
+			obj_Apollo.hspd = 0 
+			obj_Luana.hspd = 0 
             obj_Luana.can_control = false;
             obj_Niobio.can_control = false;
 			// Força estados de cutscene
@@ -51,6 +53,7 @@ function scr_Cutscene_Niobio_End(other) {
             ctrl.cutscene_timer--;
             if (ctrl.cutscene_timer <= 0) {
 				
+				global.som.tocarSFX(sfx_Niobio_Pre_Jump)
 				obj_Niobio.state = Niobio_State_Jump_A
 	            ctrl.cutscene_timer = room_speed*2; // pausa 1 segundo após pular
 	            ctrl.cutscene_step++;
@@ -63,9 +66,9 @@ function scr_Cutscene_Niobio_End(other) {
 					with obj_Niobio {
 						state = Niobio_State_Cutscene
 		                sprite_index = spr_Niobio_Reset
-	
+						
 						image_xscale = -1
-	
+
 						if(image_index >= image_number -1 )
 						{
 							sprite_index = spr_Niobio_Statue

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sfx_Niobio_Fall",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":1.1988208,
+  "exportDir":"",
+  "name":"sfx_Niobio_Fall",
+  "parent":{
+    "name":"Enemys",
+    "path":"folders/Sons/Enemys.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_Niobio_Fall.wav",
+  "volume":1.0,
+}

@@ -35,6 +35,15 @@ if place_meeting(x,y+100,obj_Sand){
 				case "arrastando_4":
 				global.som.tocarSFX(sfx_Crawling_Sand_4)
 		        break;
+				case "book":
+				global.som.tocarSFX(sfx_Apollo_Book_Open)
+		        break;
+				case "bag":
+				global.som.tocarSFX(sfx_Apollo_Bag)
+		        break;
+				case "write":
+				global.som.tocarSFX(sfx_Apollo_Write)
+		        break;
 		}
 	}
 }else if(place_meeting(x,y+100,obj_Rock_Colision) or place_meeting(x,y+100,obj_Rock_Cut))
@@ -62,6 +71,15 @@ if place_meeting(x,y+100,obj_Sand){
 				case "fallA":
 				global.som.tocarSFX(sfx_Fall_Rock_Apollo)
 	            break;
+				case "book":
+				global.som.tocarSFX(sfx_Apollo_Book_Open)
+		        break;
+				case "bag":
+				global.som.tocarSFX(sfx_Apollo_Bag)
+		        break;
+				case "write":
+				global.som.tocarSFX(sfx_Apollo_Write)
+		        break;
 		}
 	}
 }else if(place_meeting(x,y+100,obj_Block_Grass))
@@ -100,6 +118,15 @@ if place_meeting(x,y+100,obj_Sand){
 		        break;
 				case "arrastando_4":
 				global.som.tocarSFX(sfx_Crawling_Grass_4)
+		        break;
+				case "book":
+				global.som.tocarSFX(sfx_Apollo_Book_Open)
+		        break;
+				case "bag":
+				global.som.tocarSFX(sfx_Apollo_Bag)
+		        break;
+				case "write":
+				global.som.tocarSFX(sfx_Apollo_Write)
 		        break;
 		}
 	}

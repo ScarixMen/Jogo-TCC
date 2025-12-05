@@ -44,7 +44,13 @@
     "backdropYOffset":0.0,
     "events":{
       "$KeyframeStore<MessageEventKeyframe>":"",
-      "Keyframes":[],
+      "Keyframes":[
+        {"$Keyframe<MessageEventKeyframe>":"","Channels":{
+            "0":{"$MessageEventKeyframe":"","Events":[
+                "fall",
+              ],"resourceType":"MessageEventKeyframe","resourceVersion":"2.0",},
+          },"Disabled":false,"id":"f4e0e33c-4a30-47f8-836c-5a6f878442a0","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"2.0","Stretch":false,},
+      ],
       "resourceType":"KeyframeStore<MessageEventKeyframe>",
       "resourceVersion":"2.0",
     },
@@ -71,8 +77,12 @@
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"137a87a5-ba8e-4ee6-bc86-105089a412ff","path":"sprites/spr_Niobio_Falling/spr_Niobio_Falling.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"47c58c02-0715-47bb-b952-26f002d5be07","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{"0":{"$SpriteFrameKeyframe":"","Id":{"name":"0a8ffa2a-2a1c-4dfe-838d-6fdfa50d01d7","path":"sprites/spr_Niobio_Falling/spr_Niobio_Falling.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},},"Disabled":false,"id":"36f390be-6779-479a-be58-4df33b777d90","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"137a87a5-ba8e-4ee6-bc86-105089a412ff","path":"sprites/spr_Niobio_Falling/spr_Niobio_Falling.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"47c58c02-0715-47bb-b952-26f002d5be07","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0a8ffa2a-2a1c-4dfe-838d-6fdfa50d01d7","path":"sprites/spr_Niobio_Falling/spr_Niobio_Falling.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"36f390be-6779-479a-be58-4df33b777d90","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

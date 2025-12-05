@@ -1,6 +1,6 @@
 function Moth_Follow_Movement(){
     if (!instance_exists(target)) return;
-
+	
     // Posição alvo
     var tx = target.x;
     var ty = target.y - 230;
@@ -48,62 +48,74 @@ function Moth_State_Idle(){
 	
 }
 
-function Moth_State_Follow(){
-	sprite_index = spr_Moth
-	
-	Moth_Follow_Movement();
-	
-	if(place_meeting(x,y,obj_Player))
-	{
-		
-		state = Moth_State_Attack
-		
-		if(target == obj_Apollo)
-		{
-			select_target = 1
-			target.state = Apollo_State_Moth_Attack
-		}else
-		{
-			select_target = 2
-			target.state = Luana_State_Moth_Attack
-		
-		}
-		
-	}
-	
-	
+function Moth_State_Follow() {
+    sprite_index = spr_Moth;
+    
+    if (target == noone) {
+        state = Moth_State_Idle;
+        exit;
+    }
+    
+    Moth_Follow_Movement();
+    
+    if (place_meeting(x, y, obj_Player)) {
+        state = Moth_State_Attack;
+        
+        if (target == obj_Apollo) {
+            select_target = 1;
+            apollo_pego = true;
+            target.state = Apollo_State_Moth_Attack;
+        } else {
+            select_target = 2;
+            luana_pego = true;
+            target.state = Luana_State_Moth_Attack;
+        }
+    }
 }
 
-function Moth_State_Attack(){
-	
-	sprite_index = spr_Noone
-	if(select_target == 1)
-	{
-	
-		with (obj_Apollo)
-		{
-			script_execute(Input_Luana)
-			if(point_distance(x, y, obj_Luana.x, obj_Luana.y)< 300 and interact_Luana)
-			{
-				instance_destroy(other)
-				state = Apollo_State_Idle
-			
-			}
-		
-		}
-	}else{
-		with (obj_Luana)
-		{
-			script_execute(Input_Apollo)
-			if(point_distance(x, y, obj_Apollo.x, obj_Apollo.y)< 300 and interact_Apollo)
-			{
-				instance_destroy(other)
-				state = Luana_State_Idle
-			
-			}
-		
-		}
-		
-	}
-	
+function Moth_State_Attack() {
+
+    // Se os dois foram pegos → matar ambos
+    if (apollo_pego && luana_pego) {
+        with (obj_Apollo) {
+            state = Apollo_State_Death;
+        }
+        with (obj_Luana) {
+            state = Luana_State_Death;
+        }
+        
+        instance_destroy(); // Destroya o moth
+        exit;
+    }
+
+    sprite_index = spr_Noone;
+
+    // Se está atacando o Apollo
+    if (select_target == 1) {
+        with (obj_Apollo) {
+            script_execute(Input_Luana);
+
+            if (point_distance(x, y, obj_Luana.x, obj_Luana.y) < 300 && interact_Luana) {
+                instance_destroy(other);
+                sprite_index = spr_Apollo_Moth_Reset;
+                image_index = 0;
+                apollo_pego = false;
+                state = Apollo_State_Moth_Reset;
+            }
+        }
+
+    // Se está atacando a Luana
+    } else {
+        with (obj_Luana) {
+            script_execute(Input_Apollo);
+
+            if (point_distance(x, y, obj_Apollo.x, obj_Apollo.y) < 300 && interact_Apollo) {
+                instance_destroy(other);
+                sprite_index = spr_Luana_Moth_Reset;
+                image_index = 0;
+                luana_pego = false;
+                state = Luana_State_Moth_Reset;
+            }
+        }
+    }
 }

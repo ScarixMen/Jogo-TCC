@@ -8,6 +8,14 @@ with (obj_Genius_Main) { // pega todas as instâncias dos filhos, já que eles s
 		other.y = other.target.y - 50
     }
 }
+
+with (obj_Genius_Main_Temple) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+    if (place_meeting(x,y,obj_Apollo)) {
+        other.target = id; // define target como a instância encontrada
+		other.y = other.target.y - 50
+    }
+}
+
 if !global.cam_override
 {
 	with (obj_Beach_Puzzle_Apollo_Main) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
@@ -17,6 +25,18 @@ if !global.cam_override
 	    }
 	}
 }
+
+if !global.cam_override
+{
+	with (obj_Plataform_Lumini) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
+	    if (point_distance(x,y,obj_Apollo.x,obj_Apollo.y)) < 300
+		{
+	        other.target = id; // define target como a instância encontrada
+			other.y = other.target.y - 125
+	    }
+	}
+}
+
 if !global.cam_override
 {
 	with (obj_Forest_Puzzle_Main) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
@@ -54,7 +74,7 @@ if(room = rm_Forest){
 if !global.cam_override
 {
 	with (obj_Luana) { // pega todas as instâncias dos filhos, já que eles são filhos do pai
-	    if(point_distance(x, y, obj_Apollo.x, obj_Apollo.y) < 300 and state == Luana_State_Moth_Attack) {
+	    if(point_distance(x, y, obj_Apollo.x, obj_Apollo.y) < 450 and state == Luana_State_Moth_Attack) {
 	        other.target = id; // define target como a instância encontrada
 			other.y = other.target.y - 350
 	    }
@@ -64,7 +84,7 @@ if !global.cam_override
 // Se encontrou um alvo, posiciona o botão
 if (target != noone) {
     x = target.x + target.sprite_width/2;
-	if (target == obj_Luana.id) x = target.x
+	if (target == obj_Luana.id or obj_Plataform_Lumini) x = target.x
     visible = true;
 } else {
     visible = false;

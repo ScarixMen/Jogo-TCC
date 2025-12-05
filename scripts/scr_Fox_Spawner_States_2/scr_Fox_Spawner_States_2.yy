@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Fox_Spawner_States_2",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Fox_Spawner_States_2",
+  "parent":{
+    "name":"Enemys",
+    "path":"folders/Scripts/Enemys.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

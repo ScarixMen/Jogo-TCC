@@ -7,6 +7,7 @@ function scr_Cutscene_Anhanga(other) {
     switch(ctrl.cutscene_step) {
 
         case 0: // Desabilitar controle
+			global.som.tocarMusicaNiobio(bgm_The_Guardian)
             obj_Apollo.can_control = false;
             obj_Luana.can_control = false;
 			obj_Lumini_Luana.start = false;
@@ -101,6 +102,7 @@ function scr_Cutscene_Anhanga(other) {
 			obj_Anhanga.state = Anhanga_State_Attack_Spear_Down;
 			obj_Apollo.state = Apollo_State_Idle;
 			obj_Luana.state  = Luana_State_Idle;
+			global.som.tocarMusicaNiobio(bgm_Dance_Jungle)
 			
             ctrl.cutscene_step = 0;  // reseta para próxima cutscene
             return true;  // cutscene acabou

@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"sfx_Niobio_Pre_Jump",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":2.4728572,
+  "exportDir":"",
+  "name":"sfx_Niobio_Pre_Jump",
+  "parent":{
+    "name":"Enemys",
+    "path":"folders/Sons/Enemys.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_Niobio_Pre_Jump.wav",
+  "volume":1.0,
+}

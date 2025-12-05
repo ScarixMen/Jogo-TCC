@@ -44,6 +44,13 @@ function ReconfigurarSomPorRoom() {
 			global.som.tocarAmbiente("cricket", bgm_Sunset_Ambience);
 		
             break;
+			
+		case rm_Temple:
+			global.som.tocarMusica(bgm_The_Temple);
+			global.som.pararAmbiente("cricket");
+			global.som.tocarAmbiente("temple", bgm_Temple_Ambience);
+		
+            break;
 
         // Adicione outros cases para outras rooms/fases
 

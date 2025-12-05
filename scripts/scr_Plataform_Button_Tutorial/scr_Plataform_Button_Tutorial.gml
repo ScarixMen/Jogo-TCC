@@ -16,6 +16,7 @@ function Plataform_Button_Idle_Tutorial(){
 		if(place_meeting(x,y-1,obj_Player))
 		{
 			
+			obj_Apollo.state = Apollo_State_Idle
 			global.som.tocarSFX(sfx_Plataform_Button)
 			state = Plataform_Button_Press_Tutorial
 	

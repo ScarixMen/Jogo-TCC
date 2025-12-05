@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Button_Green_1",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Button_Green_1",
+  "parent":{
+    "name":"Controls",
+    "path":"folders/Scripts/Controls.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

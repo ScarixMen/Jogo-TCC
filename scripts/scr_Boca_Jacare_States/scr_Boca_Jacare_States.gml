@@ -57,7 +57,7 @@ function Boca_Jacare_State_Attack(){
 	if(image_index >= 2)
 	{
 		if (!instance_exists(hitbox)) {
-		
+			
 			hitbox = instance_create_layer(x, y, layer, obj_Hitbox_Boca_Jacare_Attack);
 		}
 	}

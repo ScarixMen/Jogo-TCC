@@ -98,7 +98,6 @@ function Button_Genius_Pressed(){
 				indice_atual = 0;
 				tempo_atual = 0;
 				delay_vitoria = 0;
-				//show_debug_message("Genius iniciado pelo botão azul");
 			}
 	}
 

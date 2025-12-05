@@ -41,6 +41,7 @@ function scr_Cutscene_BossFight(other) {
 
         case 3: // Espera diálogo "Niobio_Statue" terminar e muda estado para Idle
             if (!global.dialog) {
+				global.som.tocarSFX(sfx_Niobio_Uncross)
                 obj_Niobio.state = Niobio_State_Uncross;
                 ctrl.cutscene_step++;
             }
@@ -63,6 +64,7 @@ function scr_Cutscene_BossFight(other) {
 
         case 6: // Niobio pula + Apollo e Luana começam a correr
             obj_Niobio.state = Niobio_State_Jump;
+			global.som.tocarSFX(sfx_Niobio_Pre_Jump)
             ctrl.cutscene_step++;
             break;
 

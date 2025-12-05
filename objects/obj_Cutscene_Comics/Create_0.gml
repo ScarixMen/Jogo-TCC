@@ -3,7 +3,10 @@ comics = [
     spr_Cutscene_1,spr_Cutscene_2,spr_Cutscene_3,
     spr_Cutscene_4,spr_Cutscene_5,spr_Cutscene_6,
     spr_Cutscene_7,spr_Cutscene_8,spr_Cutscene_9,
-    spr_Cutscene_10,spr_Cutscene_11,spr_Cutscene_12
+    spr_Cutscene_10,spr_Cutscene_11,spr_Cutscene_12,
+	spr_Cutscene_13,spr_Cutscene_14,spr_Cutscene_15,
+	spr_Cutscene_16,spr_Cutscene_17,spr_Cutscene_18,
+	spr_Cutscene_19
 ];
 
 current = 0;

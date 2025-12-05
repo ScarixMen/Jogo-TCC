@@ -62,6 +62,7 @@ function Niobio_State_Air() {
 		if place_meeting(x, y + 1, obj_Block)
 		{
 			image_index = 0
+			global.som.tocarSFX(sfx_Niobio_Fall)
 			state = Niobio_State_Falling
 		}
 		
@@ -188,6 +189,7 @@ function Niobio_State_Air_A() {
 		if place_meeting(x, y + 1, obj_Base_Niobio)
 		{
 			image_index = 0
+			global.som.tocarSFX(sfx_Niobio_Fall)
 			state = Niobio_State_Falling_A
 		}
 		

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Temple_Puzzle_Light_Up",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Temple_Puzzle_Light_Up",
+  "parent":{
+    "name":"Controls",
+    "path":"folders/Scripts/Controls.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

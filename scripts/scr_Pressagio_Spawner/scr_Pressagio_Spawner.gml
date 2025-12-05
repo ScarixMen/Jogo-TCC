@@ -37,7 +37,7 @@ function Pressagio_Active() {
 
     // Quando a animação termina, cria o Pressagio real
     if (image_index >= image_number - 1) {
-        var inst = instance_create_layer(x, y, layer, obj_Pressagio);
+        var inst = instance_create_layer(x, y, "Luminis", obj_Pressagio);
         inst.state = Pressagio_Spawn;
         inst.spawner = id; // <<--- Armazena quem criou o Pressagio
         inst.target = target; // <<--- Passa o alvo corretamente

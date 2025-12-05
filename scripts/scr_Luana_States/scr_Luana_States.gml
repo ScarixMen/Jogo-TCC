@@ -348,6 +348,19 @@ function Luana_State_Moth_Attack()
 	
 }
 
+function Luana_State_Moth_Reset()
+{
+	vspd = 0
+	hspd = 0
+    sprite_index = spr_Luana_Moth_Reset;
+
+    // Quando a animação terminar, volta ao idle
+    if (image_index >= image_number - 1)
+    {
+        state = Luana_State_Idle;
+    }
+}
+
 function Luana_State_God(){
 	
 	script_execute(Input_Luana_God)

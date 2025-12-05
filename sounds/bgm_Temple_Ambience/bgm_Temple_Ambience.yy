@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"bgm_Temple_Ambience",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":80.06134,
+  "exportDir":"",
+  "name":"bgm_Temple_Ambience",
+  "parent":{
+    "name":"BGM",
+    "path":"folders/Sons/BGM.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"bgm_Temple_Ambience.wav",
+  "volume":1.0,
+}

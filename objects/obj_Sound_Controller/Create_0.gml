@@ -3,8 +3,8 @@ global.som = {
     musica_id: noone,
     ambiente_ids: ds_map_create(),
     sfx_volume: 1,
-    bgm_volume: 0,
-    amb_volume: 0,
+    bgm_volume: 1,
+    amb_volume: 1,
     fade_ativo: false,
     fade_tipo: "", // "in" ou "out"
     fade_tempo: 0,

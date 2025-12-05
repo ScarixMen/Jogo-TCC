@@ -1,7 +1,13 @@
-hspd = 0;
+// Create Event da plataforma
+
+spd = 20;            // velocidade
+v_dir = 1;          // direção inicial (1 = descendo, -1 = subindo)
+
+timer = 0;          // contador para esperar no limite
+timer_delay = room_speed * 3;   // 3 segundos de espera
+
+// variáveis auxiliares
 vspd = 0;
-spd = 10;
-v_dir = 1;
 waiting = false;
 wait_time = 0;
-wait_delay = 3 * room_speed; // 3 segundos
+wait_delay = room_speed * 3;

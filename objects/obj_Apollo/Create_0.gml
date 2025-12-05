@@ -1,5 +1,8 @@
 event_inherited();
 
+global.interact_apollo = false;
+
+
 timer = 120
 
 crounch = 0

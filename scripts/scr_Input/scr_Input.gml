@@ -60,10 +60,11 @@ function Input_Apollo(){
 	if global.cam_override
 	{
 		if(state != Apollo_State_Death){
-		state = Apollo_State_Cutscene}
+		    state = Apollo_State_Cutscene;
+		}
 		exit;
-	
 	}
+	
 	if (global.dialog && obj_Apollo.can_control)
 	{
 		if(object_index == obj_Apollo){
@@ -76,22 +77,20 @@ function Input_Apollo(){
 		    exit;
 		}
 	}
-	
 	#endregion
 	
-	left = keyboard_check(ord("A"))
-	right = keyboard_check(ord("D"))
-	move = -left+right
+	left  = keyboard_check(ord("A"));
+	right = keyboard_check(ord("D"));
+	move  = -left + right;
 	
-	interact_Apollo = keyboard_check_pressed(ord("E"))
+	// *** MODIFICAÇÃO AQUI ***
+	interact_Apollo = keyboard_check_pressed(ord("E"));
+	global.interact_apollo = interact_Apollo;
 	
-	jump = keyboard_check_pressed(vk_space)
-	
-	crounch = keyboard_check(vk_lcontrol)
-	
-	
-
+	jump    = keyboard_check_pressed(vk_space);
+	crounch = keyboard_check(vk_lcontrol);
 }
+
 function Input_Apollo_God(){
 	
 	left = keyboard_check(ord("A"))

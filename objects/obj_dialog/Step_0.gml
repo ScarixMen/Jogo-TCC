@@ -15,9 +15,8 @@ if global.skip
 	
 	if page < array_length(text) -1
 	{
-		
-		page++;	
-		
+		global.som.tocarSFX(sfx_Menu_Pass)
+		page++;
 	}
 	else
 	{
