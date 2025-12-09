@@ -23,6 +23,13 @@ function ReconfigurarSomPorRoom() {
 			global.som.pararAmbiente("ocean");
 			
             break;
+			
+		case rm_Cutscene:
+			global.som.tocarMusica(bgm_Cutscene);
+			global.som.pararAmbiente("forest");
+			global.som.pararAmbiente("ocean");
+			
+            break;
 		
 		case rm_Beach:
 			global.som.tocarMusica(bgm_The_Moon);
@@ -48,6 +55,13 @@ function ReconfigurarSomPorRoom() {
 		case rm_Temple:
 			global.som.tocarMusica(bgm_The_Temple);
 			global.som.pararAmbiente("cricket");
+			global.som.tocarAmbiente("temple", bgm_Temple_Ambience);
+		
+            break;
+		case rm_Boss:
+			global.som.tocarMusica(bgm_Insula);
+			//global.som.pararAmbiente("cricket");
+			global.som.pararAmbiente("temple");
 			global.som.tocarAmbiente("temple", bgm_Temple_Ambience);
 		
             break;

@@ -1,13 +1,16 @@
 {
   "$GMObject":"",
   "%Name":"obj_Door_Of_Ravi",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_Door_Of_Ravi",
   "overriddenProperties":[],
   "parent":{
     "name":"Construct",
-    "path":"folders/Sprites/Construct.yy",
+    "path":"folders/Objetos/Construct.yy",
   },
   "parentObjectId":null,
   "persistent":false,

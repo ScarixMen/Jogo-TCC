@@ -254,20 +254,31 @@ function Anhanga_State_Attack_Spear_Down(){
 	{
 		sprite_index = spr_Anhanga_Attack_Down
 		
-		instance_create_layer(center_x, center_y , layer, obj_Anhanga_Ball);
+		instance_create_layer(center_x, center_y - 100 , "Luminis", obj_Anhanga_Ball);
 		
-		instance_create_layer(center_x - 120, center_y + 700, layer, obj_Spear_Grounded);
-		instance_create_layer(center_x - 200, center_y + 700, layer, obj_Spear_Grounded);
-		instance_create_layer(center_x - 280, center_y + 700, layer, obj_Spear_Grounded);
-		instance_create_layer(center_x - 360, center_y + 700, layer, obj_Spear_Grounded);
-		instance_create_layer(center_x - 440, center_y + 700, layer, obj_Spear_Grounded);
-		instance_create_layer(center_x - 520, center_y + 700, layer, obj_Spear_Grounded);
-		instance_create_layer(center_x - 600, center_y + 700, layer, obj_Spear_Grounded);
-		instance_create_layer(center_x - 680, center_y + 700, layer, obj_Spear_Grounded);
-		instance_create_layer(center_x - 760, center_y + 700, layer, obj_Spear_Grounded);
-		instance_create_layer(center_x - 840, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 140, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 220, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 300, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 380, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 460, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 540, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 620, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 700, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 780, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 860, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 940, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1020, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1100, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1180, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1260, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1340, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1420, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1500, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1580, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1660, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1740, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x - 1820, center_y + 700, layer, obj_Spear_Grounded);
 													  
-		instance_create_layer(center_x + 120, center_y + 700, layer, obj_Spear_Grounded);
 		instance_create_layer(center_x + 200, center_y + 700, layer, obj_Spear_Grounded);
 		instance_create_layer(center_x + 280, center_y + 700, layer, obj_Spear_Grounded);
 		instance_create_layer(center_x + 360, center_y + 700, layer, obj_Spear_Grounded);
@@ -277,7 +288,19 @@ function Anhanga_State_Attack_Spear_Down(){
 		instance_create_layer(center_x + 680, center_y + 700, layer, obj_Spear_Grounded);
 		instance_create_layer(center_x + 760, center_y + 700, layer, obj_Spear_Grounded);
 		instance_create_layer(center_x + 840, center_y + 700, layer, obj_Spear_Grounded);
-	
+		instance_create_layer(center_x + 920, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1000, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1080, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1160, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1240, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1320, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1400, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1480, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1560, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1640, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1720, center_y + 700, layer, obj_Spear_Grounded);
+		instance_create_layer(center_x + 1800, center_y + 700, layer, obj_Spear_Grounded);
+		
 		obj_Spear_Grounded.image_angle = 180
 	
 	}

@@ -174,33 +174,41 @@ if (estado_menu == "opcoes") {
 }
 #endregion
 
-#region Credits Screen
+#region Credits Screen (Draw Event)
 if (estado_menu == "creditos") {
     var gui_w = display_get_gui_width();
     var gui_h = display_get_gui_height();
     var _x = gui_w / 2;
     var _y = gui_h / 2 - 100;
 
+    // Desenha bordas
+    draw_sprite(spr_Borda_Laranja, 0, 0, 0);
+    draw_sprite(spr_Borda_Azul, 0, gui_w - 90, 0);
+
+    // Desenha Void
+    draw_sprite(spr_Void, 0, 0, 0);
+
+    // Desenha a abelha da tela atual
+    draw_sprite(Bee[credit_index], 0, 320, 360);
+
+    // Desenha texto da tela atual
     draw_set_color(c_white);
     draw_set_font(Font_Menu);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_text(_x, _y,
-        "Créditos\n\n\n\nProdutor:   Mateus Nascimento \nProgramador:   Gabriel Pegado\nRoterista:   Matheus Lenon\nSound Designer:   Gustavo Tofano\nDesigner De Cenários:   Matheus Bastos\nDesigner De Personagens:   Clara Sodré");
+    draw_text(_x, _y, Bee_Texts[credit_index]);
 
-  // Botão VOLTAR separado
+    // Botão VOLTAR
     var back_y = 670;
     var back_x = 1230;
     var back_w = larg_ini_exit;
     var back_h = alt_ini_exit;
     var back_sprite = spr_Back_Off;
-
     if (indice == opc_max) {
         back_w = larg_exit;
         back_h = alt_exit;
         back_sprite = spr_Back_On;
     }
-
     draw_sprite_stretched(back_sprite, 0, back_x - back_w / 2, back_y - back_h / 2, back_w, back_h);
 }
 #endregion

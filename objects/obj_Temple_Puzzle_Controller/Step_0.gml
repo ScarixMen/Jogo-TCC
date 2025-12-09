@@ -13,9 +13,8 @@ function check_puzzle_step_Temple(stone_id) {
 			
 			global.som.tocarSFX(sfx_Puzzle_Apollo_Win)
 			
-			alarm[0] = 180
+			if(solved) alarm[0] = 180
 			
-            // trava todas as pedras (nenhuma mais interage)
             with (obj_Temple_Puzzle_Apollo_1) { locked = true; sprite_index = spr_Temple_Puzzle_Apollo_1_On; image_speed = 0; }
             with (obj_Temple_Puzzle_Apollo_2) { locked = true; sprite_index = spr_Temple_Puzzle_Apollo_2_On; image_speed = 0; }
             with (obj_Temple_Puzzle_Apollo_3) { locked = true; sprite_index = spr_Temple_Puzzle_Apollo_3_On; image_speed = 0; }

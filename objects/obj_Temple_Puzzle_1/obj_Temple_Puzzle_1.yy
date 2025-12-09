@@ -13,8 +13,8 @@
     "path":"folders/Objetos/Construct/Temple_Puzzle.yy",
   },
   "parentObjectId":{
-    "name":"obj_Forest_Puzzle_Main",
-    "path":"objects/obj_Forest_Puzzle_Main/obj_Forest_Puzzle_Main.yy",
+    "name":"obj_Temple_Puzzle_Main",
+    "path":"objects/obj_Temple_Puzzle_Main/obj_Temple_Puzzle_Main.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

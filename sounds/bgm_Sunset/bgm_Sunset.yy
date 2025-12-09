@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_Sunset.wav",
-  "volume":0.7,
+  "volume":0.6,
 }

@@ -23,7 +23,7 @@ switch (estado) {
             }
         }
         break;
-
+		
     case "entrada":
         // Espera jogador tocar os botões (não faz nada aqui)
         break;
@@ -68,9 +68,16 @@ switch (estado) {
     global.cam_override = true;
     global.focus_target = obj_Passage;
 	
+	obj_Luana.state = Luana_State_Idle
+	obj_Luana.can_control = false;
+	obj_Luana.hspd = 0
+	
+	obj_Apollo.state = Apollo_State_Idle
+	obj_Apollo.can_control = false;
+	obj_Apollo.hspd = 0
+	
     with obj_Passage {
         sprite_index = spr_Passage;
-		//if(image_index == 0)global.som.tocarSFX(sfx_Bridge)
         image_index = 0;
         image_speed = 1;
     }
@@ -86,8 +93,11 @@ switch (estado) {
             global.cam_override = false;
 			instance_destroy(obj_Genius_Temple);
 			sprite_index = spr_Noone
+			obj_Apollo.sprite_index = spr_Apollo_Idle
 			obj_Apollo.hspd = 0
+			obj_Luana.sprite_index = spr_Luana_Idle
 			obj_Luana.hspd = 0
+			
 			instance_destroy();
         }
     }

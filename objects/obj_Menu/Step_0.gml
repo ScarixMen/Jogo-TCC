@@ -45,6 +45,19 @@ if (input != 0) {
     larg = larg_ini;
     alt = alt_ini;
 }
+#region Créditos - Passar de tela (Step Event)
+if (estado_menu == "creditos") {
+    if (keyboard_check_pressed(vk_right)) { // seta direita
+        credit_index += 1;
+        if (credit_index >= array_length(Bee)) credit_index = array_length(Bee) - 1; // limita
+    }
+    if (keyboard_check_pressed(vk_left)) { // seta esquerda
+        credit_index -= 1;
+        if (credit_index < 0) credit_index = 0;
+    }
+}
+#endregion
+
 
 // Controle de volume apenas no menu de opções
 if (estado_menu == "opcoes") {
@@ -89,7 +102,7 @@ if (enter) {
                 switch (indice) {
                     case 0: room_goto(rm_Cutscene); break;
                     case 1:
-                        opc = ["Tutorial", "Praia", "Floresta", "Templo", "5"];
+                        opc = ["Tutorial", "Praia", "Floresta", "Templo", "Insula"];
                         opc_max = array_length(opc);
                         indice = 0;
                         estado_menu = "fases";
@@ -125,7 +138,7 @@ if (enter) {
                     case 1: room_goto(rm_Beach); break;
                     case 2: room_goto(rm_Forest); break;
                     case 3: room_goto(rm_Temple); break;
-                    case 4: room_goto(rm_Fase5); break;
+                    case 4: room_goto(rm_Boss); break;
                 }
             }
             else if (indice == opc_max) {

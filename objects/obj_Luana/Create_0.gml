@@ -39,3 +39,11 @@ damage_Luana_Forest_Anhanga = function(){
 	global.damage = true
 
 }
+
+damage_Luana_Ravi = function(){
+
+	state  = Luana_State_Death_Ravi
+	
+	global.damage = true
+
+}

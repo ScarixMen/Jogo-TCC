@@ -1,4 +1,4 @@
-spd = 1
+spd = 0.4
 
 target = obj_Apollo
 

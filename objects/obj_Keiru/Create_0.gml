@@ -1,0 +1,1 @@
+global.som.tocarSFX(sfx_Keiru)

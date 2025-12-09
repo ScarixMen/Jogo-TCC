@@ -8,10 +8,10 @@ timer_attack = 0
 timer = 0
 timer_down = 0
 timer_exhausted = 0
-timer_delay = 90
-timer_delay_attack = 120
-timer_delay_down = 180
-timer_delay_exhausted = 600
+timer_delay = 210
+timer_delay_attack = 210
+timer_delay_down = 240
+timer_delay_exhausted = 900
 
 select_plat = "4"
 

@@ -14,5 +14,9 @@ if place_meeting(x,y,obj_Player)
 		
 			obj_Transition_Room.target_room = rm_Forest
 		break;
+		case rm_Temple:
+		
+			obj_Transition_Room.target_room = rm_Boss
+		break;
 	}	
 }

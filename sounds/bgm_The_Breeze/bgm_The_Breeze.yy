@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":109.87682,
   "exportDir":"",
   "name":"bgm_The_Breeze",
   "parent":{

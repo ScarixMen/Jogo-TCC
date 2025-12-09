@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_Cutscene_Pass_Out",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Cutscene_Pass_Out",
+  "parent":{
+    "name":"Controls",
+    "path":"folders/Scripts/Controls.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

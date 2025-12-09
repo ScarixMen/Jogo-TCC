@@ -45,3 +45,20 @@ axis_up_previously = false;
 axis_down_previously = false;
 axis_right_previously = false;
 axis_left_previously = false;
+
+#region Setup (Create Event)
+    // Array de sprites das abelhas
+    Bee = [spr_Bee_1, spr_Bee_2, spr_Bee_3, spr_Bee_4, spr_Bee_5, spr_Bee_6];
+    
+    // Array de textos das telas
+    Bee_Texts = [
+        "Produtor - Mateus Da Silva",
+        "Programador - Gabriel Pegado",
+        "Roterista - Matheus Lenon Dreux",
+        "Sound Designer - Gustavo Tofano",
+        "Designer De Personagns - Clara Sodré",
+        "Designer De Cenário - Matheus Bastos"
+    ];
+    
+    credit_index = 0; // Tela atual
+#endregion

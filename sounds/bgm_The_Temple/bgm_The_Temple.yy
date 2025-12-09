@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":139.95117,
+  "duration":138.75612,
   "exportDir":"",
   "name":"bgm_The_Temple",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"bgm_The_Temple.wav",
-  "volume":1.0,
+  "volume":0.7,
 }

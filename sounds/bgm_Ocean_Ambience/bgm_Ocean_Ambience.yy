@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":57.044174,
+  "duration":193.58774,
   "exportDir":"",
   "name":"bgm_Ocean_Ambience",
   "parent":{

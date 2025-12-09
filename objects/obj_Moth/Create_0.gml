@@ -15,3 +15,7 @@ base_x = x;
 base_y = y;
 osc = 0;
 select_target = 0;
+
+
+global.apollo_pego = false;
+global.luana_pego  = false;

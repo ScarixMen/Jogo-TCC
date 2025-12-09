@@ -1,6 +1,11 @@
-if(image_index >= image_number -1)
+if(sprite_index == spr_Passage)
 {
 	
-	sprite_index = spr_Noone
+	if(image_index >= image_number -1)
+	{
+		
+		instance_destroy();
+		
+	}
 	
 }

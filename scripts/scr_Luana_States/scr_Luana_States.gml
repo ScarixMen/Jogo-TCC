@@ -309,6 +309,60 @@ function Luana_State_Death_Forest_Anhanga() {
 	}
 	
 }
+function Luana_State_Death_Ravi() {
+	
+	sprite_index = spr_Luana_Death
+	
+	hspd = 0
+	
+	if(image_index >= image_number -1)
+	{
+			
+		image_index = 7
+		instance_create_layer(0, 0, layer, obj_Transition_Death);
+		
+	}
+	
+	if instance_exists( obj_Transition_Death)
+	{
+		if obj_Transition_Death.alpha == 1
+		{	
+			x = global.check_X
+			y = global.check_Y
+			obj_Apollo.x = global.check_X
+			obj_Apollo.y = global.check_Y
+			instance_destroy(obj_Attack_Splash);
+			instance_destroy(obj_Attack_Wave);
+			instance_destroy(obj_Attack_Wave_Invert);
+			instance_destroy(obj_Attack_Hand_Water_Protection);
+			instance_destroy(obj_Attack_Hand_Water);
+			instance_destroy(obj_Attack_Hand_Water_Wall);
+			
+			
+			obj_Statue_Foutain.start_dialog_done = false;
+			
+			with(obj_Ravi)
+			{
+				
+				state = Ravi_State_Idle;
+				splash_step = 0;
+				splash_timer = 0;
+				special_step = 0;
+				wave_spawned = false;
+				wave_stage = 0;
+				last_random_x = -99999;
+				global.splash_ocupado = array_create(0);
+				stage_one_timer = 0; // timer para o novo state
+
+				
+			}
+			state = Luana_State_Idle;
+		}
+	}
+	
+
+}
+
 
 function Luana_State_Cutscene() {
     // Continua andando se hspd for diferente de 0
@@ -342,6 +396,12 @@ function Luana_State_Push_Niobio() {
 
 function Luana_State_Moth_Attack()
 {
+	
+	/*if(place_meeting(x,y-1,obj_Rock_Colision))
+	{*/
+		vspd = 0
+		
+	//}
 	
 	hspd = 0
 	sprite_index = spr_Luana_Moth_Attack;

@@ -1,0 +1,1 @@
+state = Door_Of_Ravi_State_Idle
