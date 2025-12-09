@@ -1,3 +1,4 @@
+if (Check_Pause()) exit;
 switch (wave_state)
 {
     case "spawn":

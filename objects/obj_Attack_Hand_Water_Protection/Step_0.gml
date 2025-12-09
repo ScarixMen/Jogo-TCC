@@ -1,0 +1,1 @@
+if (Check_Pause()) exit;

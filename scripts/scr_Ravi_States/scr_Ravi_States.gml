@@ -201,6 +201,7 @@ function Ravi_State_End()
         if (splash_timer <= 0)
         {
 			
+			global.finish = true
 			room_goto(rm_Menu)
 			
 		}

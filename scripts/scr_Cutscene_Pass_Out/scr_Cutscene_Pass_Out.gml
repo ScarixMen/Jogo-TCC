@@ -78,6 +78,7 @@ function scr_Cutscene_Pass_Out(other) {
 			   var d2 = instance_create_layer(x,y, layer, obj_Dialog);
 			   d2.npc_name = "pass_out_3";
 			   global.dialog = true;
+			   obj_Luana.y -= 1
 			   ctrl.cutscene_step++;
 				
 			}

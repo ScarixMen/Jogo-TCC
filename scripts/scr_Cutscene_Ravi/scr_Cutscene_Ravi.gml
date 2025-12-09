@@ -110,7 +110,8 @@ function scr_Cutscene_Ravi(other) {
             obj_Luana.can_control = true;
 			obj_Apollo.state = Apollo_State_Idle;
 			obj_Luana.state  = Luana_State_Idle;
-			obj_Ravi.state = Ravi_State_Wave_Splash_Mix;
+			global.som.tocarMusicaNiobio(bgm_Insula)
+			obj_Ravi.state = Ravi_State_Start;
 			
             ctrl.cutscene_step = 0;  // reseta para próxima cutscene
             return true;  // cutscene acabou

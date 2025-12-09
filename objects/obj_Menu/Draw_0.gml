@@ -182,21 +182,21 @@ if (estado_menu == "creditos") {
     var _y = gui_h / 2 - 100;
 
     // Desenha bordas
-    draw_sprite(spr_Borda_Laranja, 0, 0, 0);
-    draw_sprite(spr_Borda_Azul, 0, gui_w - 90, 0);
 
     // Desenha Void
     draw_sprite(spr_Void, 0, 0, 0);
+	draw_sprite(spr_Borda_Laranja, 0, 0, 0);
+    draw_sprite(spr_Borda_Azul, 0, gui_w - 90, 0);
 
     // Desenha a abelha da tela atual
     draw_sprite(Bee[credit_index], 0, 320, 360);
 
     // Desenha texto da tela atual
     draw_set_color(c_white);
-    draw_set_font(Font_Menu);
+    draw_set_font(Font_Menu_1);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_text(_x, _y, Bee_Texts[credit_index]);
+    draw_text(800, 350, Bee_Texts[credit_index]);
 
     // Botão VOLTAR
     var back_y = 670;

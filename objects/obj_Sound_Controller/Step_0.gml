@@ -59,10 +59,10 @@ function ReconfigurarSomPorRoom() {
 		
             break;
 		case rm_Boss:
-			global.som.tocarMusica(bgm_Insula);
+			global.som.tocarMusica(bgm_Corredor_Temple);
 			//global.som.pararAmbiente("cricket");
 			global.som.pararAmbiente("temple");
-			global.som.tocarAmbiente("temple", bgm_Temple_Ambience);
+			global.som.tocarAmbiente("foutain", bgm_Foutain);
 		
             break;
 

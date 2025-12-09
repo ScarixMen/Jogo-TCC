@@ -1,3 +1,4 @@
+if (Check_Pause()) exit;
  // Posição alvo
 var tx = target.x;
 var ty = target.y ;

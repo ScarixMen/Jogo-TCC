@@ -13,7 +13,7 @@ function Plataform_Button_Idle_Temple(){
 		
 		}
 	}
-		if(place_meeting(x,y-1,obj_Player))
+		if(place_meeting(x,y-1,obj_Apollo))
 		{
 			obj_Apollo.state = Apollo_State_Idle
 			global.som.tocarSFX(sfx_Plataform_Button)

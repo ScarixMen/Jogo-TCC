@@ -347,7 +347,7 @@ function scr_dialog()
 	case "Cutscene_0":
 	
 	        // Texto principal
-	        text[0]  = "Eu acordei...Em um lugar totalmente escuro";
+	        text[0]  = "Eu acordei...Em um lugar totalmente escuro.";
 	        text[1]  = "Minha cabeça estava rodando, porém logo parou.";
 	        text[2]  = "Quando olhei para o chão, parecia uma galáxia inteira.";
 	        text[3]  = "Sem rumo, decidir andar, para ver se chegava em algum lugar.";

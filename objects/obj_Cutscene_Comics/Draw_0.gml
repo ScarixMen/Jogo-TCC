@@ -17,5 +17,3 @@ if (next != -1) {
         y
     );
 }
-
-draw_text(100,100,current)

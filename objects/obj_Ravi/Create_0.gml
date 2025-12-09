@@ -31,3 +31,5 @@ if (!variable_global_exists("splash_ocupado")) global.splash_ocupado = [];
 // --- FLAGS DE SEGURANÇA ---
 if (!variable_instance_exists(id, "wave_repeat_count")) wave_repeat_count = 0;
 if (!variable_instance_exists(id, "mix_repeat_count")) mix_repeat_count = 0;
+
+global.finish = false

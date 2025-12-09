@@ -1,3 +1,4 @@
+if (Check_Pause()) exit;
 timer--;
 
 if (timer <= 0) {

@@ -247,6 +247,7 @@ function Apollo_State_Death_Ravi() {
 			instance_destroy(obj_Attack_Hand_Water_Protection);
 			instance_destroy(obj_Attack_Hand_Water);
 			instance_destroy(obj_Attack_Hand_Water_Wall);
+			global.som.tocarMusicaNiobio(bgm_Corredor_Temple)
 			
 			
 			obj_Statue_Foutain.start_dialog_done = false;
