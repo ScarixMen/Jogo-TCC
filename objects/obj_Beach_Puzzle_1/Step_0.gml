@@ -15,3 +15,15 @@ if (!input)
 
 	}
 }
+
+if(keyboard_check_pressed(ord("T")))
+{
+	
+	obj_Hud_BookMark_Beach.limit = 3
+	obj_Luana.x	= 19988
+	obj_Luana.y	= 2365
+	obj_Apollo.x = 19968
+	obj_Apollo.y = 2368
+
+	
+}

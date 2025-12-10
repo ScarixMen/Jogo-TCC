@@ -27,7 +27,7 @@ function scr_dialog()
 			
 			case "botao_tutorial":
 		
-			text[0] = "Esperem. Aparentemente os povos que moravam aqui tinha alguns mecanismos.";
+			text[0] = "Esperem. Aparentemente os povos que moravam aqui tinham alguns mecanismos.";
 			text[1] = "Apollo, tenta se agachar apertando (CTRL), e levante-se soltando-o, assim fique em cima daquele botão laranja dentro daquele túnel." ;
 			text[2] = "Pode deixar!";
 			
@@ -87,7 +87,7 @@ function scr_dialog()
 			
 			case "Niobio_Statue":
 			
-			text[0] = "Parece ser diferente das outras estatuas... Espera, é parecido com aqueles símbolos que a gente achou antes! " 
+			text[0] = "Parece ser diferente das outras estátuas... Espera, é parecido com aqueles símbolos que a gente achou antes! " 
 			text[1] = "Estranho, será que era alguma figura importante pra ilha?"
 			text[2] = "Talvez. Acho que eu consigo traduzir o que tá escrito. Espera um minutinho."
 			
@@ -158,7 +158,7 @@ function scr_dialog()
 			case "Cutscene_1":
 			
 			text[0] = "Ei, Luana, dá uma olhada!"
-			text[1] = "Tem um monte de símbolos desconhecidos. Acho que deve ser a escrita ser das pessoas que já moraram aqui"
+			text[1] = "Tem um monte de símbolos desconhecidos. Acho que deve ser a escrita das pessoas que já moraram aqui"
 			text[2]	= "E se a gente tirar foto? Não dá pra deixar passar um achado desses moscando. Quem sabe, assim confiem mais em você sobre essa ilha."
 			text[3]	= "É, você tem razão."
 			
@@ -177,10 +177,10 @@ function scr_dialog()
 			case "Cutscene_Luminis_1":
 			
 			text[0] = "Apollo? Luana? Conseguem me escutar?"
-			text[1] = "Oi ayla. A gente tá escutando"
+			text[1] = "Oi, ayla. A gente tá escutando"
 			text[2]	= "Sim! Tamo na escuta. Câmbio."
-			text[3]	= "Ótimo. Vejo que já chegaram nas florestas de Umbra. Segundo os dados que estou captando,"
-			text[4]	= "vocês não devem estar muito longe de chegar ao templo."
+			text[3]	= "Ótimo. Vejo que já chegaram nas florestas de Umbra."
+			text[4]	= "Segundo os dados que estou captando, vocês não devem estar muito longe de chegar ao templo."
 			text[5]	= "Entretanto, há muitas interferências nessa região, recomendo seguirem com cautela."
 			text[6]	= "Será que são mais daquelas estátuas?"
 			text[7]	= "Não sei dizer, parece ser outra coisa... de qualquer forma, tomem cuidado."
@@ -207,7 +207,7 @@ function scr_dialog()
 			
 			case "Cutscene_Luminis_2":
 			
-			text[0] = "O Luana, eu to ficando louco ou parece ter algo ali?"
+			text[0] = "Ô, Luana, eu tô ficando louco ou parece ter algo ali?"
 			
 			name[0] = "Apollo"
 			
@@ -218,7 +218,7 @@ function scr_dialog()
 			case "Cutscene_Luminis_3":
 			
 			text[0] = "Ei, vocês estão bem? Acharam algo?"
-			text[1] = "Ah, a gente tá bem, mas a gente encontro duas coisas que estão brilhando... Eles não parecem querer atacar a gente."
+			text[1] = "Ah, a gente tá bem, mas a gente encontrou duas coisas que estão brilhando... Eles não parecem querer atacar a gente."
 			text[2]	= "Parecem ser pacíficos."
 			text[3]	= "Estranho... enfim, me avisem se houver outro problema."
 			text[4]	= "Tá bom! Câmbio."
@@ -260,7 +260,7 @@ function scr_dialog()
 			text[0] = "O Luana, se meu conhecimento tá em dia, acho que essa parada aqui não é da ilha."
 			text[1] = "Estranho, eu já vi essas coisas em algum lugar... Ayla, sabe se tem mais alguém além da gente?"
 			text[2]	= "Não. Mesmo com as interferências, eu conseguiria saber disso."
-			text[3]	= "Esquisito. Vai ver alguém naufragou aqui a um tempo?"
+			text[3]	= "Esquisito. Vai ver alguém naufragou aqui há um tempo?"
 			text[4]	= "Mas sem saber o caminho exato, é quase impossível vir parar aqui..."
 			
 			name[0] = "Apollo"
@@ -299,7 +299,7 @@ function scr_dialog()
 			case "Anhanga_2":
 		
 			text[0] = "Tive uma ideia. Talvez se a gente cansar ele usando os luminis, ele deixe a gente passar!";
-			text[1] = "Ah, bacana... Perai, você tá falando sério?";
+			text[1] = "Ah, bacana... Peraí, você tá falando sério?";
 			
 			name[0] ="Luana"
 			name[1] ="Apollo"
@@ -325,10 +325,10 @@ function scr_dialog()
 			case "Anhanga_end":
 		
 			text[0] = "Deu certo! Bom trabalho distraindo ele.";
-			text[1] = "Uff...Uff...Por nada Lu...";
-			text[2] = "Bom, já ouvi falar em \"espiritos guardiões\" que nem ele sabe. Normalmente uma figura com traços de animal que protege as florestas.";
+			text[1] = "Uff... uff... por nada, Lu...";
+			text[2] = "Bom, já ouvi falar em \"espíritos guardiões\" que nem ele sabe. Normalmente uma figura com traços de animal que protege as florestas.";
 			text[3] = "Mas eles normalmente aparecem quando alguém causa problemas severos ao meio..."
-			text[4] = "Se isso é verdade, é sinistro viu. Bom, vamo foca, a entrada do templo já ta bem próxima daqui."
+			text[4] = "Se isso é verdade, é sinistro viu. Bom, vamo foca, a entrada do templo já tá bem próxima daqui."
 
 			name[0] ="Luana"
 			name[1] ="Apollo"
@@ -347,13 +347,13 @@ function scr_dialog()
 	case "Cutscene_0":
 	
 	        // Texto principal
-	        text[0]  = "Eu acordei...Em um lugar totalmente escuro.";
+	        text[0]  = "Eu acordei... Em um lugar totalmente escuro.";
 	        text[1]  = "Minha cabeça estava rodando, porém logo parou.";
 	        text[2]  = "Quando olhei para o chão, parecia uma galáxia inteira.";
-	        text[3]  = "Sem rumo, decidir andar, para ver se chegava em algum lugar.";
+	        text[3]  = "Sem rumo, decidi andar, para ver se chegava em algum lugar.";
 	        text[4]  = "Até que uma luz branca apareceu.";
 	        text[5]  = "Eu tive que tapar meus olhos até eles se acostumarem com a claridade.";
-	        text[6]  = "Quando minha visão foca, eu a vejo, em toda sua glória";
+	        text[6]  = "Quando minha visão focou, eu a vejo, em toda sua glória";
 	        text[7]  = "Ela se comunicava comigo, de um jeito estranho.";
 	        text[8]  = "Não existiam palavras....";
 	        text[9]  = "Mas eu sabia exatamente o que ela queria me dizer.";
@@ -448,7 +448,7 @@ function scr_dialog()
 			case "temple_help":
 		
 			text[0] = "Hm, que saco, tá trancado. Se eu fosse a de óculos, ela diria algo como:"
-			text[1] = "\"Vasculhem por aí e vêm se encontrem alguma coisa\". Algo do tipo"
+			text[1] = "\"Vasculhem por aí e vejam se encontrem alguma coisa\". Algo do tipo"
 			
 			name[0] = "Apollo"
 			name[1] = "Apollo"
@@ -460,7 +460,7 @@ function scr_dialog()
 			
 			case "pass_out":
 		
-			text[0] = "Luana? ta tudo bem?"
+			text[0] = "Luana? tá tudo bem?"
 			text[1] = "Minha cabeça... eu a sinto meio pesada..."
 			
 			name[0] ="Apollo"
@@ -483,7 +483,7 @@ function scr_dialog()
 			
 			case "pass_out_3":
 		
-			text[0] = "Ai! ainda bem. Quase que meu coração. não me assusta assim não Luu..."
+			text[0] = "Ai! Ainda bem. Quase que meu coração. Não me assusta assim não Luu..."
 			text[1] = "Uhhm... Perdão, eu acabei desmaiando eu acho. Mas, eu tive muitas visões."
 			text[2] = "Ah? Que história é essa?"
 			text[3] = "Eu... Calma, vou tentar explicar."
@@ -492,11 +492,11 @@ function scr_dialog()
 			text[6]	= "Ela... aparentemente buscava tomar ações que fizessem todos serem julgados igualmente aos olhos da Lua..."
 			text[7]	= "Porém a ilha foi invadida no dia seguinte."
 			text[8]	= "Ah... que horrível."
-			text[9]	= "Mas, não foi só isso que eu vi. Eu descobri que aparentemente foi planejado eu ta aqui."
+			text[9]	= "Mas, não foi só isso que eu vi. Eu descobri que aparentemente foi planejado eu estar aqui.."
 			text[10] = "E que minha tribo é descendente dos Indus..."
 			text[11] = "Nossa, isso explica muita coisa. Mas por que a Lua te trouxe até aqui então?"
 			text[12] = "Eu ainda não sei. Foi tudo de uma vez então minha cabeça tá meio confusa ainda."
-			text[13] = "Po, mas também se desmaiou, não dá pra exigir muito. Se bem que, acho que se a gente vê o artefato, talvez..."
+			text[13] = "Pô, mas também... Você desmaiou, não dá pra exigir muito. Se bem que, acho que se a gente vê o artefato, talvez..."
 			text[14] = "...Eu descubra o porquê!"
 			
 			name[0] = "Apollo"
@@ -559,10 +559,10 @@ function scr_dialog()
 			name[0] = "???"
 			name[1] = "Luana"
 			name[2] = "Apollo"
-			name[3] = "Luana"
+			name[3] = "Ravi"
 			name[4] = "Luana"
-			name[5] = "Luana"
-			name[6] = "Luana"
+			name[5] = "Ravi"
+			name[6] = "Ravi"
 
 			speaker[0] = Mistery
 			speaker[1] = Luana
